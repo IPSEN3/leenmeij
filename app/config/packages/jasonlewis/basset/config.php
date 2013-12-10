@@ -33,11 +33,19 @@ return array(
             $collection->directory('assets/css', function($collection)
             {
                 $collection->add('less/master.less')->apply('Less');
+                $collection->add('themes/default.css');
+                $collection->add('themes/default.date.css');
+                $collection->add('themes/default.time.css');
             })->apply('UriRewriteFilter')->apply('CssMin');
 
             $collection->directory('assets/js', function($collection)
             {
-                $collection->javascript('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
+                $collection->javascript('//code.jquery.com/jquery-1.10.2.min.js');
+                $collection->add('datetimepicker/picker.js');
+                $collection->add('datetimepicker/picker.date.js');
+                $collection->add('datetimepicker/picker.time.js');
+                $collection->add('datetimepicker/legacy.js');
+                $collection->add('datetimepicker/main.js');
                 //$collection->add('bootstrap/bootstrap.js');
                 $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
             })->apply('JsMin');

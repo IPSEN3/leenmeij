@@ -88,6 +88,11 @@ App::down(function()
 	return Response::make("Be right back!", 503);
 });
 
+
+/* set locale */
+
+App::setLocale(Session::get('lang', 'nl'));
+
 /*
 |--------------------------------------------------------------------------
 | Require The Filters File

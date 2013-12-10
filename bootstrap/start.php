@@ -26,9 +26,8 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-    //'local' => array('VirtualMint'), // Change this to your local machine hostname.
-    'local' => array('101.84.231.pool.hsleiden.nl'), // Change this to your local machine hostname.
-    'staging' => array('your-staging-machine-name'),
+    'local' => array('iMac-van-Reshad.local'), // Change this to your local machine hostname.
+    'devberry' => array('devberry'),
     'production' => array('your-production-machine-name'),
 
 ));

@@ -3,7 +3,9 @@ Options +FollowSymLinks
     Options -MultiViews
     RewriteEngine On
 
-	RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteBase /~reshadfarid/leenmeij/public/
+
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>

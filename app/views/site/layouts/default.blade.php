@@ -6,12 +6,12 @@
 		<meta charset="utf-8" />
 		<title>
 			@section('title')
-			Laravel 4 Sample Site
+			Leenmeij
 			@show
 		</title>
-		<meta name="keywords" content="your, awesome, keywords, here" />
-		<meta name="author" content="Jon Doe" />
-		<meta name="description" content="Lorem ipsum dolor sit amet, nihil fabulas et sea, nam posse menandri scripserit no, mei." />
+		<meta name="keywords" content="Leenmeij, autoverhuur" />
+		<meta name="author" content="Koekietrommel" />
+		<meta name="description" content="Dit is de klanten reserveringssysteem van Leenmeij." />
 
 		<!-- Mobile Specific Metas
 		================================================== -->
@@ -33,10 +33,6 @@
 
 		<!-- Favicons
 		================================================== -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{{ asset('assets/ico/apple-touch-icon-144-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{{ asset('assets/ico/apple-touch-icon-114-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{{ asset('assets/ico/apple-touch-icon-72-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" href="{{{ asset('assets/ico/apple-touch-icon-57-precomposed.png') }}}">
 		<link rel="shortcut icon" href="{{{ asset('assets/ico/favicon.png') }}}">
 	</head>
 
@@ -64,12 +60,19 @@
                         @if (Auth::user()->hasRole('admin'))
                         <li><a href="{{{ URL::to('admin') }}}">Admin Panel</a></li>
                         @endif
-                        <li><a href="{{{ URL::to('user') }}}">Logged in as {{{ Auth::user()->username }}}</a></li>
-                        <li><a href="{{{ URL::to('user/logout') }}}">Logout</a></li>
+                        <li><a href="{{{ URL::to('user') }}}">{{{ Lang::get('site.logged_in') }}}{{{ Auth::user()->username }}}</a></li>
+                        <li><a href="{{{ URL::to('user/logout') }}}">{{{ Lang::get('site.logout') }}}</a></li>
                         @else
                         <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Login</a></li>
                         <li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}">{{{ Lang::get('site.sign_up') }}}</a></li>
                         @endif
+    					<li class="dropdown">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{{Lang::get('site.choose_language')}}} <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+				          <li>{{link_to_route('language.select', 'English', array('en'))}}</li>
+    					  <li>{{link_to_route('language.select', 'Dutch', array('nl'))}}</li>
+				        </ul>
+				        </li>
                     </ul>
 					<!-- ./ nav-collapse -->
 				</div>
@@ -79,17 +82,19 @@
 
 		<!-- Container -->
 		<div class="container">
-			<!-- Notifications -->
-			@include('notifications')
-			<!-- ./ notifications -->
+			<div class="innerpage">
+				<!-- Notifications -->
+				@include('notifications')
+				<!-- ./ notifications -->
 
-			<!-- Content -->
-			@yield('content')
-			<!-- ./ content -->
+				<!-- Content -->
+				@yield('content')
+				<!-- ./ content -->
+			</div>
 		</div>
 		<!-- ./ container -->
 
-		<!-- the following div is needed to make a sticky footer -->
+		<!-- sticky footer -->
 		<div id="push"></div>
 		</div>
 		<!-- ./wrap -->
@@ -97,7 +102,7 @@
 
 	    <div id="footer">
 	      <div class="container">
-	        <p class="muted credit">Laravel 4 Starter Site on <a href="https://github.com/andrew13/Laravel-4-Bootstrap-Starter-Site">Github</a>.</p>
+	        <p class="muted credit">&copy; Koekietrommel</p>
 	      </div>
 	    </div>
 

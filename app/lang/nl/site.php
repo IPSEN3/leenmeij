@@ -18,5 +18,6 @@ return array(
         'logout' => 'Log uit',
         'logged_in' => 'Ingelogd als',
         'choose_language' => 'Kies taal',
+        'formerror' => 'Controleer het formulier op fouten alstublieft'
 
 );

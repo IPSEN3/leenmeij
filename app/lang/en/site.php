@@ -18,5 +18,6 @@ return array(
         'logout' => 'logout',
         'logged_in' => 'Logged in as',
         'choose_language' => 'Choose language',
+        'formerror' => 'Please check the form below for errors'
 
 );

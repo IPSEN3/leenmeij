@@ -21,21 +21,25 @@
 			    <fieldset>
 			    	<h4>{{ Lang::get('renting.pickup') }}</h4>
 			        <div class="form-group">
+			        	<div class="col-md-10"><p class="help-block">{{ Lang::get('renting.startdateinfo') }}</p></div>
 			            <div class="col-md-6">
-			                <input type="date" class="form-control js__datepicker" required = "required" placeholder="Datum" name="pickupdate">
-                 			<p class="help-block">{{ Lang::get('renting.startdateinfo') }}</p>
+			            	{{ Form::text('pickupdate', $value=null, array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }}
+                 			<p>{{ $errors->first('pickupdate') }}</p>
 			            </div>
 			            <div class="col-md-4">
-			                <input type="time" class="form-control js__timepicker" required = "required" placeholder="Tijd" name="pickuptime">
+			                {{ Form::text('pickuptime', $value=null, array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'pickuptime')) }}
+			                <p>{{ $errors->first('pickuptime') }}</p>
 			            </div>
 			        </div>
 			        <h4>{{ Lang::get('renting.return') }}</h4>
 			        <div class="form-group">
 			        	<div class="col-md-6">
-			                <input type="date" class="form-control js__datepicker" required = "required" placeholder="Datum" name="returndate">
+			        		{{ Form::text('returndate', $value=null, array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }}
+			                <p>{{ $errors->first('returndate') }}</p>
 			            </div>
 			            <div class="col-md-4">
-			                <input type="time" class="form-control js__timepicker" required = "required" placeholder="Tijd" name="returntime">
+			                {{ Form::text('returntime', $value=null, array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'returntime')) }}
+			                <p>{{ $errors->first('returntime') }}</p>
 			            </div>
 			        </div>
 

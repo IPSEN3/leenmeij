@@ -49,7 +49,7 @@
 
 			        <div class="form-group">
 			            <div class="col-md-10">
-			                <button tabindex="3" type="submit" class="btn btn-primary">{{ Lang::get('renting.pickcar') }}</button>
+			                <button tabindex="3" type="submit" class="btn btn-default">{{ Lang::get('renting.pickcar') }}</button>
 			            </div>
 			        </div>
 			    </fieldset>

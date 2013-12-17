@@ -40,7 +40,7 @@ return array(
 
             $collection->directory('assets/js', function($collection)
             {
-                $collection->javascript('//code.jquery.com/jquery-1.10.2.min.js');
+                $collection->javascript('http://code.jquery.com/jquery-1.10.2.min.js');
                 $collection->add('datetimepicker/picker.js');
                 $collection->add('datetimepicker/picker.date.js');
                 $collection->add('datetimepicker/picker.time.js');

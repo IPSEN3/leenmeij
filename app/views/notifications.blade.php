@@ -2,7 +2,7 @@
 <div class="alert alert-danger alert-block">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<h4>Error</h4>
-	Please check the form below for errors
+	<p>{{{ Lang::get('site.formerror') }}}</p>
 </div>
 @endif
 

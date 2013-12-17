@@ -67,12 +67,16 @@
 
     {{ Form::open(array('url' => 'reservation')) }}
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <div class="form-group">
+
+              {{ '<pre>' }}
+              {{ $vehicles }}
+
+              <!-- <div class="form-group">
                   <div class="col-md-3">
                     <h4>Auto</h4>
                     {{ Form::radio('car', 'car1') }}
                   </div>
-              </div>
+              </div> -->
 
               @if ( Session::get('error') )
               <div class="alert alert-danger">{{ Session::get('error') }}</div>

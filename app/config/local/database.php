@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'production',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -58,6 +58,17 @@ return array(
 			'database'  => 'leenmeij',
 			'username'  => 'reshadfarid',
 			'password'  => '',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
+		'production' => array(
+			'driver'    => 'mysql',
+			'host'      => '145.97.16.192',
+			'database'  => 'ipsen2',
+			'username'  => 'ipsen3',
+			'password'  => 'ipsen3',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

@@ -3,11 +3,12 @@
 class ReservationController extends BaseController {
 
 	protected $reservation = array();
+	protected $vehicles = array();
 
-	public function __construct()
+	public function __construct(Vehicle $vehicles)
     {
         parent::__construct();
-        
+        $this->vehicles = $vehicles;
     }
 
 	public function postDates() {
@@ -38,7 +39,7 @@ class ReservationController extends BaseController {
 		else {
 			
 			Session::put('reserveringen', $reservation);
-			return Redirect::to('reservation/car');
+			return Redirect::to('reservation/car')->with('vehicles', $this->vehicles->getVehicles());
 
 		}
 

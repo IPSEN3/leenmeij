@@ -2,7 +2,6 @@
 
 class ReservationController extends BaseController {
 
-	protected $reservation = array();
 	protected $vehicles = array();
 
 	public function __construct(Vehicle $vehicles)
@@ -39,7 +38,7 @@ class ReservationController extends BaseController {
 		else {
 			
 			Session::put('reserveringen', $reservation);
-			return Redirect::to('reservation/car')->with('vehicles', $this->vehicles->getVehicles());
+			return Redirect::to('reservation/car');
 
 		}
 
@@ -49,7 +48,7 @@ class ReservationController extends BaseController {
 
 		$value = Session::get('reserveringen');
 
-		return View::make('site/reservation/car')->with('datum', $value);
+		return View::make('site/reservation/car')->with('datum', $value)->with('vehicles', $this->vehicles->getVehicles());
 
 	}
 
@@ -84,6 +83,25 @@ class ReservationController extends BaseController {
 			return Redirect::to('reservation/car')->with('success', Lang::get("site.saved"));
 
 		}
+
+	}
+
+	public function selectCar() {
+
+		$reservation['car'] = Input::get('id');	
+
+		if (Session::has('car')) {
+			Session::forget('car');
+		}
+
+		if (Input::has('id'))
+		{
+		    Session::push('reserveringen', $reservation['car']);
+		}
+
+		$data = Session::all();
+		//return Redirect::to('reservation/payment');
+		return Redirect::back()->with('success', 'Auto gekozen')->with('sessie', $data);
 
 	}
 

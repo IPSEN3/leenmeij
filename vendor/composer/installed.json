@@ -2997,5 +2997,58 @@
             "testing",
             "woodling"
         ]
+    },
+    {
+        "name": "creitive/breadcrumbs",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/CreITive/Laravel-4-Breadcrumbs.git",
+            "reference": "b375ab78e1376e665c515951523da1e9e01c85ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/CreITive/Laravel-4-Breadcrumbs/zipball/b375ab78e1376e665c515951523da1e9e01c85ff",
+            "reference": "b375ab78e1376e665c515951523da1e9e01c85ff",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "4.x",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~2.0",
+            "symfony/dom-crawler": "~2.0",
+            "way/phpunit-wrappers": "dev-master"
+        },
+        "time": "2013-12-09 07:01:02",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Creitive\\Breadcrumbs\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT License"
+        ],
+        "authors": [
+            {
+                "name": "Luka Macun",
+                "email": "luka.macun@creitive.rs"
+            },
+            {
+                "name": "Miloš Levačić",
+                "email": "milos.levacic@creitive.rs"
+            }
+        ],
+        "description": "Simple breadcrumbs class",
+        "homepage": "https://github.com/CreITive/Laravel-4-Breadcrumbs",
+        "keywords": [
+            "breadcrumbs",
+            "laravel"
+        ]
     }
 ]

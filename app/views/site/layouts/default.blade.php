@@ -79,7 +79,6 @@
 			</div>
 		</div>
 		<!-- ./ navbar -->
-
 		<!-- Container -->
 		<div class="container">
 			<div class="innerpage">

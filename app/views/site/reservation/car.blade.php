@@ -65,18 +65,38 @@
 <div class="row">
 	<div class="col-md-12"><h2>{{{ Lang::get('reservation.choose_car') }}}</h2></div>
 
-    {{ Form::open(array('url' => 'reservation')) }}
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    
+              <div class="row">
+              @foreach ( $vehicles as $vehicle )
+              {{ Form::open(array('url' => 'reservation/car/select')) }}
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <input type="hidden" name="id" value="{{ $vehicle->id }}">
+                <div class="col-md-4">
+                    <div class="well well-sm">
+                      <h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4>
+                          <div class="input-group input-group-md">
+                              <p>Beschrijving: {{ $vehicle->description }}</p>
+                              <p>Airco {{ $vehicle->airco == 1 ? 'ja' : 'nee' }}</p>
+                              <p>Zitplaatsen {{ $vehicle->seats }}</p>
+                              @if(isset($session) && $vehicle->id == $session['id'])
+                              <span class="badge">Geselecteerd</span>
+                              @endif
+                          </div>
+                          <div class="input-group input-group-sm">
+                              <span class="input-group-addon">&euro;</span>
+                              <input type="text" class="form-control" value="{{ $vehicle->hourly_rent }}" disabled>
+                          </div>
+                          <div class="input-group input-group-md">
+                             <button tabindex="3" type="submit" class="btn btn-default">{{ Lang::get('renting.choose') }}</button>
+                          </div>
+                        </div>
+                </div>
+                {{ Form::close() }}
+              @endforeach
+              </div>
+              <pre>
+              <?php print_r(Session::all()); ?>
 
-              {{ '<pre>' }}
-              {{ $vehicles }}
-
-              <!-- <div class="form-group">
-                  <div class="col-md-3">
-                    <h4>Auto</h4>
-                    {{ Form::radio('car', 'car1') }}
-                  </div>
-              </div> -->
 
               @if ( Session::get('error') )
               <div class="alert alert-danger">{{ Session::get('error') }}</div>
@@ -85,7 +105,6 @@
               @if ( Session::get('notice') )
               <div class="alert">{{ Session::get('notice') }}</div>
               @endif
-      </form>
 
 </div>
 @stop

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7feddbb047268e77ac66d93316c9033a",
+    "hash": "e601daf9e4b2f06031b7b5fbaa2e029b",
     "packages": [
         {
             "name": "bllim/datatables",
@@ -100,6 +100,57 @@
                 "preload"
             ],
             "time": "2013-06-24 22:58:34"
+        },
+        {
+            "name": "creitive/breadcrumbs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CreITive/Laravel-4-Breadcrumbs.git",
+                "reference": "b375ab78e1376e665c515951523da1e9e01c85ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CreITive/Laravel-4-Breadcrumbs/zipball/b375ab78e1376e665c515951523da1e9e01c85ff",
+                "reference": "b375ab78e1376e665c515951523da1e9e01c85ff",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.x",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.0",
+                "symfony/dom-crawler": "~2.0",
+                "way/phpunit-wrappers": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Creitive\\Breadcrumbs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Luka Macun",
+                    "email": "luka.macun@creitive.rs"
+                },
+                {
+                    "name": "Miloš Levačić",
+                    "email": "milos.levacic@creitive.rs"
+                }
+            ],
+            "description": "Simple breadcrumbs class",
+            "homepage": "https://github.com/CreITive/Laravel-4-Breadcrumbs",
+            "keywords": [
+                "breadcrumbs",
+                "laravel"
+            ],
+            "time": "2013-12-09 07:01:02"
         },
         {
             "name": "doctrine/annotations",
@@ -2910,6 +2961,7 @@
         "zizaco/entrust": 20,
         "jasonlewis/basset": 20,
         "j20/php-uuid": 20,
+        "creitive/breadcrumbs": 20,
         "way/generators": 20,
         "mockery/mockery": 20,
         "barryvdh/laravel-ide-helper": 20,

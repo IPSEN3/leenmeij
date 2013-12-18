@@ -122,7 +122,8 @@ Route::get('contact-us', function()
 
 # Reservation steps
 Route::any('reservation/edit', 'ReservationController@editDates');
-Route::get('reservation/car', "ReservationController@getDates");
+Route::get('reservation/car', 'ReservationController@getDates');
+Route::post('reservation/car/select', 'ReservationController@selectCar');
 Route::post('reservation', 'ReservationController@postDates');
 
 

@@ -48,6 +48,7 @@ return array(
     'Doctrine\\Common\\Cache\\' => $vendorDir . '/doctrine/cache/lib',
     'Doctrine\\Common\\Annotations\\' => $vendorDir . '/doctrine/annotations/lib',
     'Doctrine\\Common\\' => $vendorDir . '/doctrine/common/lib',
+    'Creitive\\Breadcrumbs\\' => $vendorDir . '/creitive/breadcrumbs/src',
     'ClassPreloader' => $vendorDir . '/classpreloader/classpreloader/src',
     'Carbon' => $vendorDir . '/nesbot/carbon/src',
     'Bllim\\Datatables' => $vendorDir . '/bllim/datatables/src',

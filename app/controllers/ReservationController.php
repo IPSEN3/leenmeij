@@ -13,17 +13,16 @@ class ReservationController extends BaseController {
 	public function postDates() {
 
 		$reservation['pickupdate'] = Input::get( 'pickupdate' );
-		$reservation['pickuptime'] = Input::get( 'pickuptime' );
 		$reservation['returndate'] = Input::get( 'returndate' );
-		$reservation['returntime'] = Input::get( 'returntime' );
+		$reservation['pickupsub'] = Input::get( 'd__pickupdate__m' );
+		$reservation['returnsub'] = Input::get( 'd__returndate__m' );
+
 
 		$validation = Validator::make(
 			Input::all(),
 			array(
 				'pickupdate' => 'required',
-				'pickuptime' => 'required',
 				'returndate' => 'required',
-				'returntime' => 'required'
 				)
 		);
 
@@ -38,6 +37,7 @@ class ReservationController extends BaseController {
 		else {
 			
 			Session::put('reserveringen', $reservation);
+
 			return Redirect::to('reservation/car');
 
 		}
@@ -48,47 +48,20 @@ class ReservationController extends BaseController {
 
 		$value = Session::get('reserveringen');
 
-		return View::make('site/reservation/car')->with('datum', $value)->with('vehicles', $this->vehicles->getVehicles());
+		return View::make('site/reservation/car')
+		->with('gegevens', $value)
+		->with('vehicles', $this->vehicles->getVehicle($value['pickupsub'], $value['returnsub']));
 
 	}
 
 	public function editDates() {
 
-		$reservation['pickupdate'] = Input::get( 'pickupdate' );
-		$reservation['pickuptime'] = Input::get( 'pickuptime' );
-		$reservation['returndate'] = Input::get( 'returndate' );
-		$reservation['returntime'] = Input::get( 'returntime' );
-
-		$validation = Validator::make(
-			Input::all(),
-			array(
-				'pickupdate' => 'required',
-				'pickuptime' => 'required',
-				'returndate' => 'required',
-				'returntime' => 'required'
-				)
-		);
-
-
-		if($validation->fails()) {
-
-			return Redirect::back()
-			->withErrors($validation)
-			->withInput();
-
-		}
-		else {
-			
-			Session::put('reserveringen', $reservation);
-			return Redirect::to('reservation/car')->with('success', Lang::get("site.saved"));
-
-		}
+		return $this->postDates()
+		->with('success', Lang::get('site.saved'));
 
 	}
 
 	public function selectCar() {
-
-		$reservation['car'] = Input::get('id');	
 
 		if (Session::has('car')) {
 			Session::forget('car');
@@ -96,12 +69,15 @@ class ReservationController extends BaseController {
 
 		if (Input::has('id'))
 		{
-		    Session::push('reserveringen', $reservation['car']);
+		    $reserveringen = Session::get('reserveringen');
+			$reserveringen['car'] = Input::get('id');
+			Session::put('reserveringen', $reserveringen);
 		}
 
-		$data = Session::all();
+		$data = Session::get('reserveringen');
 		//return Redirect::to('reservation/payment');
-		return Redirect::back()->with('success', 'Auto gekozen')->with('sessie', $data);
+		return $this->getDates($data['pickupdate'], $data['returndate'])
+		->with('gegevens', $data);
 
 	}
 

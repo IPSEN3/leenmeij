@@ -24,23 +24,15 @@
             <h4>{{ Lang::get('renting.pickup') }}</h4>
               <div class="form-group">
                   <div class="col-md-6">
-                    {{ Form::text('pickupdate',  $datum['pickupdate'], array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }}
+                    {{ Form::text('pickupdate',  $gegevens['pickupdate'], array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }}
                       <p>{{ $errors->first('pickupdate') }}</p>
-                  </div>
-                  <div class="col-md-4">
-                      {{ Form::text('pickuptime', $datum['pickuptime'], array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'pickuptime')) }}
-                      <p>{{ $errors->first('pickuptime') }}</p>
                   </div>
               </div>
               <h4>{{ Lang::get('renting.return') }}</h4>
               <div class="form-group">
                 <div class="col-md-6">
-                  {{ Form::text('returndate', $datum['returndate'], array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }}
+                  {{ Form::text('returndate', $gegevens['returndate'], array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }}
                       <p>{{ $errors->first('returndate') }}</p>
-                  </div>
-                  <div class="col-md-4">
-                      {{ Form::text('returntime', $datum['returntime'], array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'returntime')) }}
-                      <p>{{ $errors->first('returntime') }}</p>
                   </div>
               </div>
 
@@ -71,31 +63,29 @@
               {{ Form::open(array('url' => 'reservation/car/select')) }}
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <input type="hidden" name="id" value="{{ $vehicle->id }}">
-                <div class="col-md-4">
-                    <div class="well well-sm">
+                <div class="col-md-4" onClick="submit();" class="cars"> 
+                    <div class="well well-sm  {{ isset($gegevens['car']) && $gegevens['car'] == $vehicle->id ? 'selectedCar' : null }} ">
                       <h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4>
                           <div class="input-group input-group-md">
                               <p>Beschrijving: {{ $vehicle->description }}</p>
                               <p>Airco {{ $vehicle->airco == 1 ? 'ja' : 'nee' }}</p>
                               <p>Zitplaatsen {{ $vehicle->seats }}</p>
-                              @if(isset($session) && $vehicle->id == $session['id'])
-                              <span class="badge">Geselecteerd</span>
-                              @endif
                           </div>
                           <div class="input-group input-group-sm">
                               <span class="input-group-addon">&euro;</span>
                               <input type="text" class="form-control" value="{{ $vehicle->hourly_rent }}" disabled>
                           </div>
-                          <div class="input-group input-group-md">
+                          <!-- <div class="input-group input-group-md">
                              <button tabindex="3" type="submit" class="btn btn-default">{{ Lang::get('renting.choose') }}</button>
-                          </div>
+                          </div> -->
                         </div>
                 </div>
                 {{ Form::close() }}
               @endforeach
               </div>
-              <pre>
-              <?php print_r(Session::all()); ?>
+
+<!--               <pre>
+              {{ print_r(Session::all()) }} -->
 
 
               @if ( Session::get('error') )

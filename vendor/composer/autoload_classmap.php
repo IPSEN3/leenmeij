@@ -1890,7 +1890,6 @@ return array(
     'UserController' => $baseDir . '/app/controllers/user/UserController.php',
     'UserPresenter' => $baseDir . '/app/presenters/UserPresenter.php',
     'UsersTableSeeder' => $baseDir . '/app/database/seeds/UsersTableSeeder.php',
-    'Vehicle' => $baseDir . '/app/models/Vehicle.php',
     'Way\\Generators\\Cache' => $vendorDir . '/way/generators/src/Way/Generators/Cache.php',
     'Way\\Generators\\Commands\\BaseGeneratorCommand' => $vendorDir . '/way/generators/src/Way/Generators/Commands/BaseGeneratorCommand.php',
     'Way\\Generators\\Commands\\ControllerGeneratorCommand' => $vendorDir . '/way/generators/src/Way/Generators/Commands/ControllerGeneratorCommand.php',

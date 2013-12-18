@@ -26,20 +26,12 @@
 			            	{{ Form::text('pickupdate', $value=null, array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }}
                  			<p>{{ $errors->first('pickupdate') }}</p>
 			            </div>
-			            <div class="col-md-4">
-			                {{ Form::text('pickuptime', $value=null, array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'pickuptime')) }}
-			                <p>{{ $errors->first('pickuptime') }}</p>
-			            </div>
 			        </div>
 			        <h4>{{ Lang::get('renting.return') }}</h4>
 			        <div class="form-group">
 			        	<div class="col-md-6">
 			        		{{ Form::text('returndate', $value=null, array('class' => 'form-control js__datepicker', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }}
 			                <p>{{ $errors->first('returndate') }}</p>
-			            </div>
-			            <div class="col-md-4">
-			                {{ Form::text('returntime', $value=null, array('class' => 'form-control js__timepicker', 'placeholder' => 'Tijd', 'required' => 'required', 'name' => 'returntime')) }}
-			                <p>{{ $errors->first('returntime') }}</p>
 			            </div>
 			        </div>
 

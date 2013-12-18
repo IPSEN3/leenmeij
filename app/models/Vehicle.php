@@ -17,8 +17,6 @@ class Vehicle extends Eloquent {
 
 	public function getVehicle($startdate, $enddate) {
 
-
-          // $vehicles = DB::select( DB::raw("select v.id, v.brand, v.type, v.description, v.airco, v.seats, v.hourly_rent from vehicle as v where v.id not in((select v.id from vehicle as v inner join reservation as r on r.`vehicle_id` = v.id where r.status_id in(3,4,5) AND (r.startdate >= :start AND r.enddate <= :eind ) group by v.id))"), 
 		$vehicles = DB::select( DB::raw("
 			SELECT v.id, v.brand, v.type, v.description, v.airco, v.seats, v.hourly_rent 
 			FROM vehicle as v 
@@ -56,3 +54,4 @@ class Vehicle extends Eloquent {
 	}
 
 }
+

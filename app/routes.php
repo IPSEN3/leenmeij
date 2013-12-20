@@ -123,9 +123,13 @@ Route::get('contact-us', function()
 # Reservation steps
 Route::any('reservation/edit', 'ReservationController@editDates');
 Route::get('reservation/car', 'ReservationController@getDates');
-Route::post('reservation/car/select', 'ReservationController@selectCar');
+Route::any('reservation/car/select', 'ReservationController@selectCar');
+Route::get('reservation/payment', 'ReservationController@getPayment');
 Route::post('reservation', 'ReservationController@postDates');
 
+#misc pages
+Route::get('about/leenmeij', 'FrontController@getAbout');
+Route::get('contact/leenmeij', 'FrontController@getContact');
 
 # Index Page - Last route, no matches
 

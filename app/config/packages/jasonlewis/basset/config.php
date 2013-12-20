@@ -36,6 +36,10 @@ return array(
                 $collection->add('themes/default.css');
                 $collection->add('themes/default.date.css');
                 $collection->add('themes/default.time.css');
+                $collection->add('slider/nojs.css');
+                $collection->add('slider/style2.css');
+                $collection->add('slider/.css');
+                $collection->add('trip/trip.min.css');
             })->apply('UriRewriteFilter')->apply('CssMin');
 
             $collection->directory('assets/js', function($collection)
@@ -46,6 +50,12 @@ return array(
                 $collection->add('datetimepicker/picker.time.js');
                 $collection->add('datetimepicker/legacy.js');
                 $collection->add('datetimepicker/main.js');
+                $collection->add('backtotop.js');
+                $collection->add('slider/jquery.cslider.js');
+                $collection->add('slider/modernizr.custom.28468.js');
+                $collection->add('slider/sliderfunc.js');
+                $collection->add('trip/trip.min.js');
+                $collection->add('trip/trip.js');
                 //$collection->add('bootstrap/bootstrap.js');
                 $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
             })->apply('JsMin');

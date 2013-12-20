@@ -50,7 +50,7 @@ class ReservationController extends BaseController {
 
 		return View::make('site/reservation/car')
 		->with('gegevens', $value)
-		->with('vehicles', $this->vehicles->getVehicle($value['pickupsub'], $value['returnsub']));
+		->with('vehicles', $this->vehicles->getVehicleByDate($value['pickupsub'], $value['returnsub']));
 
 	}
 
@@ -80,5 +80,38 @@ class ReservationController extends BaseController {
 		->with('gegevens', $data);
 
 	}
+
+	public function getPayment() {
+
+		$value = Session::get('reserveringen');
+
+		$this->diff(strtotime($value['pickupsub']), strtotime($value['returnsub']));
+
+		$totaal = $this->day;
+
+		return View::make('site/reservation/payment')
+		->with('gegevens', $value)
+		->with('totaal', $totaal)
+		->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+
+	}
+
+
+	public function diff($start,$end = false) { 
+
+	    if(!$end) { $end = time(); } 
+	    if(!is_numeric($start) || !is_numeric($end)) { return false; } 
+	    
+	    $start  = date('Y-m-d',$start); 
+	    $end    = date('Y-m-d',$end); 
+	    $d_start    = new DateTime($start); 
+	    $d_end      = new DateTime($end); 
+	    $diff = $d_start->diff($d_end); 
+	    
+	    $this->year    = $diff->format('%y'); 
+	    $this->month    = $diff->format('%m'); 
+	    $this->day      = $diff->format('%d'); 
+	    return true; 
+	} 
 
 }

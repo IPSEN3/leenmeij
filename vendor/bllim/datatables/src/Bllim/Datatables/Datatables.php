@@ -7,7 +7,7 @@
 *
 * @package    Laravel
 * @category   Bundle
-* @version    1.3
+* @version    1.3.1
 * @author     Bilal Gultekin <bilal@bilal.im>
 */
 
@@ -23,20 +23,22 @@ class Datatables
 	public 		$query;
 	protected	$query_type;
 
-	protected 	$extra_columns		= array();
-	protected 	$excess_columns		= array();
-	protected 	$edit_columns		= array();
+	protected $extra_columns		= array();
+	protected $excess_columns		= array();
+	protected $edit_columns			= array();
+	protected $sColumns					= array();
 
-	public 		$columns 		= array();
+	public 		$columns 		    	= array();
 	public 		$last_columns 		= array();
 
-	protected	$count_all		= 0;
+	protected	$count_all		    = 0;
+	protected	$display_all	    = 0;
 
 	protected	$result_object;
-	protected	$result_array		= array();
+	protected	$result_array			= array();
 	protected	$result_array_r		= array();
 
-	protected   $mDataSupport;
+	protected $mDataSupport;
 
 
 	/**
@@ -46,7 +48,7 @@ class Datatables
 	 */
 	public static function of($query)
 	{
-		$ins = with(new static);
+		$ins = new static;
 		$ins->save_query($query);
 		return $ins;
 	}
@@ -98,8 +100,9 @@ class Datatables
 
 	private function init()
 	{
+		$this->count('count_all'); //Total records
 		$this->filtering();
-		$this->count();
+		$this->count('display_all'); // Filtered records
 		$this->paging();
 		$this->ordering();
 	}
@@ -113,6 +116,8 @@ class Datatables
 
 	public function add_column($name,$content,$order = false)
 	{
+		$this->sColumns[] = $name;
+
 		$this->extra_columns[] = array('name' => $name, 'content' => $content, 'order' => $order);
 		return $this;
 	}
@@ -172,7 +177,7 @@ class Datatables
 				if (is_string($value['content'])):
 					$value['content'] = $this->blader($value['content'], $rvalue);
 				elseif (is_callable($value['content'])):
-					$value['content'] = $value['content']($rvalue);
+					$value['content'] = $value['content']($this->result_object[$rkey]);
 				endif;
 
 				$rvalue = $this->include_in_array($value,$rvalue);
@@ -183,7 +188,7 @@ class Datatables
 				if (is_string($value['content'])):
 					$value['content'] = $this->blader($value['content'], $rvalue);
 				elseif (is_callable($value['content'])):
-					$value['content'] = $value['content']($rvalue);
+					$value['content'] = $value['content']($this->result_object[$rkey]);
 				endif;
 
 				$rvalue[$value['name']] = $value['content'];
@@ -244,8 +249,9 @@ class Datatables
 				$count++; $i--; continue;
 			}
 
-			preg_match('#^(\S*?)\s+as\s+(\S*?)$#si',$this->columns[$i],$matches);
-			$last_columns[$count] = empty($matches) ? $this->columns[$i] : $matches[2];
+			// previous regex #^(\S*?)\s+as\s+(\S*?)$# prevented subqueries and functions from being detected as alias
+			preg_match('#\s+as\s+(\S*?)$#si',$this->columns[$i],$matches);
+			$last_columns[$count] = empty($matches) ? $this->columns[$i] : $matches[1];
 			$count++;
 		}
 
@@ -339,17 +345,33 @@ class Datatables
 
 		if(!is_null(Input::get('iSortCol_0')))
 		{
+			$columns = $this->cleanColumns( $this->last_columns );
 
 			for ( $i=0, $c=intval(Input::get('iSortingCols')); $i<$c ; $i++ )
 			{
 				if ( Input::get('bSortable_'.intval(Input::get('iSortCol_'.$i))) == "true" )
 				{
-					if(isset($this->last_columns[intval(Input::get('iSortCol_'.$i))]))
-					$this->query->orderBy($this->last_columns[intval(Input::get('iSortCol_'.$i))],Input::get('sSortDir_'.$i));
+					if(isset($columns[intval(Input::get('iSortCol_'.$i))]))
+					$this->query->orderBy($columns[intval(Input::get('iSortCol_'.$i))],Input::get('sSortDir_'.$i));
 				}
 			}
 
 		}
+	}
+	/**
+	 * @param array $cols
+	 * @return array
+	 */
+	private function cleanColumns( $cols )
+	{
+		$return = array();
+		foreach ( $cols as  $i=> $col )
+		{
+			preg_match('#^(.*?)\s+as\s+(\S*?)$#si',$col,$matches);
+			$return[$i] = empty($matches) ? $col : $matches[2]; 
+		}
+
+		return $return;
 	}
 
 	/**
@@ -360,11 +382,12 @@ class Datatables
 
 	private function filtering()
 	{
-		
+		$columns = $this->cleanColumns( $this->columns );
 		
 		if (Input::get('sSearch','') != '')
 		{
 			$copy_this = $this;
+			$copy_this->columns = $columns;
 
 			$this->query->where(function($query) use ($copy_this) {
 
@@ -376,9 +399,7 @@ class Datatables
 				{
 					if (Input::get('bSearchable_'.$i) == "true")
 					{
-
-						preg_match('#^(\S*?)\s+as\s+(\S*?)$#si',$copy_this->columns[$i],$matches);
-						$column = empty($matches) ? $copy_this->columns[$i] : $matches[1];
+						$column = $copy_this->columns[$i];
 						
 						if (stripos($column, ' AS ') !== false){ 
 							$column = substr($column, stripos($column, ' AS ')+4);
@@ -413,7 +434,7 @@ class Datatables
     
 		$db_prefix = $this->database_prefix();
 
-		for ($i=0,$c=count($this->columns);$i<$c;$i++)
+		for ($i=0,$c=count($columns);$i<$c;$i++)
 		{
 			if (Input::get('bSearchable_'.$i) == "true" && Input::get('sSearch_'.$i) != '')
 			{
@@ -424,10 +445,10 @@ class Datatables
 				}
 
 				if(Config::get('datatables.search.case_insensitive', false)) {
-					$column = $db_prefix . $this->columns[$i];
+					$column = $db_prefix . $columns[$i];
 					$this->query->where(DB::raw('LOWER('.$column.')'),'LIKE', $keyword);
 				} else {
-					$this->query->where($this->columns[$i], 'LIKE', $keyword);
+					$this->query->where($columns[$i], 'LIKE', $keyword);
 				}
 			}
 		}
@@ -466,20 +487,18 @@ class Datatables
 
 	/**
 	 *	Counts current query
-	 *
+	 *  @param string $count variable to store to 'count_all' for iTotalRecords, 'display_all' for iTotalDisplayRecords
 	 *	@return null
 	 */
 
-	private function count()
+	private function count($count  = 'count_all')
 	{
 		//Get columns to temp var.
-        $query_type = get_class($this->query) == 'Illuminate\Database\Query\Builder' ? 'fluent' : 'eloquent';
-		$columns = $query_type == 'eloquent' ? $this->query->getQuery()->columns : $this->query->columns;
-		
-		$this->count_all = $this->query->count();
-		
-		//Put columns back.
-		$this->query->select($columns);
+		$query_type = get_class($this->query) == 'Illuminate\Database\Query\Builder' ? 'fluent' : 'eloquent';
+		$query  = $query_type == 'eloquent' ? $this->query->getQuery() : $this->query;
+		//Count the number of rows in the select
+		$this->$count = DB::table(DB::raw('('.$query->toSql().') AS count_row_table'))
+		->setBindings($query->getBindings())->count();
 	}
 
 
@@ -516,11 +535,14 @@ class Datatables
 
 	private function output()
 	{
+		$sColumns = array_merge_recursive($this->columns,$this->sColumns);
+
 		$output = array(
 			"sEcho" => intval(Input::get('sEcho')),
 			"iTotalRecords" => $this->count_all,
-			"iTotalDisplayRecords" => $this->count_all,
-			"aaData" => $this->result_array_r
+			"iTotalDisplayRecords" => $this->display_all,
+			"aaData" => $this->result_array_r,
+			"sColumns" => $sColumns
 		);
 
 		if(Config::get('application.profiler', false)) {

@@ -12,5 +12,15 @@ class FrontController extends BaseController {
 		return View::make('site/user/home');
 	}
 
+	public function getAbout() 
+	{
+		return View::make('site/user/about');
+	}
+
+	public function getContact()
+	{
+		return View::make('site/user/contact');
+	}
+
 
 }

@@ -15,7 +15,7 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-    	<h3 class="panel-title">{{{ Lang::get('reservation.date') }}}</h3>
+    	<h3 class="panel-title">{{{ Lang::get('renting.date') }}}</h3>
     </div>
   <div class="panel-body">
       <form class="form-horizontal" method="POST" action="{{ URL::to('reservation/edit') }}" accept-charset="UTF-8">
@@ -55,7 +55,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-12"><h2>{{{ Lang::get('reservation.choose_car') }}}</h2></div>
+	<div class="col-md-12"><h2>{{{ Lang::get('renting.choose_car') }}}</h2></div>
 
     
               <div class="row">
@@ -83,9 +83,7 @@
                 {{ Form::close() }}
               @endforeach
               </div>
-
-<!--               <pre>
-              {{ print_r(Session::all()) }} -->
+              <a href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
 
 
               @if ( Session::get('error') )

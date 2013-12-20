@@ -15,7 +15,7 @@ class Vehicle extends Eloquent {
 		}
 	}
 
-	public function getVehicle($startdate, $enddate) {
+	public function getVehicleByDate($startdate, $enddate) {
 
 		$vehicles = DB::select( DB::raw("
 			SELECT v.id, v.brand, v.type, v.description, v.airco, v.seats, v.hourly_rent 
@@ -50,6 +50,17 @@ class Vehicle extends Eloquent {
         );
 
           		return $vehicles;
+
+	}
+
+	public function getVehicleById($id) {
+
+		$vehicles = DB::table('vehicle')
+					->select('*')
+					->where('id', '=', (int) $id)
+					->get();
+
+				return $vehicles;
 
 	}
 

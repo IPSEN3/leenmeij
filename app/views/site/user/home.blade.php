@@ -69,7 +69,7 @@
 <div id="da-slider" class="da-slider">
 	<div class="da-slide">
 		<h2>Warm welcome</h2>
-		<p>Onze klanten krijgen bij LeenMeij een perfecte service voor de laagste prijs. Wanneer u langs komt om uw reservering op te halen kunt u wachten en genieten van een lekker kopje koffie.</p>
+		<p>Wanneer u langs komt om uw reservering op te halen kunt u onder het genot van een lekker kopje koffie wachten.</p>
 		<div class="da-img">{{ HTML::image('/assets/img/slider/1.png') }}</div>
 	</div>
 	<div class="da-slide">

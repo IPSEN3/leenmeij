@@ -37,7 +37,7 @@ return array(
                 $collection->add('themes/default.date.css');
                 $collection->add('themes/default.time.css');
                 $collection->add('slider/nojs.css');
-                $collection->add('slider/style2.css');
+                $collection->add('slider/style2.css')->apply('UriRewriteFilter');
                 $collection->add('slider/.css');
                 $collection->add('trip/trip.min.css');
             })->apply('UriRewriteFilter')->apply('CssMin');

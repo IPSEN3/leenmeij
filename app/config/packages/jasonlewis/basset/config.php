@@ -40,6 +40,8 @@ return array(
                 $collection->add('slider/style2.css')->apply('UriRewriteFilter');
                 $collection->add('slider/.css');
                 $collection->add('trip/trip.min.css');
+                $collection->add('animate-custom.css');
+                //$collection->add('component.css');
             })->apply('UriRewriteFilter')->apply('CssMin');
 
             $collection->directory('assets/js', function($collection)
@@ -56,6 +58,10 @@ return array(
                 $collection->add('slider/sliderfunc.js');
                 $collection->add('trip/trip.min.js');
                 $collection->add('trip/trip.js');
+                $collection->add('plugins.js');
+                $collection->add('quotes.js');
+                //$collection->add('modernizr.menu.js');
+                //$collection->add('menu.js');
                 //$collection->add('bootstrap/bootstrap.js');
                 $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
             })->apply('JsMin');
@@ -161,7 +167,7 @@ return array(
     |
     */
 
-    'debug' => false,
+    'debug' => true,
 
     /*
     |--------------------------------------------------------------------------

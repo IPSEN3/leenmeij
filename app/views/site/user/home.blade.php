@@ -61,21 +61,22 @@
 		</div>
 	</div>
 	<div class="col-md-4">
-		<input type="button" value="{{ Lang::get('site.explain') }}" class="btn btn-primary btn-small uitleg">
+		<input type="button" value="{{ Lang::get('site.explain') }}" class="btn btn-custom btn-small uitleg">
 	</div>
 </div>
 </div>
+
 <!-- Slider -->
 <div id="da-slider" class="da-slider">
 	<div class="da-slide">
 		<h2>Warm welcome</h2>
 		<p>Wanneer u langs komt om uw reservering op te halen kunt u onder het genot van een lekker kopje koffie wachten.</p>
-		<div class="da-img">{{ HTML::image('/assets/img/slider/1.png') }}</div>
+		<!-- <div class="da-img">{{ HTML::image('/assets/img/slider/1.png') }}</div> -->
 	</div>
 	<div class="da-slide">
 		<h2>Easy management</h2>
 		<p>Wanneer u bij LeenMeij een auto huurt kunt u zelf gemakkelijk bijna al uw zaken regelen. Het enige wat nog overblijft is de auto ophalen!</p>
-		<div class="da-img">{{ HTML::image('/assets/img/slider/2.png') }}</div>
+		<!-- <div class="da-img">{{ HTML::image('/assets/img/slider/2.png') }}</div> -->
 	</div>
 <!-- 	<div class="da-slide">
 		<h2>Revolution</h2>
@@ -92,4 +93,27 @@
 		<span class="da-arrows-next"></span>
 	</nav>
 </div>
+
+<section id="quotes">
+   <article class="boxed">
+       <ul id="quote" class="nolist textcenter aligncenter">
+           <li class="animated flipInX">
+               <div class="quote"><p>Leenmeij heeft een prima service geleverd en ik kom graag nog eens terug!</p></div>
+               <div class="person">Reshad Farid</div>
+           </li>
+           <li class="animated flipInX">
+               <div class="quote"><p>Snel, Uitstekend maar vooral klantvriendelijk.</p></div>
+               <div class="person">David Fernandez</div>
+           </li>
+           <li class="animated flipInX">
+               <div class="quote"><p>Uitermate behulpzaam en beschikken ook nog eens over de nieuwste auto's!</p></div>
+               <div class="person">Reinier Koops</div>
+           </li>
+           <li class="animated flipInX">
+               <div class="quote"><p>Prachtige website!</p></div>
+               <div class="person">Deniz Erden</div>
+           </li>
+       </ul>
+   </article>
+</section>
 @stop

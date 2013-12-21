@@ -112,7 +112,7 @@
 	        		
 	        	</div>
 	        </div>
-	        <a href="#" class="back-to-top">Back to Top</a>
+	        <a href="#" class="back-to-top">Back to Top &hearts;</a>
 	      </div>
 	    </div>
 

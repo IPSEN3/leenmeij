@@ -2,7 +2,9 @@ $(function() {
 			
 				$('#da-slider').cslider({
 					autoplay	: true,
-					bgincrement	: 450
+					bgincrement	: 2,
+					interval    : 4000
+
 				});
 			
 			});

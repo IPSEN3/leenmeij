@@ -83,7 +83,7 @@
                 {{ Form::close() }}
               @endforeach
               </div>
-              <a href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
+              <a class="btn btn-default" href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
 
 
               @if ( Session::get('error') )

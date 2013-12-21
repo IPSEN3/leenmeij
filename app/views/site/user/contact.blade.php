@@ -2,7 +2,7 @@
 
 {{-- Web site Title --}}
 @section('title')
-{{{ Lang::get('titles.homepage') }}} ::
+{{{ Lang::get('titles.contact') }}} ::
 @parent
 @stop
 

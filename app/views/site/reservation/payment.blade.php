@@ -25,6 +25,7 @@
     	{{ Lang::get('renting.return') }}
     	<p>{{{ $gegevens['returndate'] }}}</p>
     	<p>Aantal dagen: {{ $totaal }} </p>
+      <a class="btn btn-primary" href="{{{ URL::action('ReservationController@selectCar') . '#dates' }}}">{{Lang::get('reservation.edit')}}</a>
   </div>
 </div>
 
@@ -37,23 +38,23 @@
         	{{ '<p>' . $vehicle->brand . " " . $vehicle->type . '</p>' }}
         @endforeach
         <p>Kosten totaal: &euro;{{ $totaal * $vehicle->hourly_rent }}</p>
-
-    	
+        <p>ex. BTW: {{ $totaal * (int)$vehicle->hourly_rent -= $vehicle->hourly_rent/121 * 21 }}</p>
+        <a class="btn btn-primary" href="{{{ URL::action('ReservationController@selectCar') . '#vehicles' }}}">{{Lang::get('reservation.edit')}}</a>
   </div>
 </div>
 
 <div class="row">
 	<div class="col-md-12"><h2>{{{ Lang::get('renting.payment') }}}</h2></div>
 
-    
-              <div class="row">
-
-              </div>
+  
 
         <div class="col-md-12">
-        	  @if ( ! Auth::check())
+        	  @if (! Auth::check())
               <p>{{ Lang::get('renting.login') }}.</p>
-              @endif
+              <a class="btn btn-default" href="{{{ URL::to('user/login') }}}">Login</a>
+              @else
+              <a class="btn btn-default" href="{{{ URL::to('reservation/confirm') }}}">{{{ Lang::get('site.confirm') }}}</a>
+            @endif
         </div>
 
 

@@ -47,6 +47,7 @@ return array(
             $collection->directory('assets/js', function($collection)
             {
                 $collection->javascript('http://code.jquery.com/jquery-1.10.2.min.js');
+                $collection->javascript('http://maps.googleapis.com/maps/api/js?center=Leiderdorp&key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&markers=color:blue&sensor=false');
                 $collection->add('datetimepicker/picker.js');
                 $collection->add('datetimepicker/picker.date.js');
                 $collection->add('datetimepicker/picker.time.js');
@@ -60,6 +61,7 @@ return array(
                 $collection->add('trip/trip.js');
                 $collection->add('plugins.js');
                 $collection->add('quotes.js');
+                $collection->add('googlemaps.js');
                 //$collection->add('modernizr.menu.js');
                 //$collection->add('menu.js');
                 //$collection->add('bootstrap/bootstrap.js');

@@ -63,6 +63,9 @@
                         @if (Auth::user()->hasRole('admin'))
                         <li><a href="{{{ URL::to('admin') }}}">Admin Panel</a></li>
                         @endif
+                        @if (Session::has('reserveringen'))
+                        <li><a href="{{{ URL::action('ReservationController@getPayment') }}}"> {{Lang::get('reservation.continue')}} </a></li>
+                        @endif
                         <li><a href="{{{ URL::to('user') }}}">{{{ Lang::get('site.logged_in') }}} {{{ Auth::user()->username }}}</a></li>
                         <li><a href="{{{ URL::to('user/logout') }}}">{{{ Lang::get('site.logout') }}}</a></li>
                         @else

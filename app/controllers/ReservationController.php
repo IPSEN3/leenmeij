@@ -75,7 +75,6 @@ class ReservationController extends BaseController {
 		}
 
 		$data = Session::get('reserveringen');
-		//return Redirect::to('reservation/payment');
 		return $this->getDates($data['pickupdate'], $data['returndate'])
 		->with('gegevens', $data);
 

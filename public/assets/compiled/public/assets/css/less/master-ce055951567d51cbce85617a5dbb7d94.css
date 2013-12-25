@@ -6161,3 +6161,11 @@ fieldset[disabled] .btn-cancel.active {
 #quote li {
   display: none;
 }
+.contact ul li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+#googleMap {
+  width: 100%;
+  height: 300px;
+}

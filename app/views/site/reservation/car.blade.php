@@ -14,7 +14,7 @@
 @section('content')
 
 <div class="panel panel-default">
-	<div class="panel-heading">
+	<div class="panel-heading" id="dates">
     	<h3 class="panel-title">{{{ Lang::get('renting.date') }}}</h3>
     </div>
   <div class="panel-body">
@@ -55,7 +55,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-12"><h2>{{{ Lang::get('renting.choose_car') }}}</h2></div>
+	<div class="col-md-12" id="vehicles"><h2>{{{ Lang::get('renting.choose_car') }}}</h2></div>
 
     
               <div class="row">
@@ -72,8 +72,21 @@
                               <p>Zitplaatsen {{ $vehicle->seats }}</p>
                           </div>
                           <div class="input-group input-group-sm">
-                              <span class="input-group-addon">&euro;</span>
-                              <input type="text" class="form-control" value="{{ $vehicle->hourly_rent }}" disabled>
+                              <table class="table">
+                                <tr>
+                                  <p>{{Lang::get('site.prices')}}</p>
+                                </tr>
+                                <tr>
+                                  <td>btw</td>
+                                  <td>Inc.</td>
+                                  <td>Ex.</td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td><input type="text" class="form-control" value="{{ $vehicle->hourly_rent }}" disabled></td>
+                                  <td><input type="text" class="form-control" value="{{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}" disabled></td>
+                                </tr>
+                              </table>
                           </div>
                           <!-- <div class="input-group input-group-md">
                              <button tabindex="3" type="submit" class="btn btn-default">{{ Lang::get('renting.choose') }}</button>

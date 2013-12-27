@@ -45,7 +45,10 @@
 
 <div class="row">
 	<div class="col-md-12"><h2>{{{ Lang::get('renting.payment') }}}</h2></div>
-
+  {{ Form::open(array('url' => 'reservation/car/select')) }}
+  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    
+  {{ Form::close() }}
   
 
         <div class="col-md-12">
@@ -53,7 +56,7 @@
               <p>{{ Lang::get('renting.login') }}.</p>
               <a class="btn btn-default" href="{{{ URL::to('user/login') }}}">Login</a>
               @else
-              <a class="btn btn-default" href="{{{ URL::to('reservation/confirm') }}}">{{{ Lang::get('site.confirm') }}}</a>
+              <a class="btn btn-default" href="{{{ URL::to('reservation/confirm') }}}">{{{ Lang::get('site.overview') }}}</a>
             @endif
         </div>
 

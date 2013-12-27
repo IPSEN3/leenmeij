@@ -21,5 +21,7 @@ return array(
         'formerror' => 'Controleer het formulier op fouten alstublieft',
         'common' => 'algemeen',
         'explain' => 'uitleg',
+        'company' => 'Bedrijf',
+        'kvknr' => 'KvK nr',
 
 );

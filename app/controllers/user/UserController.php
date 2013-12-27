@@ -9,13 +9,20 @@ class UserController extends BaseController {
     protected $user;
 
     /**
+     * User Model
+     * @var User
+     */
+    protected $reservation;
+
+    /**
      * Inject the models.
      * @param User $user
      */
-    public function __construct(User $user)
+    public function __construct(User $user, Reservation $reservation)
     {
         parent::__construct();
         $this->user = $user;
+        $this->reservation = $reservation;
     }
 
     /**
@@ -29,7 +36,36 @@ class UserController extends BaseController {
         if($redirect){return $redirect;}
 
         // Show the page
+        return View::make('site/user/dashboard', compact('user'));   
+    }
+
+    public function getSettingsIndex()
+    {
+        list($user,$redirect) = $this->user->checkAuthAndRedirect('user');
+        if($redirect){return $redirect;}
+
+        // Show the page
         return View::make('site/user/index', compact('user'));
+    }
+
+    public function getReservationIndex()
+    {
+
+        list($user,$redirect) = $this->user->checkAuthAndRedirect('user');
+        if($redirect){return $redirect;}
+
+        // Show the page
+        return View::make('site/user/reservations', compact('user'))
+            ->with('reservations', $this->reservation->getReservationByCustomerId($user->id));
+    }
+
+    public function getReviewIndex()
+    {
+        list($user,$redirect) = $this->user->checkAuthAndRedirect('user');
+        if($redirect){return $redirect;}
+
+        // Show the page
+        return View::make('site/user/reviews', compact('user'));
     }
 
     /**
@@ -40,10 +76,6 @@ class UserController extends BaseController {
     {
         $this->user->username = Input::get( 'username' );
         $this->user->email = Input::get( 'email' );
-        $this->user->birthday = Input::get( 'd__day_of_birth__m' );
-        $this->user->company = Input::get( 'company' );
-        $this->user->kvknr = Input::get( 'kvknr' );
-
         $password = Input::get( 'password' );
         $passwordConfirmation = Input::get( 'password_confirmation' );
 
@@ -65,23 +97,30 @@ class UserController extends BaseController {
             unset($this->user->password_confirmation);
         }
 
-        // Save if valid. Password field will be hashed before save
-        $this->user->save();
-
-        if ( $this->user->id )
+        if($this->user->check()) 
         {
-            // Redirect with success message, You may replace "Lang::get(..." for your custom message.
-            return Redirect::to('user/login')
-                ->with( 'notice', Lang::get('user/user.user_account_created') );
+             // Save if valid. Password field will be hashed before save
+            $this->user->save();
+
+            if ( $this->user->id )
+            {
+                // Redirect with success message, You may replace "Lang::get(..." for your custom message.
+                return Redirect::to('user/login')
+                    ->with( 'notice', Lang::get('user/user.user_account_created') );
+            }
+            else
+            {
+                // Get validation errors (see Ardent package)
+                $error = $this->user->errors()->all();
+
+                return Redirect::to('user/create')
+                    ->withInput(Input::except('password'))
+                    ->with( 'error', $error );
+            }
         }
-        else
-        {
-            // Get validation errors (see Ardent package)
-            $error = $this->user->errors()->all();
-
-            return Redirect::to('user/create')
-                ->withInput(Input::except('password'))
-                ->with( 'error', $error );
+        else {
+            return Redirect::back()
+                ->with('error', Lang::get('site.somethingbad'));
         }
     }
 
@@ -100,18 +139,6 @@ class UserController extends BaseController {
             $oldUser = clone $user;
             $user->username = Input::get( 'username' );
             $user->email = Input::get( 'email' );
-            if(preg_match('/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/', Input::get( 'day_of_birth' ))){ 
-                $user->birthday = Input::get( 'day_of_birth' );
-            }else{ 
-                $user->birthday = Input::get( 'd__day_of_birth__m' );
-            }
-            $user->company = Input::get( 'company' );
-            if(empty(Input::get('kvknr'))) {
-            $this->user->kvknr = 0;
-            }
-            else {
-                $this->user->kvknr = Input::get( 'kvknr' );
-            }
             $password = Input::get( 'password' );
             $passwordConfirmation = Input::get( 'password_confirmation' );
 

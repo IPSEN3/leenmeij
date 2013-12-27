@@ -17,7 +17,7 @@ body {
 {{-- Content --}}
 @section('content')
 <div class="page-header">
-	<h3>Edit your settings</h3>
+	<h3>My Reviews</h3>
 </div>
 <form class="form-horizontal" method="post" action="{{ URL::to('user/' . $user->id . '/edit') }}"  autocomplete="off">
     <!-- CSRF Token -->

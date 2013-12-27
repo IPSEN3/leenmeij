@@ -18,24 +18,6 @@
             <label for="password_confirmation">{{{ Lang::get('confide::confide.password_confirmation') }}}</label>
             <input class="form-control" placeholder="{{{ Lang::get('confide::confide.password_confirmation') }}}" type="password" name="password_confirmation" id="password_confirmation">
         </div>
-         <div class="form-group">
-            <label for="day_of_birth">{{{ Lang::get('form.day_of_birth') }}}</label>
-            <input class="form-control js__birthdaypicker" placeholder="{{{ Lang::get('form.day_of_birth') }}}" type="text" name="day_of_birth" id="day_of_birth">
-        </div>
-
-    </fieldset>
-    <fieldset>
-        <legend>{{{Lang::get('site.business')}}}</legend>
-
-        <div class="form-group">
-            <label for="company">{{{ Lang::get('site.company') }}}</label>
-            <input class="form-control" placeholder="{{{ Lang::get('site.company') }}}" type="text" name="company" id="company" value="{{{ Input::old('company') }}}">
-        </div>
-        <div class="form-group">
-            <label for="kvk">{{{ Lang::get('site.kvknr') }}}</label>
-            <input class="form-control" placeholder="{{{ Lang::get('site.kvknr') }}}" type="text" name="kvknr" id="kvknr" value="{{{ Input::old('kvknr') }}}">
-        </div>
-
     </fieldset>
     <fieldset>
 

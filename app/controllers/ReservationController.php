@@ -3,11 +3,15 @@
 class ReservationController extends BaseController {
 
 	protected $vehicles = array();
+	protected $user;
+	protected $reservation;
 
-	public function __construct(Vehicle $vehicles)
+	public function __construct(Vehicle $vehicles, User $user, Reservation $reservation)
     {
         parent::__construct();
         $this->vehicles = $vehicles;
+        $this->user = $user;
+        $this->reservation = $reservation;
     }
 
 	public function postDates() {
@@ -92,6 +96,23 @@ class ReservationController extends BaseController {
 		->with('gegevens', $value)
 		->with('totaal', $totaal)
 		->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+
+	}
+
+	public function postReservation() {
+
+		$value = Session::get('reserveringen');
+
+		if($this->reservation->makeReservation($value))
+		{
+			return View::make('/')
+			->with('success', Lang::get('site.reservation_complete'));
+		}
+		else {
+			return Redirect::back()
+			->with('error', Lang::get('site.reservation_error'));
+		}
+
 
 	}
 

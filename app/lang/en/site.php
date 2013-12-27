@@ -21,5 +21,7 @@ return array(
         'formerror' => 'Please check the form below for errors',
         'common' => 'general',
         'explain' => 'explanation',
+        'company' => 'Company',
+        'kvknr' => 'CoC nr',
 
 );

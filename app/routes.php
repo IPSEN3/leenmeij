@@ -100,6 +100,15 @@ Route::post('user/{user}/edit', 'UserController@postEdit')
 //:: User Account Routes ::
 Route::post('user/login', 'UserController@postLogin');
 
+//:: User Account Routes ::
+Route::get('user/settings', 'UserController@getSettingsIndex');
+
+//:: User Account Routes ::
+Route::get('user/reservations', 'UserController@getReservationIndex');
+
+//:: User Account Routes ::
+Route::get('user/reviews', 'UserController@getReviewIndex');
+
 # User RESTful Routes (Login, Logout, Register, etc)
 Route::controller('user', 'UserController');
 
@@ -125,6 +134,8 @@ Route::any('reservation/edit', 'ReservationController@editDates');
 Route::get('reservation/car', 'ReservationController@getDates');
 Route::any('reservation/car/select', 'ReservationController@selectCar');
 Route::get('reservation/payment', 'ReservationController@getPayment');
+Route::get('reservation/overview', 'ReservationController@getOverview');
+Route::get('reservation/confirm', 'ReservationController@postReservation');
 Route::post('reservation', 'ReservationController@postDates');
 
 #misc pages

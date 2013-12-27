@@ -105,6 +105,25 @@ class User extends ConfideUser implements PresentableInterface {
         return (new Confide(new ConfideEloquentRepository()))->user();
     }
 
+    public function check() 
+    {
+        $user = DB::table('customer')
+        ->where('email', Input::get('email'))
+        ->first();
+
+        if($user->email) {
+            die();
+        }
+
+        else {
+            
+        }
+    }
+
+    private function createCustomer() 
+    {
+
+    }
 
 
 }

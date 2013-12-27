@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'mysql' => 'production',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'leenmeij',
+			'database'  => 'ipsen2',
 			'username'  => 'reshadfarid',
 			'password'  => '',
 			'charset'   => 'utf8',

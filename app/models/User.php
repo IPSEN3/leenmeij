@@ -10,6 +10,8 @@ use Carbon\Carbon;
 class User extends ConfideUser implements PresentableInterface {
     use HasRole;
 
+    protected $user;
+
 	/**
 	 * The database table used by the model.
 	 *
@@ -105,24 +107,50 @@ class User extends ConfideUser implements PresentableInterface {
         return (new Confide(new ConfideEloquentRepository()))->user();
     }
 
-    public function check() 
+    public function check($email) 
     {
-        $user = DB::table('customer')
-        ->where('email', Input::get('email'))
+        $this->user = DB::table('customer')
+        ->where('email', $email)
         ->first();
 
-        if($user->email) {
-            die();
+        // registratie probleem fixen
+
+        if($this->user) {
+            
+            return true;
+            
         }
 
         else {
-            
+
+            $this->createNewCustomer($email);
+
         }
     }
 
-    private function createCustomer() 
+    private function createNewCustomer($email) 
     {
+        DB::table('customer')->insert(
+            array('email' => $email, 'firstname' => '', 'insertion' => '', 'lastname' => '', 'company' => '', 'kvknr' => 0, 'phone' => '', 'address' => '', 'zip' => '', 'city' => '', 'birthdate' => '00-00-000', 'passportnumber' => '')
+        );
 
+        $this->check($email);
+    }
+
+    public function getSettings($email)
+    {
+        $settings = DB::table('customer')
+            ->where('email', '=', $email)
+            ->first();
+
+        return $settings;
+    }
+
+    public function saveSettings($email, $settings)
+    {
+        DB::table('customer')
+            ->where('email', '=', $email)
+            ->update(array('firstname' => $settings['firstname'], 'insertion' => $settings['insertion'], 'lastname' => $settings['lastname'], 'company' => $settings['company'], 'kvknr' => $settings['kvknr'], 'phone' => $settings['phone'], 'address' => $settings['address'], 'zip' => $settings['zip'], 'city' => $settings['city'], 'birthdate' => $settings['d__birthdate__m'], 'passportnumber' => $settings['passportnumber']));
     }
 
 

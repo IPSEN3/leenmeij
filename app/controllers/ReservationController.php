@@ -105,8 +105,8 @@ class ReservationController extends BaseController {
 
 		if($this->reservation->makeReservation($value))
 		{
-			return View::make('/')
-			->with('success', Lang::get('site.reservation_complete'));
+			return Redirect::to('/')
+			->with('success', Lang::get('site.reservation_complete') );
 		}
 		else {
 			return Redirect::back()

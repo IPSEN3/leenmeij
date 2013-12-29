@@ -36,6 +36,8 @@ class Reservation extends Eloquent {
 		    array('date' => $objDateTime , 'startdate' => $reservation['pickupsub'], 'enddate' => $reservation['returnsub'], 'vehicle_id' => $reservation['car'], 'customer_id' => Auth::user()->id, 'payment_type_id' => 1, 'status_id' => 1, 'invoice_id' => 2)
 		);
 
+		Session::forget('reserveringen');
+
 		return true;
 
 	}

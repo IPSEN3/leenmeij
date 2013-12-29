@@ -45,7 +45,8 @@ class UserController extends BaseController {
         if($redirect){return $redirect;}
 
         // Show the page
-        return View::make('site/user/index', compact('user'));
+        return View::make('site/user/index', compact('user'))
+            ->with('settings', $this->user->getSettings($user->email));
     }
 
     public function getReservationIndex()
@@ -97,8 +98,9 @@ class UserController extends BaseController {
             unset($this->user->password_confirmation);
         }
 
-        if($this->user->check()) 
+        if($this->user->check(Input::get('email')) == true) 
         {
+            
              // Save if valid. Password field will be hashed before save
             $this->user->save();
 
@@ -161,6 +163,13 @@ class UserController extends BaseController {
             $user->prepareRules($oldUser, $user);
 
             // Save if valid. Password field will be hashed before save
+
+            $settings = Input::all();
+
+            // save the customer table
+            $user->saveSettings($user->email, $settings);
+
+            // save the webuser table
             $user->amend();
         }
 

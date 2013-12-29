@@ -65,30 +65,29 @@ body {
         </div>
         <!-- ./ password confirm -->
     </div>
-
-    <!--  birthday -->
-                 <div class="form-group {{{ $errors->has('d__day_of_birth__m') ? 'error' : '' }}}">
-                    <label class="col-md-2 control-label" for="day_of_birth">{{{ Lang::get('form.day_of_birth') }}}</label>
-                    <div class="col-md-10">
-                        <input class="form-control js__birthdaypicker" placeholder="{{{ Lang::get('form.day_of_birth') }}}" type="text" name="day_of_birth" id="day_of_birth" value="{{{ Input::old('day_of_birth', isset($user) ? $user->birthday : null) }}}"/>
-                        {{{ $errors->first('d__day_of_birth__m', '<span class="help-inline">:message</span>') }}}
-                    </div>
-                </div>
-                <!-- ./ birthday -->
-
-                <!-- business -->
-                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="company">{{{ Lang::get('site.company') }}}</label>
-                    <div class="col-md-10">
-                        <input class="form-control" placeholder="{{{ Lang::get('site.company') }}}" type="text" name="company" id="company" value="{{{ Input::old('company', isset($user) ? $user->company : null) }}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                        <label class="col-md-2 control-label" for="kvk">{{{ Lang::get('site.kvknr') }}}</label>
-                        <div class="col-md-10">
-                            <input class="form-control" placeholder="{{{ Lang::get('site.kvknr') }}}" type="text" name="kvknr" id="kvknr" value="{{{ Input::old('kvknr', isset($user) ? $user->kvknr : null) }}}">
+        @foreach ($settings as $setting => $v)
+                
+                @if($setting == 'birthdate')
+                       <!--  birthday -->
+                         <div class="form-group">
+                            <label class="col-md-2 control-label" for="{{$setting}}">{{{ Lang::get('form.'.$setting) }}}</label>
+                            <div class="col-md-10">
+                                <input class="form-control js__birthdaypicker" placeholder="{{{ Lang::get('form.'.$setting) }}}" type="text" name="{{$setting}}" id="{{$setting}}" data-value="{{ $v }}" />
+                                {{{ $errors->first('d__day_of_birth__m', '<span class="help-inline">:message</span>') }}}
+                            </div>
                         </div>
+                        <!-- ./ birthday -->
+                @elseif(($setting !== 'id') && ($setting !== 'date') && ($setting !== 'email') ) 
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="{{ $setting }}">{{{ Lang::get('form.'.$setting) }}}</label>
+                    <div class="col-md-10">
+                        <input class="form-control" placeholder="{{{ Lang::get('form.'.$setting) }}}" type="text" name="{{$setting}}" id="$setting" value="{{{ $v }}}"/>
+                        {{{ $errors->first($setting, '<span class="help-inline">:message</span>') }}}
+                    </div>
                 </div>
+                @endif
+
+        @endforeach
 
     <!-- ./ general tab -->
 

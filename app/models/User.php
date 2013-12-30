@@ -124,6 +124,7 @@ class User extends ConfideUser implements PresentableInterface {
         else {
 
             $this->createNewCustomer($email);
+            return true;
 
         }
     }

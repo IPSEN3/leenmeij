@@ -23,15 +23,15 @@
 			    	<h4>{{ Lang::get('renting.pickup') }}</h4>
 			        <div class="form-group">
 			            <div class="col-md-6">
-			            	{{ Form::text('pickupdate', $value=null, array('class' => 'form-control js__datepicker startdate', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }}
-                 			<p>{{ $errors->first('pickupdate') }}</p>
+			            	<!-- {{ Form::text('pickupdate', $value=null, array('class' => 'form-control js__datepicker startdate', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'pickupdate')) }} -->
+			            	<input type="text" class="form-control js__datepicker startdate {{ $err = $errors->first('pickupdate') ? 'err' : 'null' }}" placeholder="{{ Lang::get('site.date') }}" name="pickupdate" value="{{{ Input::old('pickupdate', '') }}}">
 			            </div>
 			        </div>
 			        <h4>{{ Lang::get('renting.return') }}</h4>
 			        <div class="form-group">
 			        	<div class="col-md-6">
-			        		{{ Form::text('returndate', $value=null, array('class' => 'form-control js__datepicker enddate', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }}
-			                <p>{{ $errors->first('returndate') }}</p>
+			        		<!-- {{ Form::text('returndate', $value=null, array('class' => 'form-control js__datepicker enddate', 'placeholder' => 'Datum', 'required' => 'required', 'name' => 'returndate')) }} -->
+			        		<input type="text" class="form-control js__datepicker enddate {{ $err = $errors->first('returndate') ? 'err' : 'null' }}" placeholder="{{ Lang::get('site.date') }}" name="returndate" value="{{{ Input::old('returndate', '') }}}">
 			            </div>
 			        </div>
 
@@ -70,7 +70,7 @@
 <div id="da-slider" class="da-slider">
 	<div class="da-slide">
 		<h2>Warm welcome</h2>
-		<p>Wanneer u langs komt om uw reservering op te halen kunt u onder het genot van een lekker kopje koffie wachten.</p>
+		<p>Wanneer u langs komt om uw reservering op te halen, kunt u onder het genot van een lekker kopje koffie wachten.</p>
 		<!-- <div class="da-img">{{ HTML::image('/assets/img/slider/1.png') }}</div> -->
 	</div>
 	<div class="da-slide">

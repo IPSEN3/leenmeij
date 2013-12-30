@@ -3,14 +3,12 @@
 class ReservationController extends BaseController {
 
 	protected $vehicles = array();
-	protected $user;
 	protected $reservation;
 
-	public function __construct(Vehicle $vehicles, User $user, Reservation $reservation)
+	public function __construct(Vehicle $vehicles, Reservation $reservation)
     {
         parent::__construct();
         $this->vehicles = $vehicles;
-        $this->user = $user;
         $this->reservation = $reservation;
     }
 

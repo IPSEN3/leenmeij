@@ -3,7 +3,7 @@ Options +FollowSymLinks
     Options -MultiViews
     RewriteEngine On
 
-    RewriteBase /~reshadfarid/leenmeij/public/
+    RewriteBase /public/
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f

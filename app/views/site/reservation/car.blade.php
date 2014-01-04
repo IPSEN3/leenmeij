@@ -63,34 +63,24 @@
               {{ Form::open(array('url' => 'reservation/car/select')) }}
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <input type="hidden" name="id" value="{{ $vehicle->id }}">
-                <div class="col-md-4" onClick="submit();" class="cars"> 
+                <div class="col-md-4" class="cars"> 
                     <div class="well well-sm  {{ isset($gegevens['car']) && $gegevens['car'] == $vehicle->id ? 'selectedCar' : null }} ">
                       <h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4>
-                          <div class="input-group input-group-md">
+                          <div onClick="submit();" class="input-group input-group-md">
                               <p>Beschrijving: {{ $vehicle->description }}</p>
                               <p>Airco {{ $vehicle->airco == 1 ? 'ja' : 'nee' }}</p>
                               <p>Zitplaatsen {{ $vehicle->seats }}</p>
                           </div>
                           <div class="input-group input-group-sm">
-                              <table class="table">
-                                <tr>
-                                  <p>{{Lang::get('site.prices')}}</p>
-                                </tr>
-                                <tr>
-                                  <td>btw</td>
-                                  <td>Inc.</td>
-                                  <td>Ex.</td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td><input type="text" class="form-control" value="{{ $vehicle->hourly_rent }}" disabled></td>
-                                  <td><input type="text" class="form-control" value="{{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}" disabled></td>
-                                </tr>
-                              </table>
+                            <ul class="nav nav-tabs" id="myTab">
+                              <li class="active"><a href="#inc{{ $vehicle->id }}" data-toggle="tab">Inc. BTW</a></li>
+                              <li><a href="#exc{{$vehicle->id}}" data-toggle="tab">Exc. BTW</a></li>
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane fade in active" id="inc{{$vehicle->id}}">&euro; {{ $vehicle->hourly_rent }}</div>
+                              <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}</div>
+                            </div>
                           </div>
-                          <!-- <div class="input-group input-group-md">
-                             <button tabindex="3" type="submit" class="btn btn-default">{{ Lang::get('renting.choose') }}</button>
-                          </div> -->
                         </div>
                 </div>
                 {{ Form::close() }}

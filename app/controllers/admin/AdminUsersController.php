@@ -92,7 +92,7 @@ class AdminUsersController extends AdminController {
         $this->user->email = Input::get( 'email' );
         $this->user->birthday = Input::get( 'd__day_of_birth__m' );
         $this->user->company = Input::get( 'company' );
-        if(empty(Input::get('kvknr'))) {
+        if(trim(Input::get('kvknr')) == '') {
             $this->user->kvknr = 0;
         }
         else {

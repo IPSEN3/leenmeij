@@ -138,6 +138,9 @@ Route::get('reservation/overview', 'ReservationController@getOverview');
 Route::get('reservation/confirm', 'ReservationController@postReservation');
 Route::post('reservation', 'ReservationController@postDates');
 
+#review routes
+Route::get('review/{id}/add', 'ReviewController');
+
 #misc pages
 Route::get('about/leenmeij', 'FrontController@getAbout');
 Route::get('contact/leenmeij', 'FrontController@getContact');

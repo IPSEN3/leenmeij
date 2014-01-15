@@ -24,5 +24,6 @@ return array(
         'company' => 'Bedrijf',
         'kvknr' => 'KvK nr',
         'place_review' => 'Plaats review',
+        'date' => 'Datum',
 
 );

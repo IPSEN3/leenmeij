@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'production-school-test',
+	'default' => 'production-school',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -77,9 +77,9 @@ return array(
 		'production-school' => array(
 			'driver'    => 'mysql',
 			'host'      => '145.97.16.192',
-			'database'  => 'ipsen2',
-			'username'  => 'ipsen3',
-			'password'  => 'ipsen3',
+			'database'  => 'ipsen3',
+			'username'  => 'ipsen',
+			'password'  => 'Ip27sen',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

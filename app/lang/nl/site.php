@@ -23,5 +23,6 @@ return array(
         'explain' => 'uitleg',
         'company' => 'Bedrijf',
         'kvknr' => 'KvK nr',
+        'place_review' => 'Plaats review',
 
 );

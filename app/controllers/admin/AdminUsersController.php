@@ -192,7 +192,7 @@ class AdminUsersController extends AdminController {
                 $user->birthday = Input::get( 'd__day_of_birth__m' );
             }
             $user->company = Input::get( 'company' );
-            if(empty(Input::get('kvknr'))) {
+            if(trim(Input::get('kvknr')) == '') {
             $this->user->kvknr = 0;
             }
             else {

@@ -23,5 +23,6 @@ return array(
         'explain' => 'explanation',
         'company' => 'Company',
         'kvknr' => 'CoC nr',
+        'place_review' => 'Place review',
 
 );

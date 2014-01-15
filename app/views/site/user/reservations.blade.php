@@ -41,7 +41,7 @@ body {
                         <td>{{ $v->vehicle_id }}</td>
                         <td>{{ $v->brand . '  ' . $v->type }}</td>
                         <td>{{ $v->value }}</td>
-                        <td></td>
+                        <td><a class="btn btn-link" href="">{{ Lang::get('site.place_review') }}</a></td>
                 </tr>
                 @endforeach
                 @else

@@ -142,7 +142,10 @@ Route::post('reservation', 'ReservationController@postDates');
 Route::get('review/{id}/add', 'ReviewController');
 
 #misc pages
-Route::get('about/leenmeij', 'FrontController@getAbout');
+# Posts - Second to last set, match slug
+Route::get('{postSlug}', 'BlogController@getView');
+Route::post('{postSlug}', 'BlogController@postView');
+Route::get('about/leenmeij', 'BlogController@getIndex');
 Route::get('contact/leenmeij', 'FrontController@getContact');
 
 # Index Page - Last route, no matches

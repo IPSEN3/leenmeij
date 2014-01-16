@@ -54,16 +54,17 @@
   </div>
 </div>
 
+<a class="btn btn-success pull-right" href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
 <div class="row">
 	<div class="col-md-12" id="vehicles"><h2>{{{ Lang::get('renting.choose_car') }}}</h2></div>
 
-    
               <div class="row">
               @foreach ( $vehicles as $vehicle )
               {{ Form::open(array('url' => 'reservation/car/select')) }}
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <input type="hidden" name="id" value="{{ $vehicle->id }}">
-                <div class="col-md-4" class="cars"> 
+                <div class="col-md-4" class="cars">
+                    <span onClick="submit();" class="btn btn-default pull-right">{{ Lang::get('site.choose_car') }}</span>
                     <div class="well well-sm  {{ isset($gegevens['car']) && $gegevens['car'] == $vehicle->id ? 'selectedCar' : null }} ">
                       <h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4>
                           <div class="input-group input-group-md">
@@ -79,7 +80,6 @@
                             <div class="tab-content">
                               <div class="tab-pane fade in active" id="inc{{$vehicle->id}}">&euro; {{ $vehicle->hourly_rent }}</div>
                               <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}</div>
-                              <span onClick="submit();" class="badge pull-right">{{ Lang::get('site.choose_car') }}</span>
                             </div>
                           </div>
                         </div>
@@ -87,7 +87,7 @@
                 {{ Form::close() }}
               @endforeach
               </div>
-              <a class="btn btn-default" href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
+              <a class="btn btn-success pull-right" href="{{{ URL::to('reservation/payment') }}}">{{{ Lang::get('site.payment') }}}</a>
 
 
               @if ( Session::get('error') )

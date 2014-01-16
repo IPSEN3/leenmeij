@@ -66,7 +66,11 @@
                         @if (Session::has('reserveringen'))
                         <li><a href="{{{ URL::action('ReservationController@selectCar') }}}"> {{Lang::get('reservation.continue')}} </a></li>
                         @endif
+                        @if (Auth::user()->hasRole('admin'))
+                        <li><a href="#">{{{ Lang::get('site.logged_in') }}} {{{ Auth::user()->username }}}</a></li>
+                        @else
                         <li><a href="{{{ URL::to('user') }}}">{{{ Lang::get('site.logged_in') }}} {{{ Auth::user()->username }}}</a></li>
+                        @endif
                         <li><a href="{{{ URL::to('user/logout') }}}">{{{ Lang::get('site.logout') }}}</a></li>
                         @else
                         <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Login</a></li>

@@ -84,16 +84,26 @@ class ReservationController extends BaseController {
 
 	public function getPayment() {
 
-		$value = Session::get('reserveringen');
+        if(array_key_exists('car', Session::get('reserveringen'))) {
 
-		$this->diff(strtotime($value['pickupsub']), strtotime($value['returnsub']));
+            $value = Session::get('reserveringen');
 
-		$totaal = $this->day;
+            $this->diff(strtotime($value['pickupsub']), strtotime($value['returnsub']));
 
-		return View::make('site/reservation/payment')
-		->with('gegevens', $value)
-		->with('totaal', $totaal)
-		->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+            $totaal = $this->day;
+
+            return View::make('site/reservation/payment')
+                ->with('gegevens', $value)
+                ->with('totaal', $totaal)
+                ->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+
+        }
+        else {
+
+            return Redirect::back()
+                ->with('error', Lang::get('renting.choose_car_first'));
+
+        }
 
 	}
 

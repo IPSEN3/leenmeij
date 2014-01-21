@@ -122,24 +122,6 @@ class ConfideUser extends Ardent implements UserInterface {
         return true;
     }
 
-     /**
-     * Send email with information about password reset
-     *
-     * @return string
-     */
-    public function activateAccount()
-    {
-        // ConfideRepository will generate token (and save it into database)
-        $token = static::$app['confide.repository']
-            ->activateAccountToken( $this );
-
-        $view = static::$app['config']->get('confide::email_account_confirmation');
-
-        $this->sendEmail( 'confide::confide.email.password_reset.subject', $view, array('user'=>$this, 'token'=>$token) );
-
-        return true;
-    }
-
     /**
      * Change user password
      *

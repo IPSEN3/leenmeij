@@ -27,8 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
     'local' => array('iMac-van-Reshad.local'), // Change this to your local machine hostname.
-    'devberry' => array('devberry'),
-    'production' => array('your-production-machine-name'),
+    'devberry' => array('ipsen27'),
 
 ));
 

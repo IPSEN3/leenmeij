@@ -1,4 +1,5 @@
 <?php
+define('FACTUREN_DIR', public_path('uploads/facturen'));
 
 class Reservation extends Eloquent {
 
@@ -41,17 +42,17 @@ class Reservation extends Eloquent {
 
 	}
 
-	public function makeReservation( $reservation) {
+	public function makeReservation($reservation, $user) {
 
 		$objDateTime = new DateTime('NOW');
 
 		$id = DB::table('reservation')->insert(
-		    array('date' => $objDateTime , 'startdate' => $reservation['pickupsub'], 'enddate' => $reservation['returnsub'], 'vehicle_id' => $reservation['car'], 'customer_id' => Auth::user()->id, 'payment_type_id' => 1, 'status_id' => 1, 'invoice_id' => 2)
+		    array('date' => $objDateTime , 'startdate' => $reservation['pickupsub'], 'enddate' => $reservation['returnsub'], 'vehicle_id' => $reservation['car'], 'customer_id' => $user, 'payment_type_id' => 1, 'status_id' => 1, 'invoice_id' => 2)
 		);
 
 		$view = 'emails/reservation';
 
-		$this->sendEmail( 'email.reservation_complete', $view, array('user'=>Auth::User()) );
+		$this->sendEmail( 'email.succes', $view, array('user'=>$user, 'reservation'=>$reservation) );
 
 		Session::forget('reserveringen');
 
@@ -63,13 +64,25 @@ class Reservation extends Eloquent {
     {
         if ( static::$app['config']->getEnvironment() == 'testing' )
             return;
+        if (!is_dir(FACTUREN_DIR)){
+		    mkdir(FACTUREN_DIR, 0777, true);
+		}
 
-        $user = Auth::User();
+		$user = Auth::User();
+        $reservation = $params['reservation'];
+        $customer = $params['user'];
 
-        static::$app['mailer']->send($view_name, $params, function($m) use ($subject_translation, $user)
+		$outputName = str_random(10);
+        $pdfPath = FACTUREN_DIR.'/'.$outputName.'.pdf';
+        File::put($pdfPath, PDF::load(View::make('emails/invoice')->with('user', $customer)->with('reservation', $reservation)->render(), 'A4', 'portrait')->output());
+
+        static::$app['mailer']->send($view_name, $params, function($m) use ($subject_translation, $user, $pdfPath)
         {
             $m->to( Auth::User()->email )
-                ->subject( Lang::get($subject_translation) );
+                ->subject( Lang::get($subject_translation)
+            );
+
+            $m->attach($pdfPath, array('as' => Lang::get('email.invoice'), 'mime' => 'application/pdf'));
         });
     }
 

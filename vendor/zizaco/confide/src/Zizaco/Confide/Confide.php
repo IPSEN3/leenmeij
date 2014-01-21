@@ -252,17 +252,6 @@ class Confide
     }
 
     /**
-     * Display the activate account view
-     *
-     * @deprecated
-     * @return Illuminate\View\View
-     */
-    public function makeActivateAccountForm()
-    {
-        return $this->app['view']->make( $this->app['config']->get('confide::activate_account_form') );
-    }
-
-    /**
      * Display the forget password view
      *
      * @deprecated

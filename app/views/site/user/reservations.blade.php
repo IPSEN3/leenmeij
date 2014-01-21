@@ -41,7 +41,7 @@ body {
                         <td>{{ $v->vehicle_id }}</td>
                         <td>{{ $v->brand . '  ' . $v->type }}</td>
                         <td>{{ $v->value }}</td>
-                        <td><a class="btn btn-link" href="review/{{$v->id}}/add">{{ Lang::get('site.place_review') }}</a></td>
+                        <td><a class="btn btn-link" href="{{ URL::to('vehicle'). "/" .$v->vehicle_id }}">{{ Lang::get('site.place_review') }}</a></td>
                 </tr>
                 @endforeach
                 @else

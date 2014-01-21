@@ -184,11 +184,11 @@ body {
 
 @font-face {
     font-family: 'ecoico';
-    src:url('../fonts/timelineicons/ecoico.eot');
-    src:url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/timelineicons/ecoico.woff') format('woff'),
-        url('../fonts/timelineicons/ecoico.ttf') format('truetype'),
-        url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+    src:url('assets/fonts/timelineicons/ecoico.eot');
+    src:url('assets/fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/timelineicons/ecoico.woff') format('woff'),
+        url('assets/fonts/timelineicons/ecoico.ttf') format('truetype'),
+        url('assets/fonts/timelineicons/ecoico.svg#ecoico') format('svg');
     font-weight: normal;
     font-style: normal;
 } /* Made with http://icomoon.io/ */
@@ -545,4 +545,142 @@ body {
 
 .err {
     border: 2px solid tomato;
+}
+
+/*
+ Email invoice
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.document {
+
+  .document_header {
+    h2 {
+      color: #59595B;
+      font-weight: bold;
+    }
+
+    dd {
+      color: #59595B;
+    }
+
+    dt {
+      color: #00A9F0;
+      font-weight: bold;
+    }
+  }
+
+  .document_details {
+    thead th, td, tr.tfoot td.emphasize, tr.tfoot td.first {
+      border: none;
+    }
+    
+    thead th {
+      color: #00A9F0;
+      text-transform: uppercase;
+      border: none;
+    }
+
+    td {
+      background: #F3F3F3;
+      border: none;
+      color: #59595B;
+    }
+
+    tr.even td {
+      background: white;
+    }
+
+    tr.tfoot td {
+      background: white;
+    }
+
+    tr.last td {
+      margin-bottom: 50px;
+    }
+
+    tr.tfoot td.total {
+      color: #00AFED;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    tr.tfoot td.price {
+      font-size: 16px;
+    }
+
+    tr.subtotal td {
+      padding-top: 30px;
+    }
+  }
+  .document_description p {
+    color: #9A9A9A;
+    border: none !important;
+  }
+}
+
+.document, h2 {
+  color: #333;
+}
+
+table.document_details {
+  thead th {
+      background: #BEDCF4;
+      color: white;
+      border-bottom: 0px;
+      font-family: helvetica;
+  }
+
+  tbody {
+    background: #eee;
+  
+    td {
+      border-bottom: 0px;
+    }
+
+    td.emphasize {
+      border-top: 1px solid #ddd;
+      font-size: 15px;
+    }
+
+    tr.last {
+      border-bottom: 2px solid #ddd;
+    }
+  }
+}
+
+.document_description p {
+  border-top: 2px solid #ddd;
+  background: #eee;
+  padding: 10px;
+  font-style: italic;
+}
+
+/*
+ Review System
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+ .animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.stars
+{
+    margin: 10px 0;
+    font-size: 24px;
+    color: #d17581;
+}
+
+.ratings 
+{
+    color: #d17581;
+    padding-left: 10px;
+    padding-right: 10px;
 }

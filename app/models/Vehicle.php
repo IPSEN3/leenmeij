@@ -18,7 +18,7 @@ class Vehicle extends Eloquent {
 	public function getVehicleByDate($startdate, $enddate) {
 
 		$vehicles = DB::select( DB::raw("
-			SELECT v.id, v.brand, v.type, v.description, v.airco, v.seats, v.hourly_rent
+			SELECT v.id, v.brand, v.type, v.description, v.airco, v.seats, v.hourly_rent, v.rating_cache, v.rating_count
 			FROM vehicle AS v
 			LEFT JOIN reservation AS r
 			  ON v.id = r.vehicle_id
@@ -42,6 +42,21 @@ class Vehicle extends Eloquent {
 				return $vehicles;
 
 	}
+
+	public function reviews()
+	{
+		return $this->hasMany('Review');
+	}
+
+	public function recalculateRating($rating)
+	{
+		$reviews = $this->reviews()->notSpam()->approved();
+		$avgRating = $reviews->avg('rating');
+		$this->rating_cache = round($avgRating,1);
+		$this->rating_count = $reviews->count();
+		$this->save();
+	}
+
 
 }
 

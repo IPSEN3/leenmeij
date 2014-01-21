@@ -63,7 +63,7 @@
                         @if (Auth::user()->hasRole('admin'))
                         <li><a href="{{{ URL::to('admin') }}}">Admin Panel</a></li>
                         @endif
-                        @if (Session::has('reserveringen'))
+                        @if (Session::has('reserveringen') && !Auth::user()->hasRole('admin'))
                         <li><a href="{{{ URL::action('ReservationController@selectCar') }}}"> {{Lang::get('reservation.continue')}} </a></li>
                         @endif
                         @if (Auth::user()->hasRole('admin'))

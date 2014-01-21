@@ -102,6 +102,18 @@ class User extends ConfideUser implements PresentableInterface {
         return array($user, $redirectTo);
     }
 
+    public function getUserFromCustomerListByEmail()
+    {
+        $user = Auth::user();
+
+        $customer = DB::table('customer')
+        ->select('id')
+        ->where('email', $user->email)
+        ->first();
+
+       return $customer->id;
+    }
+
     public function currentUser()
     {
         return (new Confide(new ConfideEloquentRepository()))->user();

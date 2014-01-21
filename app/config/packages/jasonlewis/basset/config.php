@@ -32,7 +32,7 @@ return array(
         {
             $collection->directory('assets/css', function($collection)
             {
-                $collection->add('less/master.less')->apply('Less');
+                $collection->add('less/master.less')->apply('Less')->apply('UriRewriteFilter');
                 $collection->add('themes/default.css');
                 $collection->add('themes/default.date.css');
                 $collection->add('themes/default.time.css');
@@ -61,11 +61,13 @@ return array(
                 $collection->add('trip/trip.js');
                 $collection->add('plugins.js');
                 $collection->add('quotes.js');
+                $collection->add('review.js');
                 $collection->add('googlemaps.js');
                 //$collection->add('modernizr.menu.js');
                 //$collection->add('menu.js');
                 //$collection->add('bootstrap/bootstrap.js');
-                $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
+                $collection->javascript('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js');
+                //$collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
             })->apply('JsMin');
         },
 
@@ -87,7 +89,8 @@ return array(
             {
                 $collection->javascript('http://code.jquery.com/jquery-1.10.2.min.js');
 //                $collection->add('bootstrap/bootstrap.js');
-                $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
+                // $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
+                $collection->javascript('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js');
                 $collection->add('wysihtml5/wysihtml5-0.3.0.js');
                 $collection->add('wysihtml5/bootstrap-wysihtml5.js');
                 $collection->javascript('http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js');

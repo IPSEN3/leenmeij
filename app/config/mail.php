@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'info@leenmeij.nl', 'name' => null),
+	'from' => array('address' => 'info@leenmeij.nl', 'name' => 'Leenmeij Autoverhuurbedrijf'),
 
 	/*
 	|--------------------------------------------------------------------------

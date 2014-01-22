@@ -1,23 +1,15 @@
 <?php
  
 class Review extends Eloquent {
-
-  protected $user;
-
-  public function __construct() {
-
-    $this->user = new User();
-
-  }
- 
+  
   public function user()
   {
     return $this->belongsTo('User');
   }
  
-  public function product()
+  public function vehicle()
   {
-    return $this->belongsTo('Product');
+    return $this->belongsTo('Vehicle');
   }
  
   public function scopeApproved($query)
@@ -56,7 +48,7 @@ class Review extends Eloquent {
     $vehicle = Vehicle::find($vehicleID);
    
     // this will be added when we add user's login functionality
-    $this->user_id = $this->user->getUserFromCustomerListByEmail();
+    $this->user_id = Auth::user()->id;
     $this->comment = $comment;
     $this->rating = $rating;
     $vehicle->reviews()->save($this);

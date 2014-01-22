@@ -77,8 +77,10 @@
               <span class="glyphicon glyphicon-star{{ ($i <= $review->rating) ? '' : '-empty'}}"></span>
             @endfor
          
-            {{ $review->user ? $review->user->name : 'Anonymous'}} <span class="pull-right">{{$review->timeago}}</span> 
+            {{ $review->user ? $review->user->username : 'Anonymous'}} <span class="pull-right">{{$review->timeago}}</span> 
          
+
+
             <p>{{{$review->comment}}}</p>
             </div>
           </div>
@@ -93,5 +95,5 @@
               @if ( Session::get('notice') )
               <div class="alert">{{ Session::get('notice') }}</div>
               @endif
-
+</div>
 @stop

@@ -21,5 +21,6 @@ return array(
 	'user_account_updated'          => 'User Account updated.',
 	'user_account_created'          => 'User Account created.',
 	'reactivate_account'	=> 'Account activeren',
+    'dashboard' => 'Dashboard'
 
 );

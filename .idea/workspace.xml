@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
@@ -27,6 +28,10 @@
     <list default="true" id="399cd179-6332-4d39-9575-47542c8d7c70" name="Default" comment="" />
     <ignored path="leenmeij-master.iws" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <list default="true" id="399cd179-6332-4d39-9575-47542c8d7c70" name="Default" comment="" />
+    <ignored path="leenmeij-master.iws" />
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +49,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <favorites_list name="leenmeij" />
   </component>
   <component name="FileEditorManager">
@@ -53,6 +59,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6060">
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <favorites_list name="leenmeij-master" />
   </component>
   <component name="FileEditorManager">
@@ -61,60 +69,88 @@
         <entry file="file://$PROJECT_DIR$/app/lang/en/button.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <folding />
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="car.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="68" selection-start="2762" selection-end="2762" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1605">
 =======
-      <file leaf-file-name="form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lang/nl/form.php">
+      <file leaf-file-name="site.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="392" selection-end="392" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="391">
->>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+            <state line="24" column="27" selection-start="803" selection-end="803" vertical-scroll-proportion="0.28169015" vertical-offset="308" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/nl/form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="43" selection-start="392" selection-end="392" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="391">
+<<<<<<< HEAD
+>>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="payment.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/reservation/payment.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="58" column="114" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1170">
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       <file leaf-file-name="validation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/en/validation.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="36.884617" vertical-offset="959" max-vertical-offset="1666">
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <folding />
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="Vehicle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/en/user/user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="30" selection-start="731" selection-end="731" vertical-scroll-proportion="-12.346154" vertical-offset="53" max-vertical-offset="493">
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="Reservation.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/Reservation.php">
@@ -122,9 +158,12 @@
             <state line="75" column="42" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.8389262" vertical-offset="0" max-vertical-offset="1341">
 =======
       <file leaf-file-name="titles.php" pinned="false" current="true" current-in-tab="true">
+=======
+      <file leaf-file-name="titles.php" pinned="false" current="false" current-in-tab="false">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
         <entry file="file://$PROJECT_DIR$/app/lang/nl/titles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="0.7661972" vertical-offset="0" max-vertical-offset="391">
+            <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -166,6 +205,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/user/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,6 +216,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     </leaf>
   </component>
   <component name="FindManager">
@@ -189,6 +231,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/config/local/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -208,6 +251,8 @@
         <option value="$PROJECT_DIR$/app/views/site/reservation/payment.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Reservation.php" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
         <option value="$PROJECT_DIR$/app/lang/nl/site.php" />
         <option value="$PROJECT_DIR$/app/lang/en/site.php" />
         <option value="$PROJECT_DIR$/app/lang/en/form.php" />
@@ -220,21 +265,30 @@
         <option value="$PROJECT_DIR$/app/lang/nl/user/user.php" />
         <option value="$PROJECT_DIR$/app/lang/en/user/user.php" />
         <option value="$PROJECT_DIR$/app/lang/nl/titles.php" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="width" value="2560" />
     <option name="height" value="1440" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -244,10 +298,14 @@
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ConfirmationsSetting value="1" id="Add" />
 =======
     <ConfirmationsSetting value="0" id="Add" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <ConfirmationsSetting value="0" id="Add" />
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -272,15 +330,20 @@
           <PATH>
             <PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <option name="myItemId" value="leenmeij" />
 =======
               <option name="myItemId" value="leenmeij-master" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+              <option name="myItemId" value="leenmeij-master" />
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="leenmeij" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
@@ -288,6 +351,8 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemId" value="leenmeij-master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
@@ -307,12 +372,16 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="leenmeij" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
@@ -320,12 +389,17 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemId" value="leenmeij-master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij-master" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -333,6 +407,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -342,6 +417,8 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
             <PATH_ELEMENT>
               <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -358,7 +435,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij-master" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -366,9 +446,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="views" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -378,12 +461,16 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="user" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="leenmeij" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
@@ -391,12 +478,17 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemId" value="leenmeij-master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij-master" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -405,8 +497,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <option name="myItemId" value="models" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -438,7 +533,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="user" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,6 +546,7 @@
   </component>
   <component name="PropertiesComponent">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
@@ -455,6 +554,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -476,6 +579,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <changelist id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="" />
       <created>1389464767656</created>
       <updated>1389464767656</updated>
@@ -484,30 +588,45 @@
       <created>1389794673481</created>
       <updated>1389794673481</updated>
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+      <changelist id="399cd179-6332-4d39-9575-47542c8d7c70" name="Default" comment="" />
+      <created>1389794673481</created>
+      <updated>1389794673481</updated>
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
 =======
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22851562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -516,17 +635,23 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -543,6 +668,7 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <breakpoint-manager />
   </component>
@@ -731,6 +857,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6060">
 =======
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
@@ -958,11 +1086,15 @@
     <entry file="file://$PROJECT_DIR$/app/lang/en/general.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+<<<<<<< HEAD
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -972,10 +1104,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/button.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/site/reservation/payment.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -985,10 +1123,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="7" selection-end="50" vertical-scroll-proportion="0.09577465" vertical-offset="0" max-vertical-offset="355">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="50" vertical-scroll-proportion="0.09577465" vertical-offset="0" max-vertical-offset="355">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -998,10 +1142,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="0.73802817" vertical-offset="10" max-vertical-offset="391">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="0.73802817" vertical-offset="10" max-vertical-offset="391">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1011,10 +1161,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1037,10 +1193,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="36.884617" vertical-offset="959" max-vertical-offset="1666">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="36.884617" vertical-offset="959" max-vertical-offset="1666">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/config/view.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1050,10 +1212,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="131" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="131" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/config/compile.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1063,10 +1231,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/tests/blueprints/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1076,10 +1250,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="2" selection-start="480" selection-end="480" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="374">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/renting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="480" selection-end="480" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="374">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/tests/blueprints/User.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1089,10 +1269,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="62" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/renting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="62" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1102,10 +1288,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="747" selection-end="777" vertical-scroll-proportion="-9.884615" vertical-offset="134" max-vertical-offset="527">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/user/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="747" selection-end="777" vertical-scroll-proportion="-9.884615" vertical-offset="134" max-vertical-offset="527">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/start/local.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1115,10 +1307,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="30" selection-start="731" selection-end="731" vertical-scroll-proportion="-12.346154" vertical-offset="53" max-vertical-offset="493">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/user/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="30" selection-start="731" selection-end="731" vertical-scroll-proportion="-12.346154" vertical-offset="53" max-vertical-offset="493">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/start/global.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1128,10 +1326,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="319" selection-end="382" vertical-scroll-proportion="0.67042255" vertical-offset="0" max-vertical-offset="425">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/en/titles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="319" selection-end="382" vertical-scroll-proportion="0.67042255" vertical-offset="0" max-vertical-offset="425">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/models/Reservation.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1141,6 +1345,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="0.7661972" vertical-offset="0" max-vertical-offset="391">
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/titles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="384" selection-end="384" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="27" selection-start="803" selection-end="803" vertical-scroll-proportion="0.28169015" vertical-offset="308" max-vertical-offset="714">
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
           <folding />
         </state>
       </provider>

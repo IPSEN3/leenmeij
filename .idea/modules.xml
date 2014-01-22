@@ -3,10 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/leenmeij.iml" filepath="$PROJECT_DIR$/.idea/leenmeij.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/leenmeij-master.iml" filepath="$PROJECT_DIR$/.idea/leenmeij-master.iml" />
 >>>>>>> 947409ca9f5a36a7ecfbd8865f517a8a5e2f3fee
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/leenmeij-master.iml" filepath="$PROJECT_DIR$/.idea/leenmeij-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/leenmeij.iml" filepath="$PROJECT_DIR$/.idea/leenmeij.iml" />
+>>>>>>> fbf57b18de544747f507712135b549895705f16c
+>>>>>>> f5b053f3584400c9614f5dce55180ed8623d6283
     </modules>
   </component>
 </project>

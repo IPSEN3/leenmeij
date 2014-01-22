@@ -22,6 +22,6 @@ body {
 <ul class="flex-container">
   <li class="flex-item"><a href="{{{ URL::to('user/settings') }}}"><img src="assets/img/icons/Gear.png"></a></li>
   <li class="flex-item"><a href="{{{ URL::to('user/reservations') }}}"><img src="assets/img/icons/iCal.png"></a></li>
-  <li class="flex-item"><a href="{{{ URL::to('user/reviews') }}}"><img src="assets/img/icons/Emoticon.png"></a></li>
+  <!-- <li class="flex-item"><a href="{{{ URL::to('user/reviews') }}}"><img src="assets/img/icons/Emoticon.png"></a></li> -->
 </ul>
 @stop

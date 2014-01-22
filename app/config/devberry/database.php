@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'production-school',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,9 +55,42 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
+			'database'  => 'ipsen2',
+			'username'  => 'reshadfarid',
+			'password'  => '',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
+		'production' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
 			'database'  => 'leenmeij',
-			'username'  => 'leenmeij',
-			'password'  => 'leenmeij',
+			'username'  => 'reshadfarid',
+			'password'  => 'ipsen3',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
+		'production-school' => array(
+			'driver'    => 'mysql',
+			'host'      => '145.97.16.192',
+			'database'  => 'ipsen3',
+			'username'  => 'ipsen',
+			'password'  => 'Ip27sen',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
+		'production-school-test' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'ipsen2',
+			'username'  => 'ipsen3',
+			'password'  => 'ipsen3',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

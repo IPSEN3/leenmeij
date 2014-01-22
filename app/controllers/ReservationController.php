@@ -4,12 +4,14 @@ class ReservationController extends BaseController {
 
 	protected $vehicles = array();
 	protected $reservation;
+	protected $user;
 
-	public function __construct(Vehicle $vehicles, Reservation $reservation)
+	public function __construct(Vehicle $vehicles, Reservation $reservation, User $user)
     {
         parent::__construct();
         $this->vehicles = $vehicles;
         $this->reservation = $reservation;
+        $this->user = $user;
     }
 
 	public function postDates() {
@@ -49,17 +51,18 @@ class ReservationController extends BaseController {
 	public function getDates() {
 
 		$value = Session::get('reserveringen');
+		$vehicleRev = Vehicle::all();
 
-		return View::make('site/reservation/car')
+		return View::make('site/reservation/vehicle')
 		->with('gegevens', $value)
+		->with('reviews', $vehicleRev)
 		->with('vehicles', $this->vehicles->getVehicleByDate($value['pickupsub'], $value['returnsub']));
 
 	}
 
 	public function editDates() {
 
-		return $this->postDates()
-		->with('success', Lang::get('site.saved'));
+		return View::make('site/user/home');
 
 	}
 
@@ -84,16 +87,26 @@ class ReservationController extends BaseController {
 
 	public function getPayment() {
 
-		$value = Session::get('reserveringen');
+        if(array_key_exists('car', Session::get('reserveringen'))) {
 
-		$this->diff(strtotime($value['pickupsub']), strtotime($value['returnsub']));
+            $value = Session::get('reserveringen');
 
-		$totaal = $this->day;
+            $this->diff(strtotime($value['pickupsub']), strtotime($value['returnsub']));
 
-		return View::make('site/reservation/payment')
-		->with('gegevens', $value)
-		->with('totaal', $totaal)
-		->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+            $totaal = $this->day;
+
+            return View::make('site/reservation/payment')
+                ->with('gegevens', $value)
+                ->with('totaal', $totaal)
+                ->with('vehicles', $this->vehicles->getVehicleById($value['car']));
+
+        }
+        else {
+
+            return Redirect::back()
+                ->with('error', Lang::get('renting.choose_car_first'));
+
+        }
 
 	}
 
@@ -101,7 +114,7 @@ class ReservationController extends BaseController {
 
 		$value = Session::get('reserveringen');
 
-		if($this->reservation->makeReservation($value))
+		if($this->reservation->makeReservation($value, $this->user->getUserFromCustomerListByEmail()))
 		{
 			return Redirect::to('/')
 			->with('success', Lang::get('site.reservation_complete') );

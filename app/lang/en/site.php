@@ -22,8 +22,15 @@ return array(
         'common' => 'general',
         'explain' => 'explanation',
         'company' => 'Company',
-        'kvknr' => 'CoC nr',
+        'kvknr' => 'CoC nr.',
         'place_review' => 'Place review',
-    
+        'date' => 'Select date',
+        'choose_car' => 'Select this car',
+        'payment' => 'Checkout',
+        'back' => 'Go back',
+        'login_review' => 'Please login to place a review',
+        'confirm' => 'Confirm payment',
+        'reservation_complete' => 'Your reservation has been made!'
+
 
 );

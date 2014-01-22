@@ -225,7 +225,7 @@ abstract class Ardent extends Model {
                 if (method_exists($myself, $method)) {
                     $eventMethod = $rad.$event;
                     self::$eventMethod(function($model) use ($method){
-                        return $model->$method();
+                        return $model->$method($model);
                     });
                 }
             }
@@ -353,9 +353,10 @@ abstract class Ardent extends Model {
 	 *
 	 * @param  string  $related
 	 * @param  string  $foreignKey
+	 * @param  string  $otherKey
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 	 */
-	public function belongsTo($related, $foreignKey = null) {
+	public function belongsTo($related, $foreignKey = NULL, $otherKey = NULL, $relation = NULL) {
 		$backtrace = debug_backtrace(false);
 		$caller = ($backtrace[1]['function'] == 'handleRelationalArray')? $backtrace[3] : $backtrace[1];
 
@@ -372,10 +373,12 @@ abstract class Ardent extends Model {
 		// for the related models and returns the relationship instance which will
 		// actually be responsible for retrieving and hydrating every relations.
 		$instance = new $related;
-
+		
+		$otherKey = $otherKey ?: $instance->getKeyName();
+		
 		$query = $instance->newQuery();
 
-		return new BelongsTo($query, $this, $foreignKey, $relation);
+		return new BelongsTo($query, $this, $foreignKey, $otherKey, $relation);
 	}
 
 	/**
@@ -443,6 +446,10 @@ abstract class Ardent extends Model {
         $db->addConnection($connection);
         $db->setEventDispatcher(new Dispatcher(new Container));
         //TODO: configure a cache manager (as an option)
+
+        // Make this Capsule instance available globally via static methods
+        $db->setAsGlobal();
+        
         $db->bootEloquent();
 
         $translator = new Translator('en');
@@ -511,7 +518,7 @@ abstract class Ardent extends Model {
 			$data = $this->getAttributes(); // the data under validation
 
 			// perform validation
-			$validator = self::makeValidator($data, $rules, $customMessages);
+			$validator = static::makeValidator($data, $rules, $customMessages);
 			$success   = $validator->passes();
 
 			if ($success) {
@@ -639,6 +646,11 @@ abstract class Ardent extends Model {
                 return false;
             }
 
+            // "_token" is used by Illuminate\Html\FormBuilder to add CSRF protection
+            if (strcmp($attributeKey, '_token') === 0) {
+                return false;
+            }
+
             return true;
         };
 
@@ -759,23 +771,38 @@ abstract class Ardent extends Model {
             $ruleset = (is_string($ruleset))? explode('|', $ruleset) : $ruleset;
 
             foreach ($ruleset as &$rule) {
-                if (strpos($rule, 'unique') === 0) {
-                    $params = explode(',', $rule);
+              if (strpos($rule, 'unique') === 0) {
+                $params = explode(',', $rule);
 
-                    // Append field name if needed
-                    if (count($params) == 1) {
-                        $params[1] = $field;
-                    }
+                $uniqueRules = array();
+                
+                // Append table name if needed
+                $table = explode(':', $params[0]);
+                if (count($table) == 1)
+                  $uniqueRules[1] = $this->table;
+                else
+                  $uniqueRules[1] = $table[1];
+               
+                // Append field name if needed
+                if (count($params) == 1)
+                  $uniqueRules[2] = $field;
+                else
+                  $uniqueRules[2] = $params[1];
 
-                     // if the 3rd param was set, do not overwrite it
-                    if (!is_numeric(@$params[2])) $params[2] = $this->id;
-                   
-
-                    $rule = implode(',', $params);
+                if (isset($this->primaryKey)) {
+                  $uniqueRules[3] = $this->{$this->primaryKey};
+                  $uniqueRules[4] = $this->primaryKey;
                 }
-            }
+                else {
+                  $uniqueRules[3] = $this->id;
+                }
+       
+                $rule = 'unique:' . implode(',', $uniqueRules);  
+              } // end if strpos unique
+              
+            } // end foreach ruleset
         }
-
+        
         return $rules;
     }
 
@@ -800,6 +827,19 @@ abstract class Ardent extends Model {
         
         return $this->save($rules, $customMessages, $options, $beforeSave, $afterSave);
     }
+
+	/**
+	 * Validates a model with unique rules properly treated.
+	 *
+	 * @param array $rules Validation rules
+	 * @param array $customMessages Custom error messages
+	 * @return bool
+	 * @see Ardent::validate()
+	 */
+	public function validateUniques(array $rules = array(), array $customMessages = array()) {
+		$rules = $this->buildUniqueExclusionRules($rules);
+		return $this->validate($rules, $customMessages);
+	}
 
     /**
      * Find a model by its primary key.

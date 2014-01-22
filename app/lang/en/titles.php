@@ -12,5 +12,8 @@ return array(
 	*/
 
 	'homepage' => 'Home',
+    'contact' => 'Contact',
+    'reservation' => 'Reservation',
+
 
 );

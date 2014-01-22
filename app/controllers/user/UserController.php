@@ -57,7 +57,7 @@ class UserController extends BaseController {
 
         // Show the page
         return View::make('site/user/reservations', compact('user'))
-            ->with('reservations', $this->reservation->getReservationByCustomerId($user->id));
+            ->with('reservations', $this->reservation->getReservationByCustomerId($this->user->getUserFromCustomerListByEmail()));
     }
 
     public function getReviewIndex()

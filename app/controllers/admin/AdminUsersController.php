@@ -90,15 +90,6 @@ class AdminUsersController extends AdminController {
     {
         $this->user->username = Input::get( 'username' );
         $this->user->email = Input::get( 'email' );
-        $this->user->birthday = Input::get( 'd__day_of_birth__m' );
-        $this->user->company = Input::get( 'company' );
-        if(trim(Input::get('kvknr')) == '') {
-            $this->user->kvknr = 0;
-        }
-        else {
-            $this->user->kvknr = Input::get( 'kvknr' );
-        }
-
         $this->user->password = Input::get( 'password' );
 
         // The password confirmation will be removed from model
@@ -186,18 +177,6 @@ class AdminUsersController extends AdminController {
             $oldUser = clone $user;
             $user->username = Input::get( 'username' );
             $user->email = Input::get( 'email' );
-            if(preg_match('/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/', Input::get( 'day_of_birth' ))){ 
-                $user->birthday = Input::get( 'day_of_birth' );
-            }else{ 
-                $user->birthday = Input::get( 'd__day_of_birth__m' );
-            }
-            $user->company = Input::get( 'company' );
-            if(trim(Input::get('kvknr')) == '') {
-            $this->user->kvknr = 0;
-            }
-            else {
-                $this->user->kvknr = Input::get( 'kvknr' );
-            }
             $user->confirmed = Input::get( 'confirm' );
 
             $password = Input::get( 'password' );

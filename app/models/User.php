@@ -102,6 +102,18 @@ class User extends ConfideUser implements PresentableInterface {
         return array($user, $redirectTo);
     }
 
+    public function getUserFromCustomerListByEmail()
+    {
+        $user = Auth::user();
+
+        $customer = DB::table('customer')
+        ->select('id')
+        ->where('email', $user->email)
+        ->first();
+
+       return $customer->id;
+    }
+
     public function currentUser()
     {
         return (new Confide(new ConfideEloquentRepository()))->user();
@@ -132,7 +144,7 @@ class User extends ConfideUser implements PresentableInterface {
     private function createNewCustomer($email) 
     {
         DB::table('customer')->insert(
-            array('email' => $email, 'firstname' => '', 'insertion' => '', 'lastname' => '', 'company' => '', 'kvknr' => 0, 'phone' => '', 'address' => '', 'zip' => '', 'city' => '', 'birthdate' => '00-00-000', 'passportnumber' => '')
+            array('email' => $email, 'firstname' => '', 'insertion' => '', 'lastname' => '', 'company' => '', 'kvknr' => 0, 'phone' => '', 'address' => '', 'zip' => '', 'city' => '', 'birthdate' => '01-01-1970', 'passportnumber' => '')
         );
 
         $this->check($email);

@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.postmarkapp.com',
+	'host' => 'localhost',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return array(
 	|
 	*/
 
-	'port' => 2525,
+	'port' => 25,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'info@leenmeij.nl', 'name' => 'Leenmeij Autoverhuurbedrijf'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -94,5 +94,8 @@ return array(
 	*/
 
 	'password' => null,
+
+	'pretend' => false,
+
 
 );

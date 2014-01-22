@@ -131,15 +131,53 @@ Route::get('contact-us', function()
 
 # Reservation steps
 Route::any('reservation/edit', 'ReservationController@editDates');
+Route::post('reservation', 'ReservationController@postDates');
 Route::get('reservation/car', 'ReservationController@getDates');
 Route::any('reservation/car/select', 'ReservationController@selectCar');
 Route::get('reservation/payment', 'ReservationController@getPayment');
 Route::get('reservation/overview', 'ReservationController@getOverview');
 Route::get('reservation/confirm', 'ReservationController@postReservation');
-Route::post('reservation', 'ReservationController@postDates');
+
+#review routes
+// Route that shows an individual vehicle by its ID
+Route::get('vehicle/{id}', function($id)
+{
+  $vehicle = Vehicle::find($id);
+  // Get all reviews that are not spam for the vehicle and paginate them
+  $reviews = $vehicle->reviews()->with('user')->approved()->notSpam()->orderBy('created_at','desc')->paginate(10);
+ 
+  return View::make('site/single-car', array('vehicle'=>$vehicle,'reviews'=>$reviews));
+});
+ 
+// Route that handles submission of review - rating/comment
+Route::post('vehicle/{id}',  function($id)
+{   
+  
+   $input = array(
+    'comment' => Input::get('comment'),
+    'rating'  => Input::get('rating')
+  );
+  // instantiate Rating model
+  $review = new Review;
+ 
+  // Validate that the user's input corresponds to the rules specified in the review model
+  $validator = Validator::make( $input, $review->getCreateRules());
+ 
+  // If input passes validation - store the review in DB, otherwise return to product page with error message 
+  if ($validator->passes()) {
+    $review->storeReviewForProduct($id, $input['comment'], $input['rating']);
+    return Redirect::to('vehicle/'.$id.'#reviews-anchor')->with('review_posted',true);
+  }
+ 
+  return Redirect::to('vehicle/'.$id.'#reviews-anchor')->withErrors($validator)->withInput();
+
+});
 
 #misc pages
-Route::get('about/leenmeij', 'FrontController@getAbout');
+# Posts - Second to last set, match slug
+Route::get('{postSlug}', 'BlogController@getView');
+Route::post('{postSlug}', 'BlogController@postView');
+Route::get('about/leenmeij', 'BlogController@getIndex');
 Route::get('contact/leenmeij', 'FrontController@getContact');
 
 # Index Page - Last route, no matches

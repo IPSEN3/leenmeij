@@ -255,6 +255,7 @@ All `before` hooks, when returning `false` (specifically boolean, not simply "fa
 
 Here's the complete list of available hooks:
 
+- `before`/`afterCreate()`
 - `before`/`afterSave()`
 - `before`/`afterUpdate()`
 - `before`/`afterDelete()`
@@ -281,7 +282,7 @@ class User extends \LaravelBook\Ardent\Ardent {
 `beforeSave` and `afterSave` can be included at run-time. Simply pass in closures with the model as argument to the `save()` (or `forceSave()`) method.
 
 ```php
-$user->save(array(), array(), 
+$user->save(array(), array(), array(),
   function ($model) { // closure for beforeSave
     echo "saving the model object...";
     return true;
@@ -358,9 +359,8 @@ function __construct() {
   };
 }
 ```
-
-<a name="uniquerules"></a>
-## Updates with Unique Rules
+<a name="secure"></a>
+## Automatically Transform Secure-Text Attributes
 
 Suppose you have an attribute named `password` in your model class, but don't want to store the plain-text version in the database. The pragmatic thing to do would be to store the hash of the original content. Worry not, Ardent is fully capable of transmogrifying any number of secure fields automatically for you!
 
@@ -375,10 +375,10 @@ class User extends \LaravelBook\Ardent\Ardent {
 
 Ardent will automatically replace the plain-text password attribute with secure hash checksum and save it to database. It uses the Laravel `Hash::make()` method internally to generate hash.
 
+<a name="uniquerules"></a>
+## Updates with Unique Rules
 
-<a name="secure"></a>
-## Automatically Transform Secure-Text Attributes
-Ardent can assist you with unique updates. According to the Lavavel Documentation, when you update (and therefore validate) a field with a unique rule, you have to pass in the unique ID of the record you are updating. Without passing this ID, validation will fail because Laravel's Validator will think this record is a duplicate.
+Ardent can assist you with unique updates. According to the Laravel Documentation, when you update (and therefore validate) a field with a unique rule, you have to pass in the unique ID of the record you are updating. Without passing this ID, validation will fail because Laravel's Validator will think this record is a duplicate.
 
 From the Laravel Documentation:
 

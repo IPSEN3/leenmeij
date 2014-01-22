@@ -16,10 +16,12 @@
 	<table id="reviews" class="table table-striped table-hover">
 		<thead>
 			<tr>
-				<th class="col-md-3">{{{ Lang::get('admin/reviews/table.title') }}}</th>
-				<th class="col-md-3">{{{ Lang::get('admin/blogs/table.post_id') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.username') }}}</th>
+				<th class="col-md-1">{{{ Lang::get('admin/reviews/table.review_id') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('admin/reviews/table.vehicle_brand') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('admin/reviews/table.vehicle_type') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('admin/reviews/table.customer') }}}</th>
 				<th class="col-md-2">{{{ Lang::get('admin/reviews/table.created_at') }}}</th>
+				<th class="col-md-1">{{{ Lang::get('admin/reviews/table.visible') }}}</th>
 				<th class="col-md-2">{{{ Lang::get('table.actions') }}}</th>
 			</tr>
 		</thead>
@@ -45,6 +47,5 @@
 	     		}
 			});
 		});
-		console.log(oTable);
 	</script>
 @stop

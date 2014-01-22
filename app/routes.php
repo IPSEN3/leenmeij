@@ -79,14 +79,10 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::controller('roles', 'AdminRolesController');
 
     # Review Management
-    Route::get('reviews/{review}/edit', 'AdminReviewsController@getEdit')
-        ->where('review', '[0-9]+');
-    Route::post('reviews/{review}/edit', 'AdminReviewsController@postEdit')
-        ->where('review', '[0-9]+');
-    Route::get('reviews/{review}/delete', 'AdminReviewsController@getDelete')
-        ->where('review', '[0-9]+');
-    Route::post('reviews/{review}/delete', 'AdminReviewsController@postDelete')
-        ->where('review', '[0-9]+');
+    Route::post('reviews/{review}/approved', 'AdminReviewsController@postApproved')
+    ->where('review', '[0-9]+');
+    Route::post('reviews/{review}/disapproved', 'AdminReviewsController@postDisapproved')
+    ->where('review', '[0-9]+');
     Route::controller('reviews', 'AdminReviewsController');
 
     # Admin Dashboard
@@ -135,10 +131,6 @@ Route::get('contact-us', function()
     // Return about us page
     return View::make('site/contact-us');
 });
-
-# Posts - Second to last set, match slug
-// Route::get('{postSlug}', 'BlogController@getView');
-// Route::post('{postSlug}', 'BlogController@postView');
 
 
 # Reservation steps

@@ -36,106 +36,20 @@ class AdminReviewsController extends AdminController
         return View::make('admin/reviews/index', compact('reviews', 'title'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param $review
-     * @return Response
-     */
-    public function getEdit($review)
-    {
-        // Title
-        $title = Lang::get('admin/reviews/title.review_update');
+    public function postAapproved($review) {
 
-        // Show the page
-        return View::make('admin/reviews/edit', compact('review', 'title'));
+        Review::where('id', '=', $review)->update(array('approved' => 1));
+
+        Redirect::back()->with('notice', 'Review accepted');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param $review
-     * @return Response
-     */
-    public function postEdit($review)
-    {
-        // Declare the rules for the form validation
-        $rules = array(
-            'content' => 'required|min:3'
-        );
+    public function postDisapproved($review) {
 
-        // Validate the inputs
-        $validator = Validator::make(Input::all(), $rules);
+        Review::where('id', '=', $review)->update(array('approved' => 0));
 
-        // Check if the form validates with success
-        if ($validator->passes())
-        {
-            // Update the review post data
-            $review->content = Input::get('content');
+        Redirect::back()->with('notice', 'Review denied');
+    }    
 
-            // Was the review post updated?
-            if($review->save())
-            {
-                // Redirect to the new review post page
-                return Redirect::to('admin/reviews/' . $review->id . '/edit')->with('success', Lang::get('admin/reviews/messages.update.success'));
-            }
-
-            // Redirect to the reviews post management page
-            return Redirect::to('admin/reviews/' . $review->id . '/edit')->with('error', Lang::get('admin/reviews/messages.update.error'));
-        }
-
-        // Form validation failed
-        return Redirect::to('admin/reviews/' . $review->id . '/edit')->withInput()->withErrors($validator);
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param $review
-     * @return Response
-     */
-    public function getDelete($review)
-    {
-        // Title
-        $title = Lang::get('admin/reviews/title.review_delete');
-
-        // Show the page
-        return View::make('admin/reviews/delete', compact('review', 'title'));
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param $review
-     * @return Response
-     */
-    public function postDelete($review)
-    {
-        // Declare the rules for the form validation
-        $rules = array(
-            'id' => 'required|integer'
-        );
-
-        // Validate the inputs
-        $validator = Validator::make(Input::all(), $rules);
-
-        // Check if the form validates with success
-        if ($validator->passes())
-        {
-            $id = $review->id;
-            $review->delete();
-
-            // Was the review post deleted?
-            $review = review::find($id);
-            if(empty($review))
-            {
-                // Redirect to the review posts management page
-                return Redirect::to('admin/reviews')->with('success', Lang::get('admin/reviews/messages.delete.success'));
-            }
-        }
-        // There was a problem deleting the review post
-        return Redirect::to('admin/reviews')->with('error', Lang::get('admin/reviews/messages.delete.error'));
-    }
 
     /**
      * Show a list of all the reviews formatted for Datatables.
@@ -145,14 +59,18 @@ class AdminReviewsController extends AdminController
     public function getData()
     {
 
-        $reviews = Review::select('*');
-
-        // $reviews = Review::leftjoin('posts', 'posts.id', '=', 'reviews.post_id')
-        //                 ->leftjoin('users', 'users.id', '=','reviews.user_id' )
-        //                 ->select(array('reviews.id as id', 'posts.id as postid','users.id as userid', 'reviews.content', 'posts.title as post_name', 'users.username as poster_name', 'reviews.created_at'));
+        $reviews = Review::leftjoin('vehicle', 'vehicle.id', '=', 'reviews.vehicle_id')
+                         ->leftjoin('users', 'users.id', '=','reviews.user_id' )
+                         ->select(array('reviews.id as id', 'vehicle.id as vehicleid','users.id as userid', 'vehicle.brand as vehiclebrand', 'vehicle.type as vehicletype', 'users.username as poster_name', 'reviews.created_at', DB::raw('CASE WHEN approved = 1 THEN \'Ja\' ELSE \'Nee\' END AS approved')));
 
         return Datatables::of($reviews)
 
+        ->add_column('actions', '<a href="{{{ URL::to(\'admin/reviews/\' . $id . \'/approved\' ) }}}" class="btn btn-success btn-xs">{{{ Lang::get(\'admin/reviews/table.approve\') }}}</a>
+                <a href="{{{ URL::to(\'admin/reviews/\' . $id . \'/disapproved\' ) }}}" class="btn btn-xs btn-danger">{{{ Lang::get(\'admin/reviews/table.disapprove\') }}}</a>
+            ')
+
+        ->remove_column('vehicleid')
+        ->remove_column('userid')
 
         ->make();
     }

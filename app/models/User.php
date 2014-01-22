@@ -144,7 +144,7 @@ class User extends ConfideUser implements PresentableInterface {
     private function createNewCustomer($email) 
     {
         DB::table('customer')->insert(
-            array('email' => $email, 'firstname' => '', 'insertion' => '', 'lastname' => '', 'company' => '', 'kvknr' => 0, 'phone' => '', 'address' => '', 'zip' => '', 'city' => '', 'birthdate' => '01-01-1970', 'passportnumber' => '')
+            array('email' => $email, 'firstname' => '', 'insertion' => '', 'lastname' => '', 'company' => '', 'kvknr' => 0, 'phone' => '', 'address' => '', 'zip' => '', 'city' => '', 'birthdate' => '01-01-1970', 'passportnumber' => '') //fix de birthday and check it!!
         );
 
         $this->check($email);

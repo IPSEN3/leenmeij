@@ -45,5 +45,6 @@
 	     		}
 			});
 		});
+		console.log(oTable);
 	</script>
 @stop

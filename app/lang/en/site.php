@@ -30,6 +30,7 @@ return array(
         'back' => 'Go back',
         'login_review' => 'Please login to place a review',
         'confirm' => 'Confirm payment',
-        'reservation_complete' => 'Your reservation has been made!'
+        'reservation_complete' => 'Your reservation has been made!',
+        'about' => 'About us',
 
 );

@@ -13,5 +13,5 @@ return array(
 
 	'homepage' => 'Home',
     'contact' => 'Contact',
-    'reservation' => 'Reservatie',
+    'reservation' => 'Reservering',
 );

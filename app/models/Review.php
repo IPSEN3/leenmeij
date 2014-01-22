@@ -1,6 +1,16 @@
 <?php
  
 class Review extends Eloquent {
+
+  /**
+   * Get the comment's content.
+   *
+   * @return string
+   */
+  public function content()
+  {
+    return nl2br($this->content);
+  }
   
   public function user()
   {
@@ -56,5 +66,10 @@ class Review extends Eloquent {
     // recalculate ratings for the specified vehicle
     $vehicle->recalculateRating($rating);
   }
+
+  public function getPresenter()
+    {
+        return new ReviewPresenter($this);
+    }
 
 }

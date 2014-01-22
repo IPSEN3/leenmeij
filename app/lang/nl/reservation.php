@@ -4,6 +4,6 @@ return array(
 
     'actions' => 'Actions',
     'edit' => 'Pas reservatie aan',
-    'continue' => 'Verder gaan met reservatie',
+    'continue' => 'Verder gaan met reservering',
 
 );

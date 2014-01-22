@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
 						<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Home</a></li>
-						<li {{ (Request::is('about/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('about/leenmeij') }}}">About</a></li>
+						<li {{ (Request::is('about/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('about/leenmeij') }}}">{{{Lang::get('site.about')}}}</a></li>
 						<li {{ (Request::is('contact/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('contact/leenmeij') }}}">Contact</a></li>
 					</ul>
 

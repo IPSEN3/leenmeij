@@ -9,8 +9,8 @@ return array(
 	'payment' => 'betaling',
 	'startdateinfo' => 'U kunt tot 60 dagen in de toekomst reserveren',
 	'login' => 'U dient ingelogd te zijn om uw reservering te bevestigen',
-    'edit' => 'Modify date',
-    'choose_car' => 'Please select a car',
-    'overview' => 'Renting overview',
+    'edit' => 'Bewerk datum',
+    'choose_car' => 'Kies een voertuig alstublieft',
+    'overview' => 'Reservering overzicht',
     'choose_car_first' => 'Selecteer alstublieft een voertuig'
 );

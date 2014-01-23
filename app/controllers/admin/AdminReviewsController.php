@@ -36,19 +36,24 @@ class AdminReviewsController extends AdminController
         return View::make('admin/reviews/index', compact('reviews', 'title'));
     }
 
-    public function postAapproved($review) {
+    public function postApproved($review) {
 
-        Review::where('id', '=', $review)->update(array('approved' => 1));
+        Review::where('id', '=', $review->id)->update(array('approved' => 1));
 
-        Redirect::back()->with('notice', 'Review accepted');
+        return Redirect::back()->with('notice', 'Review accepted');
     }
 
     public function postDisapproved($review) {
 
-        Review::where('id', '=', $review)->update(array('approved' => 0));
+        Review::where('id', '=', $review->id)->update(array('approved' => 0));
 
-        Redirect::back()->with('notice', 'Review denied');
+        return Redirect::back()->with('notice', 'Review denied');
     }    
+
+    public function missingMethod($parameters = array())
+    {
+        throw new Exception('missing method on ' . Request::path() . ' With request method ' . Request::server('REQUEST_METHOD'));
+    }
 
 
     /**

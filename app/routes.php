@@ -79,10 +79,10 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::controller('roles', 'AdminRolesController');
 
     # Review Management
-    Route::post('reviews/{review}/approved', 'AdminReviewsController@postApproved')
-    ->where('review', '[0-9]+');
-    Route::post('reviews/{review}/disapproved', 'AdminReviewsController@postDisapproved')
-    ->where('review', '[0-9]+');
+    Route::any('reviews/{review}/approved', 'AdminReviewsController@postApproved')
+        ->where('review', '[0-9]+');
+    Route::any('reviews/{review}/disapproved', 'AdminReviewsController@postDisapproved')
+        ->where('review', '[0-9]+');
     Route::controller('reviews', 'AdminReviewsController');
 
     # Admin Dashboard

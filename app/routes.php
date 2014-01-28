@@ -197,10 +197,15 @@ Route::get('{postSlug}', 'BlogController@getView');
 Route::post('{postSlug}', 'BlogController@postView');
 Route::get('about/leenmeij', 'BlogController@getIndex');
 Route::get('contact/leenmeij', 'FrontController@getContact');
+Route::get('visual/leenmeij', 'FrontController@getSomething');
+Route::any('changeskin', 'FrontController@getSkin');
+
 
 # Index Page - Last route, no matches
 
 Route::get('/', 'FrontController@getIndex');
+
+
 
 # route for locale
 Route::get('language/{lang}', 

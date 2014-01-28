@@ -32,7 +32,12 @@ return array(
         {
             $collection->directory('assets/css', function($collection)
             {
-                $collection->add('less/master.less')->apply('Less')->apply('UriRewriteFilter');
+                if(Session::has('skin')){
+                    $collection->add('less/summer.less')->apply('Less')->apply('UriRewriteFilter');
+                }
+                else {
+                    $collection->add('less/master.less')->apply('Less')->apply('UriRewriteFilter');
+                }
                 $collection->add('themes/default.css');
                 $collection->add('themes/default.date.css');
                 $collection->add('themes/default.time.css');

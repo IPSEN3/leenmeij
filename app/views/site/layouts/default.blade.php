@@ -57,6 +57,7 @@
 						<li {{ (Request::is('about/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('about/leenmeij') }}}">{{{Lang::get('site.about')}}}</a></li>
 						<li {{ (Request::is('contact/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('contact/leenmeij') }}}">Contact</a></li>
                         <li {{ (Request::is('voertuigoverzicht') ? ' class="active"' : '') }}><a href="{{{ URL::to('voertuigoverzicht') }}}">{{{ Lang::get('site.vehicle_overview') }}}</a></li>
+                        <li><a href="{{{ URL::to('visual/leenmeij') }}}">Change skin</a></li>
 					</ul>
 
                     <ul class="nav navbar-nav pull-right">

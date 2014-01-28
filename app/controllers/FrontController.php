@@ -19,8 +19,20 @@ class FrontController extends BaseController {
 
 	public function getContact()
 	{
+
 		return View::make('site/user/contact');
 	}
 
+    public function getSomething()
+    {
 
+        if(Session::has('skin')) {
+            Session::forget('skin');
+        }
+        else {
+            Session::put('skin', 'summer');
+        }
+
+        return Redirect::back();
+    }
 }

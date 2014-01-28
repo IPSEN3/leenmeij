@@ -923,12 +923,9 @@ return array(
     'LaravelBook\\Ardent\\InvalidModelException' => $vendorDir . '/laravelbook/ardent/src/LaravelBook/Ardent/InvalidModelException.php',
     'LaravelBook\\Ardent\\Providers\\ArdentServiceProvider' => $vendorDir . '/laravelbook/ardent/src/LaravelBook/Ardent/Providers/ArdentServiceProvider.php',
     'Math_BigInteger' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
-<<<<<<< HEAD
     'Mews\\Captcha\\Captcha' => $vendorDir . '/mews/captcha/src/Mews/Captcha/Captcha.php',
     'Mews\\Captcha\\CaptchaServiceProvider' => $vendorDir . '/mews/captcha/src/Mews/Captcha/CaptchaServiceProvider.php',
     'Mews\\Captcha\\Facades\\Captcha' => $vendorDir . '/mews/captcha/src/Mews/Captcha/Facades/Captcha.php',
-=======
->>>>>>> 8f87b087f7cfe29a39205f96d0ca8bf402d6a4c5
     'Mockery' => $vendorDir . '/mockery/mockery/library/Mockery.php',
     'Mockery\\Adapter\\Phpunit\\TestListener' => $vendorDir . '/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php',
     'Mockery\\CompositeExpectation' => $vendorDir . '/mockery/mockery/library/Mockery/CompositeExpectation.php',
@@ -1538,10 +1535,7 @@ return array(
     'Reservation' => $baseDir . '/app/models/Reservation.php',
     'ReservationController' => $baseDir . '/app/controllers/ReservationController.php',
     'Review' => $baseDir . '/app/models/Review.php',
-<<<<<<< HEAD
-=======
     'ReviewPresenter' => $baseDir . '/app/presenters/ReviewPresenter.php',
->>>>>>> 8f87b087f7cfe29a39205f96d0ca8bf402d6a4c5
     'Robbo\\Presenter\\Decorator' => $vendorDir . '/robclancy/presenter/src/Robbo/Presenter/Decorator.php',
     'Robbo\\Presenter\\PresentableInterface' => $vendorDir . '/robclancy/presenter/src/Robbo/Presenter/PresentableInterface.php',
     'Robbo\\Presenter\\Presenter' => $vendorDir . '/robclancy/presenter/src/Robbo/Presenter/Presenter.php',

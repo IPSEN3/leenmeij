@@ -19,6 +19,7 @@ Route::model('user', 'User');
 Route::model('comment', 'Comment');
 Route::model('post', 'Post');
 Route::model('role', 'Role');
+Route::model('review', 'Review');
 
 /** ------------------------------------------
  *  Admin Routes
@@ -76,6 +77,13 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::post('roles/{role}/delete', 'AdminRolesController@postDelete')
         ->where('role', '[0-9]+');
     Route::controller('roles', 'AdminRolesController');
+
+    # Review Management
+    Route::any('reviews/{review}/approved', 'AdminReviewsController@postApproved')
+        ->where('review', '[0-9]+');
+    Route::any('reviews/{review}/disapproved', 'AdminReviewsController@postDisapproved')
+        ->where('review', '[0-9]+');
+    Route::controller('reviews', 'AdminReviewsController');
 
     # Admin Dashboard
     Route::controller('/', 'AdminDashboardController');

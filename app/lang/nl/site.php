@@ -24,6 +24,13 @@ return array(
         'company' => 'Bedrijf',
         'kvknr' => 'KvK nr',
         'place_review' => 'Plaats review',
-    'vehicle_overview' => 'Voertuig overzicht'
+    'vehicle_overview' => 'Voertuig overzicht',
+        'date' => 'Datum',
+        'payment' => 'Afrekenen',
+        'back' => 'Ga terug',
+        'login_review' => 'Meld u aan om een review te plaatsen',
+        'confirm' => 'Bevestigen',
+        'reservation_complete' => 'uw reservering is voldaan',
+        'about' => 'Over ons',
 
 );

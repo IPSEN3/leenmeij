@@ -2,69 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/main-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/tests/code_coverage_id_rsa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/tests/code_coverage_upload.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/.travis.yml" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Client.php" afterPath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Tests/ClientTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Tests/ClientTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/Connection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/Connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PHPParser/Lexer.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PHPParser/Lexer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Logger.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Parser/Parser.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Parser/Parser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Tests/Parser/ParserTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Tests/Parser/ParserTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Generator/Dumper/PhpGeneratorDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Generator/Dumper/PhpGeneratorDumper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Symfony/Component/Translation/PluralizationRules.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Symfony/Component/Translation/PluralizationRules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Symfony/Component/Process/Process.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Symfony/Component/Process/Process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/SecLibGateway.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/SecLibGateway.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/packages/bllim/datatables/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/AdminReviewsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/presenters/ReviewPresenter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/affix-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/alert-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/button-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/carousel-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/collapse-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/packages/bllim/datatables/datatables.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/dropdown-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/reviews/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/leenmeij-master.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/modal-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/popover-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/en/reservation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/nl/reservation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/scrollspy-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/tab-151622533e1152a76de8315fbea63a1c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/en/admin/reviews/table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/nl/admin/reviews/table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/tooltip-a8c66a36338dc7a206f5584356e904d2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/transition-a8c66a36338dc7a206f5584356e904d2.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/colorbox-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/datatables-bootstrap-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/less/master-2e3760bf6d735b06bcd61ffab8f20891.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default.date-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default.time-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/wysihtml5/bootstrap-wysihtml5-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/wysihtml5/prettify-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datatables-bootstrap-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datatables.fnReloadAjax-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/legacy-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/main-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker.date-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker.time-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/jquery.colorbox-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/prettify-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/wysihtml5/bootstrap-wysihtml5-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/wysihtml5/wysihtml5-0.3.0-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/animate-custom-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/slider/nojs-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/themes/default-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/themes/default.date-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/themes/default.time-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/trip/trip.min-fbf4374765adad0b32ec204c985164e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/backtotop-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/legacy-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/picker-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/picker.date-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/picker.time-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/googlemaps-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/plugins-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/quotes-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/slider/jquery.cslider-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/slider/modernizr.custom.28468-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/slider/sliderfunc-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/trip/trip-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/trip/trip.min-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Review.php" afterPath="$PROJECT_DIR$/app/models/Review.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/user/UserController.php" afterPath="$PROJECT_DIR$/app/controllers/user/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Vehicle.php" afterPath="$PROJECT_DIR$/app/models/Vehicle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/XmlFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/XmlFileLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/XmlFileLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/XmlFileLoaderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/YamlFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/YamlFileLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/YamlFileLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/YamlFileLoaderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/devberry/app.php" afterPath="$PROJECT_DIR$/app/config/devberry/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/local/app.php" afterPath="$PROJECT_DIR$/app/config/local/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/user/create.blade.php" afterPath="$PROJECT_DIR$/app/views/site/user/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/layouts/default.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/datetimepicker/main.js" afterPath="$PROJECT_DIR$/public/assets/js/datetimepicker/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/less/master.less" afterPath="$PROJECT_DIR$/public/assets/css/less/master.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/form.php" afterPath="$PROJECT_DIR$/app/lang/en/form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/form.php" afterPath="$PROJECT_DIR$/app/lang/nl/form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/comments/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/comments/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/main-bcbb1026dc11d498eafcfb9bd0a2c520.js" afterPath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/main-bcbb1026dc11d498eafcfb9bd0a2c520.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/renting.php" afterPath="$PROJECT_DIR$/app/lang/en/renting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/renting.php" afterPath="$PROJECT_DIR$/app/lang/nl/renting.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/user/signup.blade.php" afterPath="$PROJECT_DIR$/app/views/site/user/signup.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/single-car.blade.php" afterPath="$PROJECT_DIR$/app/views/site/single-car.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/site.php" afterPath="$PROJECT_DIR$/app/lang/en/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/site.php" afterPath="$PROJECT_DIR$/app/lang/nl/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.yml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.yml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/titles.php" afterPath="$PROJECT_DIR$/app/lang/en/titles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/titles.php" afterPath="$PROJECT_DIR$/app/lang/nl/titles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/user/user.php" afterPath="$PROJECT_DIR$/app/lang/en/user/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/user/user.php" afterPath="$PROJECT_DIR$/app/lang/nl/user/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="leenmeij.iws" />
@@ -91,7 +112,16 @@
       <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="183" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-30.25" vertical-offset="144" max-vertical-offset="2010">
+            <state line="58" column="183" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-36.25" vertical-offset="0" max-vertical-offset="2010">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.06711409" vertical-offset="0" max-vertical-offset="1341">
               <folding />
             </state>
           </provider>
@@ -106,19 +136,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lang/nl/site.php">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
+            <state line="133" column="0" selection-start="4840" selection-end="4840" vertical-scroll-proportion="-45.25" vertical-offset="774" max-vertical-offset="3105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="58" selection-start="4712" selection-end="4712" vertical-scroll-proportion="-33.375" vertical-offset="1044" max-vertical-offset="2985">
+            <state line="145" column="38" selection-start="3304" selection-end="3304" vertical-scroll-proportion="-87.5" vertical-offset="0" max-vertical-offset="2565">
               <folding />
             </state>
           </provider>
@@ -136,7 +166,7 @@
       <file leaf-file-name="Review.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Review.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="975">
+            <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -151,19 +181,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="car.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="0.5637584" vertical-offset="234" max-vertical-offset="1605">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="34" selection-start="881" selection-end="881" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
+            <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-31.5" vertical-offset="234" max-vertical-offset="1605">
               <folding />
             </state>
           </provider>
@@ -201,16 +222,17 @@
         <option value="$PROJECT_DIR$/app/config/devberry/app.php" />
         <option value="$PROJECT_DIR$/app/config/packages/mews/captcha/config.php" />
         <option value="$PROJECT_DIR$/app/controllers/user/UserController.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/views/site/user/signup.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
-        <option value="$PROJECT_DIR$/app/lang/en/site.php" />
-        <option value="$PROJECT_DIR$/app/lang/nl/site.php" />
         <option value="$PROJECT_DIR$/app/models/Vehicle.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/site/multiple-car.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/single-car.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/site.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/lang/nl/site.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/vendor/autoload.php" />
       </list>
     </option>
   </component>
@@ -261,6 +283,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,6 +377,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,11 +520,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34228188" vertical-offset="459" max-vertical-offset="2025" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/user/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1341" />
@@ -665,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="209" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.66114455" vertical-offset="1237" max-vertical-offset="2565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="41" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.35794184" vertical-offset="855" max-vertical-offset="6330">
@@ -693,44 +761,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lang/nl/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="881" selection-end="881" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="58" selection-start="4712" selection-end="4712" vertical-scroll-proportion="-33.375" vertical-offset="1044" max-vertical-offset="2985">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="183" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-30.25" vertical-offset="144" max-vertical-offset="2010">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
@@ -744,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Review.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+        <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
@@ -756,9 +789,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="8" selection-start="856" selection-end="856" vertical-scroll-proportion="0.29082775" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="0.5637584" vertical-offset="234" max-vertical-offset="1605">
+        <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-31.5" vertical-offset="234" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="47" selection-start="902" selection-end="902" vertical-scroll-proportion="0.29082775" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="4840" selection-end="4840" vertical-scroll-proportion="-45.25" vertical-offset="774" max-vertical-offset="3105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="38" selection-start="3304" selection-end="3304" vertical-scroll-proportion="-87.5" vertical-offset="0" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="183" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-36.25" vertical-offset="0" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.06711409" vertical-offset="0" max-vertical-offset="1341">
           <folding />
         </state>
       </provider>

@@ -39,6 +39,7 @@ return array(
     'Mustache' => $vendorDir . '/mustache/mustache/src',
     'Monolog' => $vendorDir . '/monolog/monolog/src',
     'Mockery' => $vendorDir . '/mockery/mockery/library',
+    'Mews\\Captcha' => $vendorDir . '/mews/captcha/src',
     'Math' => $vendorDir . '/phpseclib/phpseclib/phpseclib',
     'LaravelBook\\Ardent' => $vendorDir . '/laravelbook/ardent/src',
     'Jeremeamia\\SuperClosure' => $vendorDir . '/jeremeamia/SuperClosure/src',

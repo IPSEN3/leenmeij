@@ -121,6 +121,7 @@ return array(
         'Robbo\Presenter\PresenterServiceProvider', // Presenter
         'Bllim\Datatables\DatatablesServiceProvider', // Datatables
         'Thujohn\Pdf\PdfServiceProvider', // pdf converter
+        'Mews\Captcha\CaptchaServiceProvider', // captcha
 
         /* Uncomment for use in development */
 //        'Way\Generators\GeneratorsServiceProvider', // Generators
@@ -190,7 +191,6 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'PDF' 			  => 'Thujohn\Pdf\PdfFacade',
 
         /* Additional Aliases */
         'Confide'         => 'Zizaco\Confide\ConfideFacade', // Confide Alias
@@ -201,6 +201,8 @@ return array(
         'String'          => 'Andrew13\Helpers\String', // String
         'Carbon'          => 'Carbon\Carbon', // Carbon
         'Datatables'      => 'Bllim\Datatables\Datatables', // DataTables
+        'PDF' 			  => 'Thujohn\Pdf\PdfFacade', // pdf
+        'Captcha'         => 'Mews\Captcha\Facades\Captcha', // captcha
 
     ),
 

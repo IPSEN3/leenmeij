@@ -24,5 +24,6 @@ return array(
         'company' => 'Company',
         'kvknr' => 'CoC nr',
         'place_review' => 'Place review',
+    'vehicle_overview' => 'Vehicle overview'
 
 );

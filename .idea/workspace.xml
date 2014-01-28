@@ -2,24 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Reservation.php" afterPath="$PROJECT_DIR$/app/models/Reservation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReservationController.php" afterPath="$PROJECT_DIR$/app/controllers/ReservationController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/main-a982c9a8ba1786d58a539ecb2895e0be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/tests/code_coverage_id_rsa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/tests/code_coverage_upload.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/.travis.yml" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Client.php" afterPath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Tests/ClientTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Tests/ClientTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/Connection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PHPParser/Lexer.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PHPParser/Lexer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Logger.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Parser/Parser.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Parser/Parser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Tests/Parser/ParserTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Symfony/Component/CssSelector/Tests/Parser/ParserTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Generator/Dumper/PhpGeneratorDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Generator/Dumper/PhpGeneratorDumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Symfony/Component/Translation/PluralizationRules.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Symfony/Component/Translation/PluralizationRules.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Symfony/Component/Process/Process.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Symfony/Component/Process/Process.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/SecLibGateway.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/SecLibGateway.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/user/UserController.php" afterPath="$PROJECT_DIR$/app/controllers/user/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Vehicle.php" afterPath="$PROJECT_DIR$/app/models/Vehicle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/XmlFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/XmlFileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/XmlFileLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/XmlFileLoaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/YamlFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Loader/YamlFileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/YamlFileLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Loader/YamlFileLoaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/devberry/app.php" afterPath="$PROJECT_DIR$/app/config/devberry/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" afterPath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/devberry/database.php" afterPath="$PROJECT_DIR$/app/config/devberry/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/local/app.php" afterPath="$PROJECT_DIR$/app/config/local/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/user/create.blade.php" afterPath="$PROJECT_DIR$/app/views/site/user/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/devberry/mail.php" afterPath="$PROJECT_DIR$/app/config/devberry/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/datetimepicker/main.js" afterPath="$PROJECT_DIR$/public/assets/js/datetimepicker/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/less/master.less" afterPath="$PROJECT_DIR$/public/assets/css/less/master.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/emails/reservation.blade.php" afterPath="$PROJECT_DIR$/app/views/emails/reservation.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sftp-config.json" afterPath="$PROJECT_DIR$/sftp-config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/slider/style2.css" afterPath="$PROJECT_DIR$/public/assets/css/slider/style2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/user/signup.blade.php" afterPath="$PROJECT_DIR$/app/views/site/user/signup.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/single-car.blade.php" afterPath="$PROJECT_DIR$/app/views/site/single-car.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/site.php" afterPath="$PROJECT_DIR$/app/lang/en/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/nl/site.php" afterPath="$PROJECT_DIR$/app/lang/nl/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.yml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.yml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="leenmeij.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,28 +88,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/user/UserController.php">
+      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6060">
+            <state line="58" column="183" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-30.25" vertical-offset="144" max-vertical-offset="2010">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
+      <file leaf-file-name="signup.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="68" selection-start="2762" selection-end="2762" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1605">
+            <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/reservation/payment.blade.php">
+      <file leaf-file-name="site.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/nl/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="114" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1170">
+            <state line="26" column="35" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="58" selection-start="4712" selection-end="4712" vertical-scroll-proportion="-33.375" vertical-offset="1044" max-vertical-offset="2985">
               <folding />
             </state>
           </provider>
@@ -72,16 +127,43 @@
       <file leaf-file-name="Vehicle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reservation.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/Reservation.php">
+      <file leaf-file-name="Review.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Review.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="42" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.8389262" vertical-offset="0" max-vertical-offset="1341">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-car.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="84" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1575">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="car.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="0.5637584" vertical-offset="234" max-vertical-offset="1605">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="34" selection-start="881" selection-end="881" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -100,23 +182,35 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/local/app.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/views/site/user/reservations.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
         <option value="$PROJECT_DIR$/app/views/site/blog/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/users/create_edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/admin/AdminUsersController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReservationController.php" />
         <option value="$PROJECT_DIR$/app/library/reshadf/sweetcaptcha.php" />
-        <option value="$PROJECT_DIR$/app/controllers/user/UserController.php" />
-        <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/reservation/payment.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Reservation.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/datetimepicker/main.js" />
+        <option value="$PROJECT_DIR$/public/assets/css/less/master.less" />
+        <option value="$PROJECT_DIR$/app/views/site/user/create.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/local/app.php" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
+        <option value="$PROJECT_DIR$/app/config/devberry/app.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/mews/captcha/config.php" />
+        <option value="$PROJECT_DIR$/app/controllers/user/UserController.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/views/site/user/signup.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/site.php" />
+        <option value="$PROJECT_DIR$/app/lang/nl/site.php" />
+        <option value="$PROJECT_DIR$/app/models/Vehicle.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/site/multiple-car.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/single-car.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
       </list>
     </option>
   </component>
@@ -216,7 +310,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,6 +352,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -246,6 +374,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="" />
@@ -295,156 +440,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="22" selection-start="2643" selection-end="2646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="54" selection-start="5309" selection-end="5309" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="3195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="5205" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="22" selection-start="2643" selection-end="2646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="54" selection-start="5159" selection-end="5166" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="3165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="5205" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="10500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="10500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="54" selection-start="5309" selection-end="5309" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="3195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="22" selection-start="2643" selection-end="2646" vertical-scroll-proportion="-51.875" vertical-offset="0" max-vertical-offset="3195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminDashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminBlogsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7516779" vertical-offset="2349" max-vertical-offset="3690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/blogs/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.4362416" vertical-offset="0" max-vertical-offset="1341" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="61" selection-start="3938" selection-end="3981" vertical-scroll-proportion="0.7606264" vertical-offset="300" max-vertical-offset="5205" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/reservations.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="79" selection-start="1709" selection-end="1709" vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/blog/view_post.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.625" vertical-offset="279" max-vertical-offset="1620" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/blog/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="118" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="480" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/users/create_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="2548" selection-end="2548" vertical-scroll-proportion="-23.75" vertical-offset="285" max-vertical-offset="1815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="378" selection-end="378" vertical-scroll-proportion="0.14541388" vertical-offset="0" max-vertical-offset="1341" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="53" selection-start="5365" selection-end="5365" vertical-scroll-proportion="0.82102907" vertical-offset="954" max-vertical-offset="2355" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="38" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.6935123" vertical-offset="105" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="58" selection-start="5172" selection-end="5172" vertical-scroll-proportion="1.2751678" vertical-offset="0" max-vertical-offset="2385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminUsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="51" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.8545861" vertical-offset="219" max-vertical-offset="4695" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34228188" vertical-offset="459" max-vertical-offset="2025" />
@@ -460,11 +455,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1341" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2080537" vertical-offset="279" max-vertical-offset="1620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ReservationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="0" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.22818792" vertical-offset="684" max-vertical-offset="2250" />
@@ -475,107 +465,300 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user/UserController.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6060">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="68" selection-start="2762" selection-end="2762" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1605">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/compile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/blueprints/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/blueprints/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.12304251" vertical-offset="165" max-vertical-offset="1560" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="42" selection-start="2437" selection-end="2437" vertical-scroll-proportion="0.86577183" vertical-offset="99" max-vertical-offset="1440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/reservation/payment.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="114" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1170">
+        <state line="58" column="114" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.64876956" vertical-offset="0" max-vertical-offset="1341" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/roles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="842" selection-end="1479" vertical-scroll-proportion="0.3691275" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/datetimepicker/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="19" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.48351648" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zizaco/confide/src/lang/nl/confide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/titles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/reminders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/general.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/button.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="77" selection-start="3200" selection-end="3218" vertical-scroll-proportion="-35.625" vertical-offset="255" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="3" selection-start="2601" selection-end="8948" vertical-scroll-proportion="0.49217004" vertical-offset="540" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="211" column="0" selection-start="9362" selection-end="9362" vertical-scroll-proportion="1.6711409" vertical-offset="924" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/devberry/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="2" selection-start="9344" selection-end="9344" vertical-scroll-proportion="0.92170024" vertical-offset="1914" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/mews/captcha/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="147" selection-end="147" vertical-scroll-proportion="0.08948546" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/less/master.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="689" column="8" selection-start="13543" selection-end="13543" vertical-scroll-proportion="0.84042555" vertical-offset="9229" max-vertical-offset="10545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="735" selection-end="735" vertical-scroll-proportion="0.23489933" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="209" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.66114455" vertical-offset="1237" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/user/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="41" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.35794184" vertical-offset="855" max-vertical-offset="6330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09619687" vertical-offset="129" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="0.1901566" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="34" selection-start="881" selection-end="881" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+        <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="58" selection-start="4712" selection-end="4712" vertical-scroll-proportion="-33.375" vertical-offset="1044" max-vertical-offset="2985">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="183" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-30.25" vertical-offset="144" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/multiple-car.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="478" selection-end="548" vertical-scroll-proportion="0.23489933" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Review.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
+    <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+        <state line="23" column="84" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
+    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/compile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/blueprints/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/blueprints/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.12304251" vertical-offset="165" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="42" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.8389262" vertical-offset="0" max-vertical-offset="1341">
+        <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="0.5637584" vertical-offset="234" max-vertical-offset="1605">
           <folding />
         </state>
       </provider>

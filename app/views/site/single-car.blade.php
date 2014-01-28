@@ -16,11 +16,12 @@
 <div class="container">
   <div class="row">
       <div class="col-md-3">
-          <a href="{{{ URL::action('ReservationController@selectCar')}}}" class="btn btn-default">{{Lang::get('site.back')}}</a>
+          <a href="{{ URL::previous() }}" class="btn btn-default">{{Lang::get('site.back')}}</a>
         </div>
         <div class="col-md-9">
           <div class="thumbnail">
-            <img src="http://placehold.it/820x320" alt="">
+<!--            <img src="http://placehold.it/820x320" alt="">-->
+              {{ HTML::image('/assets/img/voertuigen/single-car.jpg', 'Voertuig') }}
             <div class="caption-full">
                 <h4 class="pull-right">Daily rent &euro; {{ $vehicle->hourly_rent }}</h4>
                 <a href="{{ URL::to('vehicle'). "/" .$vehicle->id }}"><h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4></a>

@@ -124,6 +124,16 @@ Route::get('contact-us', function()
     return View::make('site/contact-us');
 });
 
+Route::get('voertuigoverzicht', function(){
+
+    $vehicle = Vehicle::all();
+
+    //$reviews = $vehicle->reviews()->approved()->notSpam()->orderBy('brand','desc')->paginate(10);
+
+    Return View::make('site/multiple-car', array('vehicles'=>$vehicle));
+
+});
+
 # Posts - Second to last set, match slug
 // Route::get('{postSlug}', 'BlogController@getView');
 // Route::post('{postSlug}', 'BlogController@postView');

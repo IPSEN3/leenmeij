@@ -42,5 +42,5 @@ $( '.js__birthdaypicker' ).pickadate($.extend( $.fn.pickadate.defaults, {
     min: [1970, 01, 01],
     max: new Date(),
     selectMonths: true,
-    selectYears: 30,
+    selectYears: 30
 }))

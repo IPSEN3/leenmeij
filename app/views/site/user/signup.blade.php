@@ -17,16 +17,58 @@
             <label for="password_confirmation">{{{ Lang::get('confide::confide.password_confirmation') }}}</label>
             <input class="form-control" placeholder="{{{ Lang::get('confide::confide.password_confirmation') }}}" type="password" name="password_confirmation" id="password_confirmation">
         </div>
+        <div class="form-group">
+            <label for="firstname">{{{ Lang::get('site.firstname') }}}</label>
+            <input class="form-control" name="firstname" type="text" id="firstname" value="{{{ Input::old('firstname') }}}">
+        </div>
+        <div class="form-group">
+            <label for="insertion">{{{ Lang::get('site.insertion') }}}</label>
+            <input class="form-control" name="insertion" type="text" id="insertion" value="{{{ Input::old('insertion') }}}">
+        </div>
+        <div class="form-group">
+            <label for="lastname">{{{ Lang::get('site.lastname') }}}</label>
+            <input class="form-control" name="lastname" type="text" id="lastname" value="{{{ Input::old('lastname') }}}">
+        </div>
+        <div class="form-group">
+            <label for="company">{{{ Lang::get('site.company') }}}</label>
+            <input class="form-control" name="company" type="text" id="company" value="{{{ Input::old('company') }}}">
+        </div>
+        <div class="form-group">
+            <label for="kvknr">{{{ Lang::get('site.kvknr') }}}</label>
+            <input class="form-control" name="kvknr" type="text" id="kvknr" value="{{{ Input::old('kvknr') }}}">
+        </div>
+        <div class="form-group">
+            <label for="phone">{{{ Lang::get('site.phone') }}}</label>
+            <input class="form-control" name="phone" type="text" id="phone" value="{{{ Input::old('phone') }}}">
+        </div>
+        <div class="form-group">
+            <label for="address">{{{ Lang::get('site.address') }}}</label>
+            <input class="form-control" name="address" type="text" id="address" value="{{{ Input::old('address') }}}">
+        </div>
+        <div class="form-group">
+            <label for="zip">{{{ Lang::get('site.zip') }}}</label>
+            <input class="form-control" name="zip" type="text" id="zip" value="{{{ Input::old('zip') }}}">
+        </div>
+        <div class="form-group">
+            <label for="city">{{{ Lang::get('site.city') }}}</label>
+            <input class="form-control" name="city" type="text" id="city" value="{{{ Input::old('city') }}}">
+        </div>
+        <div class="form-group">
+            <label for="birthdate">{{{ Lang::get('site.birthdate') }}}</label>
+            <input class="form-control js__birthdaypicker" name="birthdate" type="text" id="birthdate" value="{{{ Input::old('js__birthdaypicker') }}}">
+        </div>
+        <div class="form-group">
+            <label for="passportnumber">{{{ Lang::get('site.passportnumber') }}}</label>
+            <input class="form-control" name="passportnumber" type="text" id="passportnumber" value="{{{ Input::old('passportnumber') }}}">
+        </div>
+
+        <div class="form-group">
+            <label for="captcha">{{{ Lang::get('site.captcha') }}}  {{ HTML::image(Captcha::img(), 'Captcha image') }}</label>
+            <input class="form-control" name="captcha" type="text">
+        </div>
+
     </fieldset>
     <fieldset>
-
-         @if ( Session::get('error') )
-            <div class="alert alert-error alert-danger">
-                @if ( is_array(Session::get('error')) )
-                    {{ head(Session::get('error')) }}
-                @endif
-            </div>
-        @endif
 
         @if ( Session::get('notice') )
             <div class="alert">{{ Session::get('notice') }}</div>

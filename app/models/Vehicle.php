@@ -4,17 +4,6 @@ class Vehicle extends Eloquent {
 
 	protected $table = 'vehicle';
 
-	public function getVehicles() {
-
-		$vehicles = DB::table('vehicle')->get();
-
-		foreach ($vehicles as $vehicle) {
-			
-			return $vehicles;
-
-		}
-	}
-
 	public function getVehicleByDate($startdate, $enddate) {
 
 		$vehicles = DB::select( DB::raw("

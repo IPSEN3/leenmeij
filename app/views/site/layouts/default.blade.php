@@ -56,6 +56,7 @@
 						<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Home</a></li>
 						<li {{ (Request::is('about/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('about/leenmeij') }}}">About</a></li>
 						<li {{ (Request::is('contact/leenmeij') ? ' class="active"' : '') }}><a href="{{{ URL::to('contact/leenmeij') }}}">Contact</a></li>
+                        <li {{ (Request::is('voertuigoverzicht') ? ' class="active"' : '') }}><a href="{{{ URL::to('voertuigoverzicht') }}}">{{{ Lang::get('site.vehicle_overview') }}}</a></li>
 					</ul>
 
                     <ul class="nav navbar-nav pull-right">
@@ -114,9 +115,6 @@
 	      	<div class="row">
 	      		<div class="col-md-4">
 	        	<p class="muted credit">&copy; Koekietrommel</p>
-	        	</div>
-	        	<div class="col-md-4"
-	        		
 	        	</div>
 	        </div>
 	        <a href="#" class="back-to-top">Back to Top &hearts;</a>

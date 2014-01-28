@@ -60,13 +60,14 @@
 
               <div class="row">
               @foreach ( $vehicles as $vehicle)
-              
+
               {{ Form::open(array('url' => 'reservation/car/select')) }}
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <input type="hidden" name="id" value="{{ $vehicle->id }}">
                 <div class="col-md-4" class="cars">
                     <div class="well well-sm  {{ isset($gegevens['car']) && $gegevens['car'] == $vehicle->id ? 'selectedCar' : null }} ">
                       <a href="{{ URL::to('vehicle'). "/" .$vehicle->id }}"><h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4></a>
+                        {{ HTML::image('/assets/img/voertuigen/single-car.jpg', 'Voertuig', array('class' => 'img-responsive')) }}
                           <div class="input-group input-group-md">
                               <p>Beschrijving: {{ $vehicle->description }}</p>
                               <p>Airco {{ $vehicle->airco == 1 ? 'ja' : 'nee' }}</p>

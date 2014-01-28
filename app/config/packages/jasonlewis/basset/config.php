@@ -68,7 +68,7 @@ return array(
                 //$collection->add('bootstrap/bootstrap.js');
                 $collection->javascript('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js');
                 //$collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
-            })->apply('JsMin');
+            })->apply('UriRewriteFilter')->apply('JsMin');
         },
 
         'admin' => function($collection)

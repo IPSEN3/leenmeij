@@ -2,8 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/affix-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/affix-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/alert-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/alert-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/button-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/button-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/carousel-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/carousel-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/collapse-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/collapse-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/dropdown-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/dropdown-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/modal-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/modal-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/popover-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/popover-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/scrollspy-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/scrollspy-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/tab-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/tab-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/tooltip-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/tooltip-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/transition-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/0e83dd3f1d256b09e0c120fdf87bac4f/transition-859167b0ac868a6aaf5c73748597925c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/less/master-485575c2a75c7ffed91da7fa7b7777b9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default-504f9f5ee3080f1b6f76721d396b4d5b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default.date-8f8d6f054a93c3847f8a1f00926561b7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/css/themes/default.time-7c6f052b93c02e50ba65e52a2bcae242.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datatables-bootstrap-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datatables.fnReloadAjax-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/legacy-ffffa406349b0e0fce067dec46aa91d8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/main-bcbb1026dc11d498eafcfb9bd0a2c520.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker-ffffa406349b0e0fce067dec46aa91d8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker.date-ffffa406349b0e0fce067dec46aa91d8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/datetimepicker/picker.time-ffffa406349b0e0fce067dec46aa91d8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/jquery.colorbox-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/prettify-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/wysihtml5/bootstrap-wysihtml5-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/admin/assets/js/wysihtml5/wysihtml5-0.3.0-6478674fda11874c0ff4e4b31f5c0776.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/affix-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/alert-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/button-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/carousel-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/collapse-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/dropdown-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/modal-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/popover-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/scrollspy-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/tab-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/tooltip-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/0e83dd3f1d256b09e0c120fdf87bac4f/transition-49fe37fdd6b1d004e71a46c3650d6e3b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/affix-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/alert-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/button-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/carousel-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/collapse-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/dropdown-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/modal-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/popover-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/scrollspy-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/tab-151622533e1152a76de8315fbea63a1c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/tooltip-a8c66a36338dc7a206f5584356e904d2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/9d24bce9ad9e9e9e899e82c5bc51a132/transition-a8c66a36338dc7a206f5584356e904d2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/datetimepicker/main-8dfd14cb3d5928ab80d8138825384b1f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/js/review-811afe7bde01d6a5b608b74ad424edd2.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" afterPath="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" afterPath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" afterPath="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="leenmeij.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,91 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
+      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="183" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-36.25" vertical-offset="0" max-vertical-offset="2010">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload_classmap.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1536" column="52" selection-start="184649" selection-end="184649" vertical-scroll-proportion="0.4179217" vertical-offset="22485" max-vertical-offset="32610">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="4840" selection-end="4840" vertical-scroll-proportion="-45.25" vertical-offset="774" max-vertical-offset="3105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="38" selection-start="3304" selection-end="3304" vertical-scroll-proportion="-87.5" vertical-offset="0" max-vertical-offset="2565">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vehicle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Review.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Review.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="single-car.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="84" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1575">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-31.5" vertical-offset="234" max-vertical-offset="1605">
+            <state line="44" column="14" selection-start="1590" selection-end="1617" vertical-scroll-proportion="0.20134228" vertical-offset="390" max-vertical-offset="5250">
               <folding />
             </state>
           </provider>
@@ -130,7 +116,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/site/user/reservations.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
         <option value="$PROJECT_DIR$/app/views/site/blog/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/users/create_edit.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/admin/AdminUsersController.php" />
@@ -151,9 +136,7 @@
         <option value="$PROJECT_DIR$/app/views/site/user/signup.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Vehicle.php" />
-        <option value="$PROJECT_DIR$/app/views/site/multiple-car.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/single-car.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
         <option value="$PROJECT_DIR$/app/lang/en/site.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/lang/nl/site.php" />
@@ -161,6 +144,10 @@
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+        <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/multiple-car.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
       </list>
     </option>
   </component>
@@ -224,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,11 +225,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="composer" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,72 +300,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,15 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +335,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leenmeij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jasonlewis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,16 +469,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/ReservationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.22818792" vertical-offset="684" max-vertical-offset="2250" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/Andrew13/Helpers/String.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
@@ -697,44 +690,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/multiple-car.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="478" selection-end="548" vertical-scroll-proportion="0.23489933" vertical-offset="0" max-vertical-offset="1341">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Review.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="84" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/en/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="8" selection-start="856" selection-end="856" vertical-scroll-proportion="0.29082775" vertical-offset="0" max-vertical-offset="1341">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="137" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-31.5" vertical-offset="234" max-vertical-offset="1605">
           <folding />
         </state>
       </provider>
@@ -746,34 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="-40.625" vertical-offset="0" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="4840" selection-end="4840" vertical-scroll-proportion="-45.25" vertical-offset="774" max-vertical-offset="3105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="38" selection-start="3304" selection-end="3304" vertical-scroll-proportion="-87.5" vertical-offset="0" max-vertical-offset="2565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="183" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-36.25" vertical-offset="0" max-vertical-offset="2010">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.033557046" vertical-offset="0" max-vertical-offset="1341">
@@ -781,16 +711,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+        <state line="1536" column="52" selection-start="184649" selection-end="184649" vertical-scroll-proportion="0.4179217" vertical-offset="22485" max-vertical-offset="32610">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1536" column="52" selection-start="184649" selection-end="184649" vertical-scroll-proportion="0.4179217" vertical-offset="22485" max-vertical-offset="32610">
+        <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.06711409" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="118" selection-start="4365" selection-end="4415" vertical-scroll-proportion="0.7270694" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="183" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.64876956" vertical-offset="0" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="4840" selection-end="4840" vertical-scroll-proportion="0.8098434" vertical-offset="774" max-vertical-offset="3105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="38" selection-start="3304" selection-end="3304" vertical-scroll-proportion="1.5813253" vertical-offset="0" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Vehicle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="71" selection-end="71" vertical-scroll-proportion="0.04474273" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.111856826" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/car.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="48" selection-start="2301" selection-end="2301" vertical-scroll-proportion="-28.375" vertical-offset="234" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="130" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.47427294" vertical-offset="399" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="0.22371365" vertical-offset="0" max-vertical-offset="1575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/multiple-car.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="353" selection-end="353" vertical-scroll-proportion="0.20134228" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="14" selection-start="1590" selection-end="1617" vertical-scroll-proportion="0.20134228" vertical-offset="390" max-vertical-offset="5250">
           <folding />
         </state>
       </provider>

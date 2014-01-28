@@ -65,6 +65,7 @@
               <input type="hidden" name="id" value="{{ $vehicle->id }}">
                 <div class="col-md-4" class="cars">
                     <div class="well well-sm  {{ isset($gegevens['car']) && $gegevens['car'] == $vehicle->id ? 'selectedCar' : null }} ">
+
                       <h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4>
                           <div class="input-group input-group-md">
                               <p>Beschrijving: {{ $vehicle->description }}</p>
@@ -78,7 +79,7 @@
                             </ul>
                             <div class="tab-content">
                               <div class="tab-pane fade in active" id="inc{{$vehicle->id}}">&euro; {{ $vehicle->hourly_rent }}</div>
-                              <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}</div>
+                              <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ (float)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}</div>
                               <span onClick="submit();" class="badge pull-right">{{ Lang::get('site.choose_car') }}</span>
                             </div>
                           </div>

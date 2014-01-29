@@ -23,10 +23,20 @@
 <!--            <img src="http://placehold.it/820x320" alt="">-->
               {{ HTML::image('/assets/img/voertuigen/single-car.jpg', 'Voertuig') }}
             <div class="caption-full">
-                <h4 class="pull-right">Daily rent &euro; {{ $vehicle->hourly_rent }}</h4>
+
                 <a href="{{ URL::to('vehicle'). "/" .$vehicle->id }}"><h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4></a>
                 <p>{{ $vehicle->description }}</p>
             </div>
+            <div class="input-group input-group-sm">
+                  <ul class="nav nav-tabs" id="myTab">
+                    <li class="active"><a href="#inc{{ $vehicle->id }}" data-toggle="tab">Inc. {{Lang::get('site.btw')}}</a></li>
+                    <li><a href="#exc{{$vehicle->id}}" data-toggle="tab">Exc. {{Lang::get('site.btw')}}</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="inc{{$vehicle->id}}">&euro; {{ $vehicle->hourly_rent }}</div>
+                    <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ sprintf("%01.2f", $vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21) }}</div>
+                  </div>
+                </div>
             <div class="ratings">
                 <p class="pull-right ratings">{{{ $vehicle->rating_count or '0' }}} reviews</p>
                 <p>
@@ -43,7 +53,7 @@
             <div class="well well-sm">
                   <div class="text-right">
                     @if (Auth::check())
-                      <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+                      <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">{{ Lang::get('site.leave_review') }}</a>
                       @else 
                       <p>{{ Lang::get('site.login_review') }}</p>
                     @endif
@@ -54,7 +64,7 @@
                       <div class="col-md-12">
                           <form accept-charset="UTF-8" action="" method="post">
                               <input id="ratings-hidden" name="rating" type="hidden"> 
-                              <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                              <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="{{Lang::get('site.review_text')}}" rows="5"></textarea>
               
                               <div class="text-right">
                                   <div class="stars starrr" data-rating="0"></div>

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ada3613-f074-4264-abf6-adcd7b7855da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/FrontController.php" afterPath="$PROJECT_DIR$/app/controllers/FrontController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" afterPath="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/compiled/public/assets/css/slider/style2-a3eda476d0398a5bb0fb887cfb5112b5.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/user/home.blade.php" afterPath="$PROJECT_DIR$/app/views/site/user/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" afterPath="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="leenmeij.iws" />
@@ -32,46 +28,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="59" selection-start="1840" selection-end="1840" vertical-scroll-proportion="-24.875" vertical-offset="138" max-vertical-offset="5325">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/user/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1860">
+            <state line="78" column="86" selection-start="3303" selection-end="3303" vertical-scroll-proportion="-27.125" vertical-offset="519" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrontController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/FrontController.php">
+      <file leaf-file-name="vehicle.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="591" selection-end="591" vertical-scroll-proportion="0.40268457" vertical-offset="0" max-vertical-offset="1341">
+            <state line="82" column="189" selection-start="4192" selection-end="4192" vertical-scroll-proportion="0.6308725" vertical-offset="384" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <file leaf-file-name="master.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/less/master.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="24" selection-start="7328" selection-end="7333" vertical-scroll-proportion="-42.75" vertical-offset="1824" max-vertical-offset="3180">
+            <state line="621" column="1" selection-start="12593" selection-end="12593" vertical-scroll-proportion="-60.836735" vertical-offset="6334" max-vertical-offset="10545">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
+      <file leaf-file-name="style2.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="65" selection-start="2519" selection-end="2519" vertical-scroll-proportion="-16.5" vertical-offset="489" max-vertical-offset="2025">
+            <state line="7" column="59" selection-start="170" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500">
               <folding />
             </state>
           </provider>
@@ -118,16 +105,17 @@
         <option value="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
         <option value="$PROJECT_DIR$/app/views/site/reservation/car.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" />
         <option value="$PROJECT_DIR$/app/views/site/multiple-car.blade.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/public/assets/css/less/summer.less" />
         <option value="$PROJECT_DIR$/app/controllers/SkinController.php" />
         <option value="$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php" />
-        <option value="$PROJECT_DIR$/app/views/site/user/home.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/site/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/FrontController.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/slider/style2.css" />
+        <option value="$PROJECT_DIR$/app/views/site/user/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php" />
       </list>
     </option>
   </component>
@@ -178,38 +166,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leenmeij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,14 +226,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22851562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22851562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -309,20 +265,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/lang/nl/titles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lang/nl/table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/nl/reminders.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
@@ -505,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="130" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.47427294" vertical-offset="399" max-vertical-offset="1890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/single-car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="0.22371365" vertical-offset="0" max-vertical-offset="1575">
@@ -557,13 +492,6 @@
     <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1341">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/less/master.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="621" column="1" selection-start="12593" selection-end="12593" vertical-scroll-proportion="0.10258359" vertical-offset="9180" max-vertical-offset="10545">
           <folding />
         </state>
       </provider>
@@ -631,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="59" selection-start="1840" selection-end="1840" vertical-scroll-proportion="-24.875" vertical-offset="138" max-vertical-offset="5325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/user/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="65" selection-start="2519" selection-end="2519" vertical-scroll-proportion="-16.5" vertical-offset="489" max-vertical-offset="2025">
@@ -662,6 +576,48 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/FrontController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="5" selection-start="591" selection-end="591" vertical-scroll-proportion="0.40268457" vertical-offset="0" max-vertical-offset="1341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/jasonlewis/basset/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="59" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.44519016" vertical-offset="138" max-vertical-offset="5325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/slider/style2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="59" selection-start="170" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/less/master.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="621" column="1" selection-start="12593" selection-end="12593" vertical-scroll-proportion="-60.836735" vertical-offset="6334" max-vertical-offset="10545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/slider/sliderfunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="35" selection-start="91" selection-end="91" vertical-scroll-proportion="0.043956045" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/user/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="86" selection-start="3303" selection-end="3303" vertical-scroll-proportion="-27.125" vertical-offset="519" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/reservation/vehicle.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="189" selection-start="4192" selection-end="4192" vertical-scroll-proportion="0.6308725" vertical-offset="384" max-vertical-offset="1890">
           <folding />
         </state>
       </provider>

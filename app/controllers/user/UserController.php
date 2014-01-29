@@ -80,14 +80,48 @@ class UserController extends BaseController {
         $password = Input::get( 'password' );
         $passwordConfirmation = Input::get( 'password_confirmation' );
 
-        $rules =  array('captcha' => array('required', 'captcha'));
+        $rules =  array(
+                    'captcha' => array(
+                                    'required', 'captcha'
+                                    ),
+                    'password' => array(
+                                    'regex:^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}^'
+                                    ),
+                    'firstname' => array(
+                                    'required'
+                                    ),
+                    'lastname' => array(
+                                    'required'
+                                    ),
+                    'phone' => array(
+                                    'required'
+                                    ),
+                    'address' => array(
+                                    'required'
+                                    ),
+                    'zip' => array(
+                                    'required'
+                                    ),
+                    'city' => array(
+                                    'required'
+                                    ),
+                    'd__birthdate__m' => array(
+                                    'required'
+                                    ),
+                    'passportnumber' => array(
+                                    'required'
+                                    ),
+                    );
+
         $validator = Validator::make(Input::all(), $rules);
+
+        $messages = $validator->messages();
 
         if ($validator->fails())
         {
             return Redirect::back()
                 ->withInput()
-                ->with('error', Lang::get('form.captchafailed'));
+                ->withErrors($validator);
         }
         else
         {

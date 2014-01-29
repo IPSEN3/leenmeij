@@ -21,7 +21,7 @@
 	</div>
 
     <div class="col-md-6">
-    	<h4>Contact gegevens</h4>
+    	<h4>{{Lang::get('site.contact_g')}}</h4>
         <address>
 		  <strong>Leenmeij Autoverhuur BV</strong><br>
 		  Zijldijk 130, 2352 AB<br>
@@ -32,12 +32,8 @@
 
 		</address>
 			<div class="contact">
-	    		<h4>Openingstijden</h4>
-	    		<ul>
-	    			<li>Monday-Friday: 10am to 8pm</li>
-	    			<li>Saturday: 11am to 3pm</li>
-	    			<li>Sunday: Closed</li>
-	    		</ul>
+	    		<h4>{{ Lang::get('site.business_hours') }}</h4>
+	    		<p>10:00 - 18:00</p>
 	    	</div>
     	</div>
     </div>

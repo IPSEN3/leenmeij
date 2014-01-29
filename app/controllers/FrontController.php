@@ -9,7 +9,10 @@ class FrontController extends BaseController {
 	 */
 	public function getIndex()
 	{
-		return View::make('site/user/home');
+
+		$review = Review::all();
+
+		return View::make('site/user/home')->with('reviews', $review);
 	}
 
 	public function getAbout() 

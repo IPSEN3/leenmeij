@@ -21,7 +21,7 @@
 <!--                <img src="http://placehold.it/820x320" alt="">-->
                 {{ HTML::image('/assets/img/voertuigen/single-car.jpg', 'Voertuig') }}
                 <div class="caption-full">
-                    <h4 class="pull-right">Daily rent &euro; {{ $vehicle->hourly_rent }}</h4>
+                    <h4 class="pull-right">{{Lang::get('site.daily_rent')}} &euro; {{ $vehicle->hourly_rent }}</h4>
                     <a href="{{ URL::to('vehicle'). "/" .$vehicle->id }}"><h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4></a>
                     <p>{{ $vehicle->description }}</p>
                 </div>

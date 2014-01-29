@@ -69,18 +69,18 @@
                       <a href="{{ URL::to('vehicle'). "/" .$vehicle->id }}"><h4>{{ $vehicle->brand . " " . $vehicle->type}}</h4></a>
                         {{ HTML::image('/assets/img/voertuigen/single-car.jpg', 'Voertuig', array('class' => 'img-responsive')) }}
                           <div class="input-group input-group-md">
-                              <p>Beschrijving: {{ $vehicle->description }}</p>
+                              <p>{{Lang::get('site.description')}}: {{ $vehicle->description }}</p>
                               <p>Airco {{ $vehicle->airco == 1 ? 'ja' : 'nee' }}</p>
-                              <p>Zitplaatsen {{ $vehicle->seats }}</p>
+                              <p>{{Lang::get('site.seats')}} {{ $vehicle->seats }}</p>
                           </div>
                           <div class="input-group input-group-sm">
                             <ul class="nav nav-tabs" id="myTab">
-                              <li class="active"><a href="#inc{{ $vehicle->id }}" data-toggle="tab">Inc. BTW</a></li>
-                              <li><a href="#exc{{$vehicle->id}}" data-toggle="tab">Exc. BTW</a></li>
+                              <li class="active"><a href="#inc{{ $vehicle->id }}" data-toggle="tab">Inc. {{Lang::get('site.btw')}}</a></li>
+                              <li><a href="#exc{{$vehicle->id}}" data-toggle="tab">Exc. {{Lang::get('site.btw')}}</a></li>
                             </ul>
                             <div class="tab-content">
                               <div class="tab-pane fade in active" id="inc{{$vehicle->id}}">&euro; {{ $vehicle->hourly_rent }}</div>
-                              <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ (int)$vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21 }}</div>
+                              <div class="tab-pane fade" id="exc{{$vehicle->id}}">&euro; {{ sprintf("%01.2f", $vehicle->hourly_rent = $vehicle->hourly_rent - $vehicle->hourly_rent/121 * 21) }}</div>
                             </div>
                           </div>
                             <hr>

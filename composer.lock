@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1ad173cfe33692659e593e90bf8928cf",
+    "hash": "6648507b6bd2fe08cff8dea947ed349d",
     "packages": [
         {
             "name": "bllim/datatables",
@@ -456,16 +456,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "4.1.x-dev",
+            "version": "v4.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "77395e8b8809d9d65cf0bfbae2b3cff557de797c"
+                "reference": "99a342124cb1003ef4eee36aad8f50fb7ef36e7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/77395e8b8809d9d65cf0bfbae2b3cff557de797c",
-                "reference": "77395e8b8809d9d65cf0bfbae2b3cff557de797c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/99a342124cb1003ef4eee36aad8f50fb7ef36e7e",
+                "reference": "99a342124cb1003ef4eee36aad8f50fb7ef36e7e",
                 "shasum": ""
             },
             "require": {
@@ -569,7 +569,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-01-28 17:25:02"
+            "time": "2014-01-13 19:40:50"
         },
         {
             "name": "laravelbook/ardent",
@@ -1127,12 +1127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stackphp/builder.git",
-                "reference": "f98a5eb77b212a77b67a70f74d856ae859dd74b3"
+                "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stackphp/builder/zipball/f98a5eb77b212a77b67a70f74d856ae859dd74b3",
-                "reference": "f98a5eb77b212a77b67a70f74d856ae859dd74b3",
+                "url": "https://api.github.com/repos/stackphp/builder/zipball/b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
+                "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
                 "shasum": ""
             },
             "require": {
@@ -1169,7 +1169,7 @@
             "keywords": [
                 "stack"
             ],
-            "time": "2014-01-18 16:33:58"
+            "time": "2014-01-28 19:42:24"
         },
         {
             "name": "swiftmailer/swiftmailer",

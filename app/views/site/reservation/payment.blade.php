@@ -24,7 +24,7 @@
         <p>{{{ $gegevens['pickupdate'] }}}</p>
     	{{ Lang::get('renting.return') }}
     	<p>{{{ $gegevens['returndate'] }}}</p>
-    	<p>Aantal dagen: {{ $totaal }} </p>
+    	<p>{{Lang::get('site.total_days')}}: {{ $totaal }} </p>
       <a class="btn btn-primary" href="{{{ URL::action('ReservationController@selectCar') . '#dates' }}}">{{Lang::get('reservation.edit')}}</a>
   </div>
 </div>
@@ -37,8 +37,8 @@
         @foreach ($vehicles as $vehicle)
         	{{ '<p>' . $vehicle->brand . " " . $vehicle->type . '</p>' }}
         @endforeach
-        <p>Kosten totaal: &euro;{{ $totaal * $vehicle->hourly_rent }}</p>
-        <p>ex. BTW: {{ $totaal * (int)$vehicle->hourly_rent -= $vehicle->hourly_rent/121 * 21 }}</p>
+        <p>{{Lang::get('site.total_cost')}}: &euro;{{ $totaal * $vehicle->hourly_rent }}</p>
+        <p>ex. {{Lang::get('site.btw')}}: {{ $totaal * (int)$vehicle->hourly_rent -= $vehicle->hourly_rent/121 * 21 }}</p>
         <a class="btn btn-primary" href="{{{ URL::action('ReservationController@selectCar') . '#vehicles' }}}">{{Lang::get('reservation.edit')}}</a>
   </div>
 </div>

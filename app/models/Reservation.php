@@ -12,10 +12,13 @@ class Reservation extends Eloquent {
      */
     public static $app;
 
-    public function __construct() 
+    protected $user;
+
+    public function __construct(User $user) 
     {
     	  if ( ! static::$app )
             static::$app = app();
+        $this->user = $user;
     }
 
 	public function getReservations() {
@@ -71,10 +74,13 @@ class Reservation extends Eloquent {
 		$user = Auth::User();
         $reservation = $params['reservation'];
         $customer = $params['user'];
+        $customernaw = $this->user->getSettings(Auth::User()->email);
+        // echo '<pre>';
+        // dd($);
 
 		$outputName = str_random(10);
         $pdfPath = FACTUREN_DIR.'/'.$outputName.'.pdf';
-        File::put($pdfPath, PDF::load(View::make('emails/invoice')->with('user', $customer)->with('reservation', $reservation)->render(), 'A4', 'portrait')->output());
+        File::put($pdfPath, PDF::load(View::make('emails/invoice')->with('user', $customer)->with('reservation', $reservation)->with('naw', $customernaw)->render(), 'A4', 'portrait')->output());
 
         static::$app['mailer']->send($view_name, $params, function($m) use ($subject_translation, $user, $pdfPath)
         {

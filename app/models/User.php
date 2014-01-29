@@ -166,5 +166,7 @@ class User extends ConfideUser implements PresentableInterface {
             ->update(array('firstname' => $settings['firstname'], 'insertion' => $settings['insertion'], 'lastname' => $settings['lastname'], 'company' => $settings['company'], 'kvknr' => $settings['kvknr'], 'phone' => $settings['phone'], 'address' => $settings['address'], 'zip' => $settings['zip'], 'city' => $settings['city'], 'birthdate' => $settings['d__birthdate__m'], 'passportnumber' => $settings['passportnumber']));
     }
 
+    
+
 
 }

@@ -75,16 +75,6 @@ class Request extends SymfonyRequest {
 	}
 
 	/**
-	 * Get the current encoded path info for the request.
-	 *
-	 * @return string
-	 */
-	public function decodedPath()
-	{
-		return rawurldecode($this->path());
-	}
-
-	/**
 	 * Get a segment from the URI (1 based index).
 	 *
 	 * @param  string  $index
@@ -324,7 +314,7 @@ class Request extends SymfonyRequest {
 	 */
 	public function old($key = null, $default = null)
 	{
-		return $this->session()->getOldInput($key, $default);
+		return $this->getSessionStore()->getOldInput($key, $default);
 	}
 
 	/**
@@ -338,7 +328,7 @@ class Request extends SymfonyRequest {
 	{
 		$flash = ( ! is_null($filter)) ? $this->$filter($keys) : $this->input();
 
-		$this->session()->flashInput($flash);
+		$this->getSessionStore()->flashInput($flash);
 	}
 
 	/**
@@ -374,7 +364,7 @@ class Request extends SymfonyRequest {
 	 */
 	public function flush()
 	{
-		$this->session()->flashInput(array());
+		$this->getSessionStore()->flashInput(array());
 	}
 
 	/**
@@ -506,18 +496,41 @@ class Request extends SymfonyRequest {
 	}
 
 	/**
-	 * Get the session associated with the request.
+	 * Get the Illuminate session store implementation.
 	 *
 	 * @return \Illuminate\Session\Store
+	 *
+	 * @throws \RuntimeException
 	 */
-	public function session()
+	public function getSessionStore()
 	{
-		if ( ! $this->hasSession())
+		if ( ! isset($this->sessionStore))
 		{
 			throw new \RuntimeException("Session store not set on request.");
 		}
 
-		return $this->getSession();
+		return $this->sessionStore;
+	}
+
+	/**
+	 * Set the Illuminate session store implementation.
+	 *
+	 * @param  \Illuminate\Session\Store  $session
+	 * @return void
+	 */
+	public function setSessionStore(SessionStore $session)
+	{
+		$this->sessionStore = $session;
+	}
+
+	/**
+	 * Determine if the session store has been set.
+	 *
+	 * @return bool
+	 */
+	public function hasSessionStore()
+	{
+		return isset($this->sessionStore);
 	}
 
 }

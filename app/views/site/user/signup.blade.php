@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <label for="password">{{{ Lang::get('confide::confide.password') }}}*</label>
-            <input class="form-control" placeholder="{{{ Lang::get('confide::confide.password') }}}" type="password" name="password" id="password">
+            <input class="form-control {{ $err = $errors->first('password') ? 'err' : 'null' }}" placeholder="{{{ Lang::get('confide::confide.password') }}}" type="password" name="password" id="password">
         </div>
         <div class="form-group">
             <label for="password_confirmation">{{{ Lang::get('confide::confide.password_confirmation') }}}*</label>
@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <label for="firstname">{{{ Lang::get('site.firstname') }}}*</label>
-            <input class="form-control" name="firstname" type="text" id="firstname" value="{{{ Input::old('firstname') }}}">
+            <input class="form-control {{ $err = $errors->first('firstname') ? 'err' : 'null' }}" name="firstname" type="text" id="firstname" value="{{{ Input::old('firstname') }}}">
         </div>
         <div class="form-group">
             <label for="insertion">{{{ Lang::get('site.insertion') }}}</label>
@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
             <label for="lastname">{{{ Lang::get('site.lastname') }}}*</label>
-            <input class="form-control" name="lastname" type="text" id="lastname" value="{{{ Input::old('lastname') }}}">
+            <input class="form-control {{ $err = $errors->first('lastname') ? 'err' : 'null' }}" name="lastname" type="text" id="lastname" value="{{{ Input::old('lastname') }}}">
         </div>
         <div class="form-group">
             <label for="company">{{{ Lang::get('site.company') }}}</label>
@@ -39,32 +39,32 @@
         </div>
         <div class="form-group">
             <label for="phone">{{{ Lang::get('site.phone') }}}*</label>
-            <input class="form-control" name="phone" type="text" id="phone" value="{{{ Input::old('phone') }}}">
+            <input class="form-control {{ $err = $errors->first('phone') ? 'err' : 'null' }}" name="phone" type="text" id="phone" value="{{{ Input::old('phone') }}}">
         </div>
         <div class="form-group">
             <label for="address">{{{ Lang::get('site.address') }}}*</label>
-            <input class="form-control" name="address" type="text" id="address" value="{{{ Input::old('address') }}}">
+            <input class="form-control {{ $err = $errors->first('address') ? 'err' : 'null' }}" name="address" type="text" id="address" value="{{{ Input::old('address') }}}">
         </div>
         <div class="form-group">
             <label for="zip">{{{ Lang::get('site.zip') }}}*</label>
-            <input class="form-control" name="zip" type="text" id="zip" value="{{{ Input::old('zip') }}}">
+            <input class="form-control {{ $err = $errors->first('zip') ? 'err' : 'null' }}" name="zip" type="text" id="zip" value="{{{ Input::old('zip') }}}">
         </div>
         <div class="form-group">
             <label for="city">{{{ Lang::get('site.city') }}}*</label>
-            <input class="form-control" name="city" type="text" id="city" value="{{{ Input::old('city') }}}">
+            <input class="form-control {{ $err = $errors->first('city') ? 'err' : 'null' }}" name="city" type="text" id="city" value="{{{ Input::old('city') }}}">
         </div>
         <div class="form-group">
             <label for="birthdate">{{{ Lang::get('site.birthdate') }}}*</label>
-            <input class="form-control js__birthdaypicker" name="birthdate" type="text" id="birthdate" value="{{{ Input::old('js__birthdaypicker') }}}">
+            <input class="form-control js__birthdaypicker {{ $err = $errors->first('d__birthdate__m') ? 'err' : 'null' }}" name="birthdate" type="text" id="birthdate" data-value="{{{ Input::old('d__birthdate__m') }}}">
         </div>
         <div class="form-group">
             <label for="passportnumber">{{{ Lang::get('site.passportnumber') }}}*</label>
-            <input class="form-control" name="passportnumber" type="text" id="passportnumber" value="{{{ Input::old('passportnumber') }}}">
+            <input class="form-control {{ $err = $errors->first('passportnumber') ? 'err' : 'null' }}" name="passportnumber" type="text" id="passportnumber" value="{{{ Input::old('passportnumber') }}}">
         </div>
 
         <div class="form-group">
             <label for="captcha">{{{ Lang::get('site.captcha') }}}*  {{ HTML::image(Captcha::img(), 'Captcha image') }}</label>
-            <input class="form-control" name="captcha" type="text">
+            <input class="form-control {{ $err = $errors->first('captcha') ? 'err' : 'null' }}" name="captcha" type="text">
         </div>
 
     </fieldset>

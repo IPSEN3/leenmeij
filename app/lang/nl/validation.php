@@ -75,9 +75,6 @@ return array(
 	*/
 
 	'custom' => array(
-		'captcha' => array(
-			'required' => 'Het captcha veld is verplicht',
-			),
 		),
 
 	/*
@@ -92,9 +89,6 @@ return array(
 	*/
 
 	'attributes' => array(
-		'captcha' => array(
-			''
-			),
 		)
 
 );

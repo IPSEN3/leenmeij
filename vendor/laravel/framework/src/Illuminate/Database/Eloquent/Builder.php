@@ -34,8 +34,8 @@ class Builder {
 	 * @var array
 	 */
 	protected $passthru = array(
-		'toSql', 'lists', 'insert', 'insertGetId', 'pluck', 'count',
-		'min', 'max', 'avg', 'sum', 'exists', 'getBindings',
+		'toSql', 'lists', 'insert', 'insertGetId', 'pluck',
+		'count', 'min', 'max', 'avg', 'sum', 'exists',
 	);
 
 	/**

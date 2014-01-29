@@ -84,6 +84,9 @@ class UserController extends BaseController {
                     'captcha' => array(
                                     'required', 'captcha'
                                     ),
+                    'password' => array(
+                                    'regex:^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}^'
+                                    ),
                     'firstname' => array(
                                     'required'
                                     ),
@@ -109,6 +112,7 @@ class UserController extends BaseController {
                                     'required'
                                     ),
                     );
+
         $validator = Validator::make(Input::all(), $rules);
 
         $messages = $validator->messages();

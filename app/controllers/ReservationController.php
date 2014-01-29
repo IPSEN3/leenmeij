@@ -27,6 +27,7 @@ class ReservationController extends BaseController {
 			array(
 				'pickupdate' => 'required',
 				'returndate' => 'required',
+				'd__pickupdate__m' => 'before:d__returndate__m',
 				)
 		);
 

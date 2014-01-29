@@ -22,13 +22,6 @@ class Repository implements ArrayAccess {
 	protected $default = 60;
 
 	/**
-	 * An array of registered Cache macros.
-	 *
-	 * @var array
-	 */
-	protected $macros = array();
-
-	/**
 	 * Create a new cache repository instance.
 	 *
 	 * @param  \Illuminate\Cache\StoreInterface  $store
@@ -240,45 +233,28 @@ class Repository implements ArrayAccess {
 		if ($duration instanceof DateTime)
 		{
 			$duration = Carbon::instance($duration);
+		}
 
+		if ($duration instanceof Carbon)
+		{
 			return max(0, Carbon::now()->diffInMinutes($duration, false));
 		}
 		else
 		{
-			return is_string($duration) ? intval($duration) : $duration;
+			return intval($duration);
 		}
 	}
 
 	/**
-	 * Register a macro with the Cache class.
-	 *
-	 * @param  string $name
-	 * @param  callable $callback
-	 * @return void
-	 */
-	public function macro($name, $callback)
-	{
-		$this->macros[$name] = $callback;
-	}
-
-	/**
-	 * Handle dynamic calls into macros or pass missing methods to the store.
+	 * Dynamically pass missing methods to the store.
 	 *
 	 * @param  string  $method
-	 * @param  array  $parameters
+	 * @param  array   $parameters
 	 * @return mixed
 	 */
 	public function __call($method, $parameters)
 	{
-		if (isset($this->macros[$method]))
-		{
-			return call_user_func_array($this->macros[$method], $parameters);
-		}
-		else
-		{
-			return call_user_func_array(array($this->store, $method), $parameters);
-		}
+		return call_user_func_array(array($this->store, $method), $parameters);
 	}
-
 
 }

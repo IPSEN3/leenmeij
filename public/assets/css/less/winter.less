@@ -1,0 +1,706 @@
+/*!
+ * Master CSS template for Laravel-4-Bootstrap-Starter-Site
+ *
+ */
+
+/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+// Core variables and mixins
+@import "../../../../vendor/twbs/bootstrap/less/variables.less";
+@import "variables-custom.less"; // Modify this for custom colors, font-sizes, etc
+
+@import "../../../../vendor/twbs/bootstrap/less/mixins.less";
+
+// Reset
+@import "../../../../vendor/twbs/bootstrap/less/normalize.less";
+@import "../../../../vendor/twbs/bootstrap/less/print.less";
+
+// Core CSS
+@import "../../../../vendor/twbs/bootstrap/less/scaffolding.less";
+@import "../../../../vendor/twbs/bootstrap/less/type.less";
+@import "../../../../vendor/twbs/bootstrap/less/code.less";
+@import "../../../../vendor/twbs/bootstrap/less/grid.less";
+@import "../../../../vendor/twbs/bootstrap/less/tables.less";
+@import "../../../../vendor/twbs/bootstrap/less/forms.less";
+@import "../../../../vendor/twbs/bootstrap/less/buttons.less";
+
+// Components
+@import "../../../../vendor/twbs/bootstrap/less/component-animations.less";
+@import "../../../../vendor/twbs/bootstrap/less/glyphicons.less";
+@import "../../../../vendor/twbs/bootstrap/less/dropdowns.less";
+@import "../../../../vendor/twbs/bootstrap/less/button-groups.less";
+@import "../../../../vendor/twbs/bootstrap/less/input-groups.less";
+@import "../../../../vendor/twbs/bootstrap/less/navs.less";
+@import "../../../../vendor/twbs/bootstrap/less/navbar.less";
+@import "../../../../vendor/twbs/bootstrap/less/breadcrumbs.less";
+@import "../../../../vendor/twbs/bootstrap/less/pagination.less";
+@import "../../../../vendor/twbs/bootstrap/less/pager.less";
+@import "../../../../vendor/twbs/bootstrap/less/labels.less";
+@import "../../../../vendor/twbs/bootstrap/less/badges.less";
+@import "../../../../vendor/twbs/bootstrap/less/jumbotron.less";
+@import "../../../../vendor/twbs/bootstrap/less/thumbnails.less";
+@import "../../../../vendor/twbs/bootstrap/less/alerts.less";
+@import "../../../../vendor/twbs/bootstrap/less/progress-bars.less";
+@import "../../../../vendor/twbs/bootstrap/less/media.less";
+@import "../../../../vendor/twbs/bootstrap/less/list-group.less";
+@import "../../../../vendor/twbs/bootstrap/less/panels.less";
+@import "../../../../vendor/twbs/bootstrap/less/wells.less";
+@import "../../../../vendor/twbs/bootstrap/less/close.less";
+
+
+// Components w/ JavaScript
+@import "../../../../vendor/twbs/bootstrap/less/modals.less";
+@import "../../../../vendor/twbs/bootstrap/less/tooltip.less";
+@import "../../../../vendor/twbs/bootstrap/less/popovers.less";
+@import "../../../../vendor/twbs/bootstrap/less/carousel.less";
+
+// Utility classes
+@import "../../../../vendor/twbs/bootstrap/less/utilities.less";
+@import "../../../../vendor/twbs/bootstrap/less/responsive-utilities.less";
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+/*!
+ * Custom CSS
+ *
+ */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #fff;
+}
+
+#wrap > .container {
+  padding-top: 60px;
+}
+.container .credit {
+  margin: 20px 0;
+  color: #737373;
+}
+
+/*!
+ * Semantics based on Twitter Bootstrap
+ *
+ */
+
+.btn-cancel {
+  .btn;
+  .btn-warning;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.huren {
+  background: #26a1d1;
+  -webkit-box-shadow: 0 5px 0 #2086ae;
+  -moz-box-shadow: 0 5px 0 #2086ae;
+  box-shadow: 0 5px 0 #2086ae;
+  -webkit-text-shadow: 0 -1px 0 #2086ae;
+  -moz-text-shadow: 0 -1px 0 #2086ae;
+  -ms-text-shadow: 0 -1px 0 #2086ae;
+  -o-text-shadow: 0 -1px 0 #2086ae;
+  text-shadow: 0 -1px 0 #2086ae;
+  padding: 20px;
+
+}
+
+.huren {
+  color: #fff;
+}
+
+.selectedCar {
+  background-color: rgb(41, 149, 217);
+}
+
+.arrowleft {
+  position: absolute;
+  left: 98px;
+  top: 160px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 1023px) {
+  .da-slider {
+    display: none;
+  }
+
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 768px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .uitleg {
+    display: none;
+  }
+
+  .arrowleft{
+    display:none;
+  }
+}
+
+@font-face {
+  font-family: 'ecoico';
+  src:url('assets/fonts/timelineicons/ecoico.eot');
+  src:url('assets/fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/timelineicons/ecoico.woff') format('woff'),
+  url('assets/fonts/timelineicons/ecoico.ttf') format('truetype'),
+  url('assets/fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+.cbp_tmtimeline {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* The line */
+.cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px;
+}
+
+.cbp_tmtimeline > li {
+  position: relative;
+}
+
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+  display: block;
+  text-align: right;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+  font-size: 0.9em;
+  color: #bdd0db;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+  font-size: 2.9em;
+  color: #3594cb;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+  color: #6cbfee;
+}
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+  margin: 0 0 15px 25%;
+  background: #3594cb;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+  background: #6cbfee;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #3594cb;
+  border-width: 10px;
+  top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #6cbfee;
+}
+
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon {
+  width: 40px;
+  height: 40px;
+  font-family: 'ecoico';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  background: #46a4da;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #afdcf8;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+
+.cbp_tmicon-phone:before {
+  content: "\e000";
+}
+
+.cbp_tmicon-screen:before {
+  content: "\e001";
+}
+
+.cbp_tmicon-mail:before {
+  content: "\e002";
+}
+
+.cbp_tmicon-earth:before {
+  content: "\e003";
+}
+
+@media screen and (max-width: 65.375em) {
+
+  .cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 47.2em) {
+  .cbp_tmtimeline:before {
+    display: none;
+  }
+
+  .cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+
+  .cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left;
+  }
+
+  .cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+
+  .cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #3594cb;
+    top: -20px;
+  }
+
+  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: #6cbfee;
+  }
+
+  .cbp_tmtimeline > li .cbp_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+  }
+}
+
+
+/* backtotop */
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff9e17;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  z-index: 55;
+}
+
+.back-to-top:hover {
+  color: #ffffff;
+  background: #ff9e17;
+}
+
+.jumbotron {
+  background: #DE1F1F;
+}
+
+.jumbotron h2 {
+  color: #26a1d1;
+  font-size: 66px;
+  white-space: pre-wrap;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  font-family: 'Economica', Arial, sans-serif;
+  font-weight: 700;
+}
+
+
+.navbar-brand {
+  color: #26a1d1;
+}
+
+.icon-bar {
+  background: #26a1d1;
+}
+
+.btn-primary {
+  background: #26a1d1;
+  border: none;
+
+}
+
+.btn-primary:hover {
+  background-color: #26acd1;
+  border: none;
+}
+
+.btn-custom {
+  color: #fff;
+  background: #ff9e17;
+}
+
+.btn-custom:hover {
+  background: #ff9e17;
+}
+
+.btn {
+
+}
+
+/*
+ Quotes
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+#quotes
+{
+  background-color: #26acd1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 191px;
+  float: left;
+  position: relative;
+  z-index: 25;
+}
+
+#quotes h2 {
+  text-align: center;
+  color: #fff;
+}
+
+#quotes ul li
+{
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+#quotes ul li p
+{
+  color: #ffffff;
+  font-size: 22px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+#quotes ul li .person
+{
+  color: #ffffff;
+  color: rgba( 255, 255, 255, 0.8 );
+  display: inline;
+
+}
+
+#quote li
+{
+  display: none;
+}
+
+/*
+ Contact pagina
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.contact ul li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+#googleMap {
+  width: 100%;
+  height: 300px;
+}
+
+/*
+ Flex box responsive
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: #26acd1;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+
+  margin-left: 60px;
+}
+
+.err {
+  border: 2px solid tomato;
+}
+
+/*
+ Email invoice
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.document {
+
+  .document_header {
+    h2 {
+      color: #59595B;
+      font-weight: bold;
+    }
+
+    dd {
+      color: #59595B;
+    }
+
+    dt {
+      color: #00A9F0;
+      font-weight: bold;
+    }
+  }
+
+  .document_details {
+    thead th, td, tr.tfoot td.emphasize, tr.tfoot td.first {
+      border: none;
+    }
+
+    thead th {
+      color: #00A9F0;
+      text-transform: uppercase;
+      border: none;
+    }
+
+    td {
+      background: #F3F3F3;
+      border: none;
+      color: #59595B;
+    }
+
+    tr.even td {
+      background: white;
+    }
+
+    tr.tfoot td {
+      background: white;
+    }
+
+    tr.last td {
+      margin-bottom: 50px;
+    }
+
+    tr.tfoot td.total {
+      color: #00AFED;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    tr.tfoot td.price {
+      font-size: 16px;
+    }
+
+    tr.subtotal td {
+      padding-top: 30px;
+    }
+  }
+  .document_description p {
+    color: #9A9A9A;
+    border: none !important;
+  }
+}
+
+.document, h2 {
+  color: #333;
+}
+
+table.document_details {
+  thead th {
+    background: #BEDCF4;
+    color: white;
+    border-bottom: 0px;
+    font-family: helvetica;
+  }
+
+  tbody {
+    background: #eee;
+
+    td {
+      border-bottom: 0px;
+    }
+
+    td.emphasize {
+      border-top: 1px solid #ddd;
+      font-size: 15px;
+    }
+
+    tr.last {
+      border-bottom: 2px solid #ddd;
+    }
+  }
+}
+
+.document_description p {
+  border-top: 2px solid #ddd;
+  background: #eee;
+  padding: 10px;
+  font-style: italic;
+}
+
+/*
+ Review System
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.animated {
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+.stars
+{
+  margin: 10px 0;
+  font-size: 24px;
+  color: #d17581;
+}
+
+.ratings
+{
+  color: #d17581;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*
+ Captcha
+
+----------------------------------------------------------
+----------------------------------------------------------
+*/
+
+.input-recaptcha {
+  width:172px;
+}
+
+body {
+  background: #DE1F1F;
+}
